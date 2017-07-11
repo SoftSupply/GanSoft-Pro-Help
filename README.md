@@ -1,2 +1,4 @@
-# GanSoft-Pro-Help
-Livestock management software online help
+![GanSoft Pro Logo](https://softsupply.com/content/img/products/GanSoftPro.svg)
+
+# GanSoft
+Livestock management software
