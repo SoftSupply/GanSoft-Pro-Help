@@ -1,4 +1,4 @@
-![GanSoft Pro Logo](https://softsupply.com/content/img/products/GanSoftPro.svg)
+![GanSoft Pro Logo](https://softsupply.com/content/img/products/GanSoft.svg)
 
 # GanSoft
 Livestock management software
