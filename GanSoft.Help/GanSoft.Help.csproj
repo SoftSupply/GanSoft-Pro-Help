@@ -104,9 +104,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\logo_gansoft.png" />
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
     <Content Include="bower.json" />
+    <Content Include="content\Navegation map\Principal.cshtml" />
+    <Content Include="content\Menu principal\Principal.cshtml" />
+    <Content Include="content\Menu principal\Archive.cshtml" />
+    <Content Include="content\Menu principal\View.cshtml" />
+    <Content Include="content\Menu principal\Estate.cshtml" />
+    <Content Include="content\Menu principal\Registry.cshtml" />
+    <Content Include="content\Menu principal\Event.cshtml" />
+    <Content Include="content\Menu principal\Statistics.cshtml" />
+    <Content Include="content\Menu principal\Report.cshtml" />
+    <Content Include="content\Menu principal\Tools.cshtml" />
+    <Content Include="content\Menu principal\Windows.cshtml" />
+    <Content Include="content\Menu principal\Help.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -124,7 +137,7 @@
     <Content Include="restore.cmd">
       <DependentUpon>bower.json</DependentUpon>
     </Content>
-    <Content Include="content\ViewPage1.cshtml" />
+    <Content Include="content\Unistall\Principal.cshtml" />
     <None Include="scripts\_references.js" />
     <Content Include="styles\gansoft.css" />
     <Content Include="styles\site.css" />
