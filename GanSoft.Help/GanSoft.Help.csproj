@@ -108,7 +108,7 @@
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
     <Content Include="bower.json" />
-    <Content Include="content\Navegation map\Principal.cshtml" />
+    <Content Include="content\Navegation map\PrincipalN.cshtml" />
     <Content Include="content\Menu principal\Principal.cshtml" />
     <Content Include="content\Menu principal\Archive.cshtml" />
     <Content Include="content\Menu principal\View.cshtml" />
@@ -137,7 +137,7 @@
     <Content Include="restore.cmd">
       <DependentUpon>bower.json</DependentUpon>
     </Content>
-    <Content Include="content\Unistall\Principal.cshtml" />
+    <Content Include="content\Unistall\PrincipalU.cshtml" />
     <None Include="scripts\_references.js" />
     <Content Include="styles\gansoft.css" />
     <Content Include="styles\site.css" />
