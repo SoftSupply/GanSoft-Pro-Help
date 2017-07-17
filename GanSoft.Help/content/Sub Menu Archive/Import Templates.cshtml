@@ -1,0 +1,167 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Plantilla de Importación";
+    Page.SubTitle = "Opciones del menú archivo";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    A través de esta ventana es posible crear formatos y guardarlos como plantillas de datos aquellos registros contenidos en una hoja de cálculo de Excel, de forma tal que puedan ser incorporados a la base de datos de GanSoft.
+
+                    Este proceso permite facilitar la importación de datos de romanas electrónicas de cualquier marca y de ordeños mecánicos que tengan interfaz con una computadora y puedan pasar la información a un archivo externo.
+
+                    Es recomendable que, antes de hacer una importación de datos desde formato externo, se realice un respaldo de datos como medida preventiva.
+
+                    Usted podrá importar los siguientes eventos hasta GanSoft desde las diferentes fuentes mencionadas  :<br />
+
+                    Abortos<br />
+                    Abortos históricos<br />
+                    Agregar comentarios al árbol genealógico<br />
+                    Cambio de asociación<br />
+                    Cambio de clasificación<br />
+                    Cambio de código único de la madre<br />
+                    Cambio de código único del padre<br />
+                    Cambio de color<br />
+                    Cambio de composición racial<br />
+                    Cambio de condición corporal<br />
+                    Cambio de cruzar con<br />
+                    Cambio de descartado<br />
+                    Cambio de estado<br />
+                    Cambio de fecha de nacimiento<br />
+                    Cambio de fecha de registro<br />
+                    Cambio de identificador electrónico<br />
+                    Cambio de locación<br />
+                    Cambio de madre adoptiva<br />
+                    Cambio de nombre del animal<br />
+                    Cambio de número de parto de la madre<br />
+                    Cambio de número de registro<br />
+                    Cambio de número de tetas<br />
+                    Cambio de origen de nacimiento<br />
+                    Cambio de procedencia del animal<br />
+                    Cambio de propietario<br />
+                    Cambio de raza<br />
+                    Cambio de receptora<br />
+                    Cambio del código práctico<br />
+                    Cambio del código único<br />
+                    Cambio fecha próximo examen reproductivo<br />
+                    Celos sin servicio<br />
+                    Comentario general<br />
+                    Diagnósticos y tratamientos clínicos<br />
+                    Eliminación de animales activos<br />
+                    Fotografía del animal<br />
+                    Inscripción de animales<br />
+                    Inscripción de técnicos<br />
+                    Inventario<br />
+                    Lactancia inducida<br />
+                    Lactancias históricas<br />
+                    Lactancias inducidas históricas<br />
+                    Observaciones en eventos<br />
+                    Partos<br />
+                    Partos históricos<br />
+                    Pesajes de leche<br />
+                    Pesajes de leche históricos<br />
+                    Pesos corporales<br />
+                    Pesos corporales históricos<br />
+                    Producción de embriones históricos<br />
+                    Producción embriones<br />
+                    Prueba de mastitis<br />
+                    Pruebas de mastitis históricas<br />
+                    Revisiones/Palpaciones<br />
+                    Revisiones/Palpaciones históricas<br />
+                    Secados/Destetes<br />
+                    Servicios<br />
+                    Servicios históricos<br />
+                    Traslado a otra hacienda<br />
+
+                    Para crear un nuevo formato o plantilla, lleve a cabo el siguiente procedimiento:<br />
+
+                    Agregar, haga clic en este botón para crear un nuevo formato.
+                    Nombre de la plantilla, establezca el nombre que identificará al formato. Utilice nombres que le hagan recordar fácilmente la función de ese formato.
+
+                    Siga las siguientes instrucciones para establecer las definiciones de eventos (Único, Práctico, Identificador electrónico y Número de registro) de lo que se va a importar.
+
+                    Columna, debe especificar la columna en la que se encuentra el código.
+
+                    Hoja, escriba el nombre de la hoja de Excel donde se encuentra la información del evento seleccionado.
+
+                    Eliminar, haga clic en este botón si desea borrar las especificaciones del evento a importar.
+
+                    Los campos del evento indicadas en la sección definiciones de eventos se mostrarán en la sección campos del evento.
+
+                    Los siguientes campos deben ser introducidos de la forma sugerida por los desarrolladores a causa de los diferentes idiomas utilizados en el programa:<br />
+
+                    -	Composición racial: Utilice el formato de la composición racial resumida ( ej: BB50HN50 )
+                    -	Desactivado:    Use   1 para Sí o Verdadero, 0 para No o Falso
+                    -	Descartado:     Use   1 para Sí o Verdadero, 0 para No o Falso
+                    -	Estado del animal:
+                    1  Lactante hembra (becerra o equivalente en otra especie)
+                    2  Hembra joven destetada (mauta o equivalente en otra especie)
+                    3  Hembra adulta sin parto, aborto o lactancia ind. (novilla o equivalente en otra especie)
+                    4  Hembra adulta con parto, aborto o Lactancia ind. (vaca o equivalente en otra especie)
+                    5  Lactante macho (becerro o equivalente en otra especie)
+                    6  Macho joven destetado (maute o equivalente en otra especie)
+                    7  Macho adulto no reproductor (novillo o equivalente en otra especie)
+                    8  Macho adulto reproductor. (Toro o equivalente en otra especie)
+                    9  Semen
+                    10  Embrión
+                    -	Hora de servicio:   0 para AM, 1 para PM
+                    -	Método de fertilización:  0 para MOET, 1  para FIV
+                    -	Origen de nacimiento:   0  para Monta, 1  para Inseminación, 2  para Transplante
+                    -	Registrar cría:     Use   1 para Sí o Verdadero, 0 para No o Falso
+                    -	Secado prematuro:    Use   1 para Sí o Verdadero, 0 para No o Falso
+                    -	Servicio calculado:    Use   1 para Sí o Verdadero, 0 para No o Falso
+                    -	Sexo de la cría:
+                    0	para Hembra
+                    1     para Macho
+                    -	Tipo aborto:
+                    0	para aborto sin lactancia (valor predeterminado)
+                    1    para aborto con lactancia
+                    -	Tipo movimiento en la inscripción de animales:
+                    1  Ajuste positivo  (valor predeterminado)
+                    2  Compra
+                    3  Donación entrante o recibida
+                    -	Tipo movimiento en la eliminación de animales:
+                    0  Muerte
+                    1  Venta
+                    2  Sacrificio
+                    3  Donación salida o entregada
+                    4  Ajuste negativo  (valor predeterminado)
+                    5  Robo
+                    -	Tipo medición  (pesos corporales):
+                    0  Al nacer
+                    1  Al ingreso
+                    2  Al destete
+                    3  General  (valor predeterminado)
+                    4  Entrada a servicio
+                    5  Al Parto
+                    6  Al secado
+                    7  A la venta
+                    -	Tipo de parto:
+                    0  Normal (valor predeterminado)
+                    1  Con ayuda
+                    2  Distócico
+                    3  Mortinato
+                    -	Tipo de servicio:
+                    0  Monta natural (valor predeterminado)
+                    1  Inseminación artificial
+                    2  Transplante de embriones
+
+
+                    Nota: Recuerde que a partir de la versión 7 usted puede importar múltiples eventos de manera simultánea y puede crear las plantillas deseadas totalmente ajustadas a sus libros de Excel.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>

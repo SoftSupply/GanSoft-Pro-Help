@@ -120,6 +120,29 @@
     <Content Include="content\Menu principal\Tools.cshtml" />
     <Content Include="content\Menu principal\Windows.cshtml" />
     <Content Include="content\Menu principal\Help.cshtml" />
+    <Content Include="content\Sub Menu Archive\Conection Change.cshtml" />
+    <Content Include="content\Sub Menu Archive\Import Data.cshtml" />
+    <Content Include="content\Sub Menu Archive\Import Templates.cshtml" />
+    <Content Include="content\Sub Menu Archive\Back up Data.cshtml" />
+    <Content Include="content\Sub Menu Archive\Restore Data.cshtml" />
+    <Content Include="content\Sub Menu Archive\Sign off.cshtml" />
+    <Content Include="content\Sub Menu Archive\Get Out.cshtml" />
+    <Content Include="content\Sub Menu View\Menu Bar.cshtml" />
+    <Content Include="content\Sub Menu View\Nav Bar.cshtml" />
+    <Content Include="content\Sub Menu View\Status Bar.cshtml" />
+    <Content Include="content\Sub Menu Estate\Selection.cshtml" />
+    <Content Include="content\Sub Menu Estate\General Data.cshtml" />
+    <Content Include="content\Sub Menu Estate\Configuration.cshtml" />
+    <Content Include="content\Sub Menu Estate\Inventary.cshtml" />
+    <Content Include="content\Sub Menu Estate\Notice.cshtml" />
+    <Content Include="content\Sub Menu Estate\Health plans.cshtml" />
+    <Content Include="content\Sub Menu Estate\Code.cshtml" />
+    <Content Include="content\Sub Menu Registry\Search.cshtml" />
+    <Content Include="content\Sub Menu Registry\Delete.cshtml" />
+    <Content Include="content\Sub Menu Registry\BackupA.cshtml" />
+    <Content Include="content\Sub Menu Registry\Move.cshtml" />
+    <Content Include="content\Sub Menu Registry\Changestate.cshtml" />
+    <Content Include="content\Sub Menu Registry\Familytree.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

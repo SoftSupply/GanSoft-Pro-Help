@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Respaldar Datos";
+    Page.SubTitle = "Opciones del menú archivo";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Este procedimiento permite al usuario realizar una copia de seguridad de la base de datos del sistema GanSoft en cualquier unidad seleccionada. Se recomienda sea llevada a cabo cada cierto tiempo de forma tal que mantenga sus datos en una unidad externa con la finalidad de prever cualquier inconveniente con el equipo que pueda afectar sus registros.<br />
+
+                    El sistema despliega un cuadro de diálogo desde el cual podrá llevar a cabo éste proceso. Debe seleccionar la ubicación destino en la que se desea almacenar el respaldo. Puede ser una unidad Zip, disco externo, Pen Drive o en la memoria del Computador (disco C, Mis documentos, entre otros).
+                    Al hacer clic en siguiente, se realizará la copia de seguridad en la ruta previamente indicada. El archivo de respaldo se realizará con el siguiente formato por defecto:<br />
+                    •	Serial de la Licencia (compuesto por país, programa, año, mes y consecutivo de la licencia)<br />
+                    •	Fecha invertida de la realización del respaldo (año, mes y día)<br />
+                    •	Hora del respaldo<br />
+                    Ejemplo: VEGS200611569_20120708_2042<br />
+
+                    Nota: En GanSoft 7 las fotos de los animales se guardan en la base de datos y el sistema automáticamente optimiza el tamaño y la calidad de la imagen para minimizar el espacio que ocupa.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>
