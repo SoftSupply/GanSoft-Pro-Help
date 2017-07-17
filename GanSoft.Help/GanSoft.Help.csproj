@@ -138,11 +138,19 @@
     <Content Include="content\Sub Menu Estate\Health plans.cshtml" />
     <Content Include="content\Sub Menu Estate\Code.cshtml" />
     <Content Include="content\Sub Menu Registry\Search.cshtml" />
-    <Content Include="content\Sub Menu Registry\Delete.cshtml" />
+    <Content Include="content\Sub Menu Registry\DeleteA.cshtml" />
     <Content Include="content\Sub Menu Registry\BackupA.cshtml" />
-    <Content Include="content\Sub Menu Registry\Move.cshtml" />
+    <Content Include="content\Sub Menu Registry\Enter Animal.cshtml" />
     <Content Include="content\Sub Menu Registry\Changestate.cshtml" />
     <Content Include="content\Sub Menu Registry\Familytree.cshtml" />
+    <Content Include="content\Sub Menu Registry\General Data.cshtml" />
+    <Content Include="content\Sub Menu Registry\Reproductor.cshtml" />
+    <Content Include="content\Sub Menu Registry\Bellies.cshtml" />
+    <Content Include="content\Sub Menu Registry\No Bellies.cshtml" />
+    <Content Include="content\Sub Menu Registry\Technical.cshtml" />
+    <Content Include="content\Sub Menu Registry\Irons.cshtml" />
+    <Content Include="content\Sub Menu Registry\Movements.cshtml" />
+    <Content Include="content\Sub Menu Registry\Move.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

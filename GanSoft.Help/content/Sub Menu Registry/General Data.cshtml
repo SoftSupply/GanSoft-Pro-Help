@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Datos Generales";
+    Page.SubTitle = "Opciones del menú archivo";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    En esta ventana el usuario tendrá acceso a los datos generales de cualquier animal de la hacienda (Reproductores, Vientres o No Vientres), con cualquier estatus (activo, inactivo o referencia). Esta ventana permite que el usuario pueda ver en forma individual los datos generales de un animal y adicionalmente podrá <Modificar>
+                        la mayoría de estos. Podrá seleccionar la información que desea visualizar del animal seleccionado, estos datos se encuentran clasificados según las siguientes categorías: <br />
+
+                        Información General	<br />
+                        •	Resumen: Información básica del animal. <br />
+                        •	Generales: Información básica del animal. <br />
+                        •	Descendientes: Detalles de la genealogía del animal. <br />
+                        •	Estadísticas: Promedios estadísticos calculados al animal. <br />
+                        •	Hierros: Señales asignadas al animal. <br />
+                        Históricos comunes<br />
+                        •	Vaqueras: Histórico de locaciones en las que ha estado el animal. <br />
+                        •	Inventarios: Presenta el detalle de históricos de inventarios del animal. <br />
+                        •	Movimientos: Detalla cada uno de los movimientos registrados al animal. <br />
+                        •	Clínica: Presenta cada uno de los diagnósticos y tratamientos asignados al animal. <br />
+                        •	Pesos: Histórico de pesos del animal. <br />
+                        •	Condición corporal: Histórico de condiciones corporales del animal. <br />
+                        •	Fotografías: Muestra todas las fotografías registradas al animal, indicando la foto activa (solo una, el resto son fotografías referenciales) <br />
+                        •	Comentarios: Presenta el histórico de comentarios del animal. <br />
+                        Históricos según categoría del animal (reproductores) <br />
+                        •	Servicios: Presenta el detalle de cada uno de los servicios asociados con el reproductor seleccionado. <br />
+                        •	Compras y ajustes: Muestra los eventos de tipo compra y ajuste positivo asociados con el reproductor seleccionado. <br />
+                        Históricos según categoría del animal (vientres) <br />
+                        •	Reproducción: Presenta el histórico de eventos de reproducción asociados con el animal. <br />
+                        •	Lactancias: Muestra el detalle de las lactancias acumuladas y los pesajes de leche del animal. <br />
+                        •	Mastitis: Detalla cada una de las pruebas de mastitis aplicadas al animal con sus respectivos resultados. <br />
+
+</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>
