@@ -193,6 +193,11 @@
     <Content Include="content\Sub Menu Help\About.cshtml" />
     <Content Include="content\Sub Menu Help\Upgrade.cshtml" />
     <Content Include="content\Sub Menu Help\Commet.cshtml" />
+    <Content Include="content\Install\Requeriment.cshtml" />
+    <Content Include="content\Install\Start install.cshtml" />
+    <Content Include="content\Install\Installing.cshtml" />
+    <Content Include="content\Install\Ending.cshtml" />
+    <Content Include="content\Install\Configuration.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
