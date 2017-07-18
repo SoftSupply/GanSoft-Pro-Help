@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Árbol Genealógico";
+    Page.SubTitle = "Opciones del menú reportes";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Desde ésta ventana es posible diseñar reportes personalizados relacionados con la información del árbol genealógico del animal, incluyendo variables de los diferentes niveles, es decir, el animal, los hijos, los padres, abuelos. <br />
+
+                    Por medio de esta opción es posible iniciar un asistente a través del cual es posible crear los reportes personalizados, de forma tal de presentar los resultados según las necesidades del usuario facilitando así la toma de decisiones oportunas. El procedimiento a seguir para generar reportes y vistas es el siguiente: <br />
+                    <br />Pestaña Configuraciones<br />
+                    En esta sección del generador se determinan los datos básicos del reporte. <br />
+                    Número, indique un código que identifique al reporte. <br />
+                    Nombre, establezca un nombre que permita identificar al reporte. <br />
+                    Descripción, indique una breve definición del reporte para facilitar la identificación del mismo. <br />
+                    Igualmente, cuenta con la opción de establecer como público al guardar, que si mantiene activa indica que el reporte estará disponible para todos los usuarios registrados en el sistema, si la destilda, establece que únicamente estará disponible para el usuario activo (quien crea el reporte). <br />
+                    <br />Pestaña Impresión<br />
+                    En esta sección se establecen cada una de las variables que se mostrarán en el reporte. <br />
+                    Grupo, permite seleccionar la categoría a la que pertenecen las variables a utilizar en el reporte. El ordenamiento facilita la ubicación de las variables a emplear en el reporte a diseñar. <br />
+                    Nivel, permite determinar el nivel que ocupa en el árbol genealógico el contenido a la variable a seleccionar para el reporte, es decir, indicar si pertenece al hijo, animal, padres o abuelos. <br />
+                    Variable del grupo, presenta los resultados de las variables obtenidas luego de establecer los filtros de grupo y nivel. Se deben seleccionar las variables a utilizar en el reporte y hacer clic en la opción agregar para moverlas a la parte derecha de la ventana que indica que son las variables a mostrar en el reporte. <br />
+                    En esta parte es posible determinar el orden de las variables a mostrar en el reporte, haciendo clic sobre la variable a posicionar y presionando el botón de flecha arribva o abajo en el teclado hasta obtener los resultados esperados. <br />
+                    <br />Pestaña Condiciones<br />
+                    Desde esta pestaña es posible determinar las condiciones que se deben cumplir en las variables a utilizar en el reporte para que se incluyan y o excluyan registros en el reporte. <br />
+                    <br />Pestaña Ordenamiento<br />
+                    En esta sección es posible establecer las variables que determinarán el orden de presentación de los registros contenidos en el reporte. <br />
+                    <br />Ajustes<br />
+                    Desde esta sección el usuario puede personalizar los encabezados a visualizar en el reporte, además de establecer configuraciones de fuente y de página. <br />
+                    Nota: En caso de que luego de modificar con valores personalizados el encabezado de un reporte y desea que se muestren los encabezados que por defecto estaban establecidos en el sistema, debe dejar en blanco los espacios de los encabezados y reiniciar la conexión. <br />
+
+                    Para eliminar un reporte, selecciónelo de la lista y haga clic en el botón de Eliminar representado por una X negra. <br />
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>

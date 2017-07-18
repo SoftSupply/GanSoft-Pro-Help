@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Pruebas de Mastitis";
+    Page.SubTitle = "Opciones del menú evento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Por medio de esta ventana es posible registrar los resultados de las Pruebas de Mastitis Subclínica
+                    (California Mastitis Test), realizadas a cada Vientre en producción, de forma tal de mantener un histórico de estos datos. <br />
+
+                    A través de esta ventana el usuario podrá buscar los vientres por su Código Practico o por el Código Único. Indique la fecha en la que fue realizada la prueba, esta fecha será verificada con la fecha actual del sistema, como también será verificada si esta fecha se encuentra dentro de la lactancia actual, o si está dentro de la última lactancia, en este último caso debe ser mayor que la fecha de Comienzo de Lactancia y menor que la fecha de Secado. <br />
+
+                    Los resultados de la prueba podrá registrarlos por cada Pezón, distribuidos de la siguiente forma: <br />
+
+                    <br />Resultado P.A.D.- (Pezón Anterior Derecho) <br />
+                    Resultado P.A.I.- (Pezón Anterior Izquierdo) <br />
+                    Resultado P.P.D.- (Pezón Posterior Derecho) <br />
+                    Resultado P.P.I.- (Pezón Posterior Izquierdo) <br />
+                    Con la posibilidad de registrar como resultado de cada prueba las siguientes opciones: <br />
+
+                    <br />N: Negativo<br />
+                    T: SubClínica Trazas<br />
+                    1: SubClínica Nivel 1 (Positivo Débil) <br />
+                    2: SubClínica Nivel 2 (Positivo Evidente) <br />
+                    3: SubClínica Nivel 3 (Positivo Fuerte) <br />
+                    C: Mastitis Clínica<br />
+                    Técnico, especifique el nombre del técnico responsable del evento. <br />
+                    Igualmente, podrá incluir un comentario, el cual puede repetirse para otros Vientres, es decir, si en el comentario se desea guardar el reactivo que se utilizó para la prueba y/o cualquier otra observación, tendrá la opción de activar la casilla de verificación denominada Mantener para hacer conservar el comentario durante el ingreso de los datos de los siguientes vientres, hasta donde se desee mantener el comentario. <br />
+                    Del lado derecho del formulario habrá una lista de los resultados de las últimas 12 pruebas realizadas en el vientre con anterioridad. <br />
+                    Nota: Antes de reportar una prueba de mastitis, puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. de la adulta hembra con parto aborto seleccionada. <br />
+                    Por otro lado, cuando se coloque en uno de los pezones el resultado de Pezón Perdido (P), el sistema automáticamente actualizará el campo, Cantidad de Tetas, en el vientre seleccionado y para futuras pruebas, este pezón aparecerá deshabilitado y no se podrá colocar otro resultado ya que quedará bloqueado el campo. <br />
+                    Para guardar el servicio deberá presionar el botón aceptar y en caso contrario que desea cancelar el nuevo servicio haga clic en el botón cancelar o Esc. <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>

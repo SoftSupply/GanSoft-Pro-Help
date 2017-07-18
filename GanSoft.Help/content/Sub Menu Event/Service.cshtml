@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Servicios";
+    Page.SubTitle = "Opciones del menú evento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta opción permite notificar las Inseminaciones Artificiales, Montas Naturales o Trasplantes de Embriones, que se han realizado a las hembras existentes en el archivo de Vientres.<br />
+
+                    Puede agregar servicios por animal y por grupo. Para ello, registre el número del animal (código práctico o único) y presione la tecla Enter, también puede seleccionar al animal a través de la ventana Seleccionar Vientre, que se muestra haciendo doble clic en la casilla del código (práctico o único). En esta ventana verá del lado derecho los Eventos Reproductivos Anteriores que ha tenido ese vientre, y deberá llenar los campos del nuevo servicio: <br />
+
+                    Fecha, esta debe ser en orden cronológico con respecto al último evento reproductivo. Luego presione la tecla Enter o posicione el cursor en la siguiente casilla. <br />
+
+                    Horario, seleccione si el servicio se realizó en la mañana (AM) o en la tarde (PM). Luego presione la tecla Enter.<br />
+
+                    Reproductor, escriba el código práctico del reproductor con el cual se llevó a cabo el servicio, también puede seleccionar al animal a través de la lista de códigos. Luego presione la tecla Enter
+                    o posicione el cursor en la siguiente casilla. La selección del reproductor indicara si es Monta Natural, Inseminaciones Artificiales, o Trasplante. <br />
+
+                    Técnico, puede seleccionar al técnico a través de la lista de códigos. Si en las Constantes de la Configuración de la hacienda se ha establecido algún técnico como predeterminado, el código de éste aparecerá en la casilla, pero puede ser borrado para escribir otro. Luego presione la tecla Enter o colóquese con el ratón en la siguiente casilla. <br />
+
+                    Dosis, defina el número de pajuelas de ese semen que utilizó, este valor puede estar entre 0.5 y 2. Luego presione la tecla Enter o colóquese con el ratón en la siguiente casilla. <br />
+
+                    Comentario
+                    Permite escribir un comentario sobre el evento servicio. Además de poder mantener el comentario en caso de que así lo desee con solo marcar la casilla de verificación que se encuentra en la parte inferior del comentario. <br />
+
+                    Técnico, Seleccione al técnico responsable del servicio. <br />
+
+                    Nota: Active la opción Mantener Comentario si desea conservar el detalle del comentario para los siguientes eventos a reportar. <br />
+
+                    Luego haga clic en el icono de Guardar
+                    o presionando la tecla Enter hasta que la notificación pase hasta la sección Servicios en esta sesión. <br />
+
+                    Nota: Antes de guardar el servicio también puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. Para esto sólo debe posicionarse en las casillas de la parte inferior de la ventana y luego notificar el servicio. <br />
+
+                    El sistema supervisará que las fechas de estos servicios sean mayores a la fecha del último parto/aborto (sólo si es vientre), mayor a la fecha del último celo (si tuviera un celo reportado), mayor a la fecha de la última revisión (si tuviera una revisión) y que la hembra no esté preñada. Para todos estos casos el programa dará los mensajes correspondientes de advertencia. Este proceso actualizará la información del animal, su estado reproductivo y también actualizará los datos de los reproductores y los técnicos. <br />
+
+                    Si desea cancelar el nuevo servicio salga de la ventana haciendo clic al icono de cancelar o Esc. <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>

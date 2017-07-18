@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Secado / Destete";
+    Page.SubTitle = "Opciones del menú evento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Por medio de ésta ventana es posible notificar los secados de cada uno de los vientres de la hacienda que se encuentren en producción y a su vez los destetes de sus respectivas crías, siempre que en la configuración de la hacienda se encuentre activa esta opción. <br />
+
+                    Para notificar un nuevo secado debe indicar el número del animal (código práctico o único) y presionar la tecla Enter
+                    , también puede seleccionar al animal a través de la ventana Seleccionar Vientre, que se muestra haciendo doble clic en la casilla del código (práctico o único). Podrá visualizar del lado derecho los Pesajes de Leche Anteriores que ha tenido ese vientre. Proceda a ingresar los datos correspondientes al secado: <br />
+
+                    Fecha, Día, mes y año en que ocurre el secado. <br />
+                    Peso, si lo conoce puede escribirlo en este momento y el programa actualizará esa información en el histórico de pesos corporales, de lo contrario podrá dejarlo en blanco ya que es un campo opcional. El peso debe estar reflejado en kilogramos. <br />
+                    Técnico, indique el nombre del técnico responsable del evento. <br />
+                    Comentario, puede especificar mayores detalles acerca del evento secado reportado. <br />
+
+                    <br />Destete Crías<br />
+                    •	Practico: Indica el código practico de la cría a ser destetada <br />
+                    •	Madre adoptiva: Al hacer doble clic en el campo que pertenece a madre adoptiva se desplegará una lista de códigos que le permitirá seleccionar un código madre para la cría. <br />
+                    •	Vaquera destino: Al hacer doble clic en el campo que pertenece a vaquera se desplegará una lista de códigos que le permitirá seleccionar una vaquera para la cría. <br />
+                    •	Peso: Permite indicar el peso al destete de la cría. <br />
+                    •	Altura: Permite indicar la altura al destete de la cría. <br />
+
+                    Nota: Antes de pasar a notificar un secado / destete a otro animal, puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. Servir con...  de la adulta hembra con parto aborto seleccionada. <br />
+                    Si el vientre al cual se le notificará el secado, tiene un aborto y las crías aún son becerros, el sistema exigirá los pesos al destete de estas. <br />
+
+                    El sistema acepta sólo aquellos vientres que no estén secas y que la fecha de secado sea mayor a la fecha de comienzo de lactancia. También actualiza el peso de destete del becerro, su vaquera destino, su estado (si así estuviera configurado) y actualiza el inventario de mautes y becerros. <br />
+
+                    Si desea cancelar el nuevo parto salga de la ventana haciendo clic al icono de cancelar o presione la tecla Esc. <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>

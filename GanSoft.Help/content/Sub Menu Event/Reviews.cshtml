@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Revisiones";
+    Page.SubTitle = "Opciones del menú evento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta opción permite notificar las palpaciones o revisiones realizadas a las hembras existentes en el archivo de Vientres. <br />
+
+                    Para agregar una nueva palpación debe escribir el número del animal (código práctico o único) y presionar la tecla Enter o seleccione al animal a través de la ventana Seleccionar Vientre, que se muestra haciendo doble clic en la casilla del código (práctico o único). En esta ventana podrá visualizar del lado derecho los Eventos Reproductivos Anteriores que ha tenido ese vientre. Debe proporcionar los datos correspondientes a la nueva palpación: <br />
+
+                    Fecha, esta debe ser en orden cronológico con respecto al último evento reproductivo. Luego presione la tecla Enter o posicione el cursor en el siguiente cuadro de texto. <br />
+
+                    Diagnóstico General, escriba o seleccione el código del diagnóstico general correspondiente: <br />
+                    Si escribe P (diagnóstico general por defecto y utilizado en las Constantes de la Configuración para indicar Preñez) y luego pulsa la tecla Enter, podrá notificar cambios de vaquera, condición corporal o servir con, haga los cambios deseados hasta que la notificación de la revisión haya terminado y esa información pase hasta la sección denominada Revisiones, ubicada en la parte inferior de la ventana. <br />
+
+                    Cualquier otro diagnóstico general, E (diagnóstico general por defecto y utilizado en las Constantes de la Configuración para indicar En Espera) u otro creado en Códigos Varios y definido como un Diagnóstico General, le permitirá colocar diagnósticos en Útero, Ovarios, Tratamiento Reproductivo, etc., luego utilice el botón Guardar
+                    o pulse la tecla Enter, hasta que la notificación de la revisión haya terminado y pase a la sección denominada Revisiones. Puede consultar la lista de los códigos para cada tipo de diagnóstico haciendo doble clic en la casilla y adicionalmente puede agregar alguno a través de la misma ventana. <br />
+
+                    Técnico <br />
+                    Puede seleccionar al técnico a través de la lista de códigos. Si en las Constantes de la Configuración de la hacienda se ha establecido algún técnico como predeterminado, el código de este aparecerá; en la casilla, pero puede ser borrado para escribir otro. Luego presione la tecla Enter o colóquese con el ratón en la siguiente casilla. <br />
+
+                    Comentario <br />
+                    Permite escribir un comentario sobre el evento revisión. Además de poder mantener el comentario en caso de que así lo desee con solo marcar la casilla de verificación que se encuentra en la parte inferior del comentario. <br />
+
+                    Igualmente, podrá realizar cambios en las siguientes opciones: <br />
+
+                    Vaquera, puede hacer un cambio de vaquera/lote por medio de ésta ventana. Indique el código de la misma y presione la tecla Enter, luego escriba un comentario referente al cambio. De ser necesario consulte la lista de los códigos varios, haciendo doble clic en la casilla. <br />
+
+                    Condición Corporal, puede realizar un cambio de condición corporal en este momento. Indique el código de la misma y presione la tecla Enter, luego escriba un comentario referente al cambio. De ser necesario consulte la lista de los códigos varios, haciendo doble clic en la casilla. <br />
+
+                    Pezones, este cuadro de texto le permitirá actualizar la cantidad de pezones sanos que tiene el vientre al cual le notifica la palpación. <br />
+
+                    Servir con…, aproveche (de ser necesario) para modificar esta nota en su animal. <br />
+                    En cada una de las opciones anteriores, se encuentra igualmente al lado derecho una casilla de verificación que permite determinar si será ingresada la información, en caso de encontrarse activa la casilla indica que será omitida y que al presionar la tecla Enter el cursor se posicionará en el cuadro de texto siguiente cuya casilla de verificación se encuentre desactivada. <br />
+
+                    El sistema supervisará que las fechas de estas revisiones sean mayores a la fecha del último parto/aborto (sólo si es vientre), mayor a la fecha del último celo (si tuviera un celo reportado), mayor a la fecha de la última revisión (si tuviera una revisión) y que el animal no esté preñado si va a tener un segundo diagnóstico diferente al de preñez. Para todos estos casos el programa dará los mensajes correspondientes de advertencia. <br />
+
+                    En el caso particular que notifique un diagnóstico de preñez a un vientre Vacío (un vientre sin un servicio previo a esta palpación), el sistema dará un mensaje de advertencia y solicitará: <br />
+
+                    Días de Gestación, el tiempo máximo permitido lo presentará en el mensaje de información situado en la parte inferior de la ventana. <br />
+
+                    Reproductor, por defecto se presentará Indefinido o el reproductor de monta que usted indicó en la configuración como indeterminado, escriba código práctico del reproductor de monta con el cual se llevó a cabo el servicio que preñó ese vientre, también puede seleccionar al animal de la lista desplegable. El sistema incorporará automáticamente la información del servicio con fecha calculada por los días de gestación suministrados e introducirá la revisión correspondiente y su diagnóstico. <br />
+
+                    Asimismo, es posible seleccionar la opción Tratar el evento como Descartado, de forma tal que el evento no será tomado en cuenta para los cálculos del sistema, pero si quedará registrado en el histórico de reproducción del vientre. <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        </a>
+    </div>
+</div>
