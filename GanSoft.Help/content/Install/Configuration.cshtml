@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Archivo";
-    Page.SubTitle = "Opciones del menú principal";
+    Page.Title = "Configuración inicial";
+    Page.SubTitle = "";
 }
 
 <div class="row">
@@ -9,25 +9,42 @@
         <div class="row">
             <div class="col-md-12">
                 <p>
-                    A través de este módulo puede realizar todas las operaciones de entrada, salida, respaldos, restauraciones, conexiones de los diferentes archivos con los que va a interactuar el sistema. Este módulo se compone de las siguientes opciones: <br />
+                    Una vez instalado GanSoft, iniciamos el sistema a través del acceso directo inicial y
+                    comenzará la configuración de la instalación.
 
-                    <br />• Cambiar Conexión<br />
-                    • Importa Datos <br />
-                    • Plantillas de importación <br />
-                    • Respaldar Datos <br />
-                    • Restaurar Datos <br />
-                    • Cerrar Sesión <br />
-                    • Salir <br />
+                    Automáticamente el asistente para la configuración de la instalación de GanSoft,
+                    seleccionara la instancia de datos local predeterminada (localdb)\GanSoft.
+                    Si éste detecta que en su equipo e inclusive en su red, hay más de una instancia de
+                    Microsoft SQL Server instalada, deberá confirmar y conectarse con la instancia deseada.
+
+                    Si la conexión con la instancia/servidor es correcta el asistente le mostrará el siguiente
+                    mensaje:
+
+                    Una vez confirmado presione Siguiente para continuar.
+
+                    El asistente le mostrará las principales opciones disponibles para comenzar a utilizar
+                    GanSoft.
+
+                    Si adquirió recientemente una licencia de GanSoft puede utilizar la opción: Personalizar
+                    el sistema con una nueva licencia.
+                    Si desea evaluar las funciones y características de GanSoft puede utilizar la opción: Iniciar
+                    utilizando datos demostrativos, donde podrá generar una licencia con datos de
+                    ejemplos y otra sin datos limitada a 20 animales.
+                    Si está instalando GanSoft en estaciones de trabajo puede utilizar la opción Conectarse a
+                    una base de datos existente para trabajar con bases de datos remotas o con otras
+                    licencias locales.
+
+                    Una vez finalizado contará con un acceso directo a sus rebaños en su escritorio.
                 </p>
             </div>
         </div>
     </div>
     <div class="col-md-4 text-center">
-        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
-            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
-            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip">Reproductivo</a>
-            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
-            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>
+        <a href="~/images/captures/GanSoft Pro_8.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/GanSoft Pro_8.jpg" alt="Distribucion" />
+            <a href="~/images/captures/GanSoft Pro_9.jpg" data-lightbox="roadtrip">Configuración</a>
+            @*<a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip">Lotes</a>
+    <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip">Productivo</a>*@
         </a>
     </div>
 </div>

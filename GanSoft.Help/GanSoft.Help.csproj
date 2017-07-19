@@ -104,6 +104,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\captures\Demostrativa_con_datos_2.jpg" />
+    <Content Include="images\captures\GanSoft Pro.jpg" />
+    <Content Include="images\captures\GanSoft Pro_1.jpg" />
+    <Content Include="images\captures\GanSoft Pro_10.jpg" />
+    <Content Include="images\captures\GanSoft Pro_2.jpg" />
+    <Content Include="images\captures\GanSoft Pro_3.jpg" />
+    <Content Include="images\captures\GanSoft Pro_4.jpg" />
+    <Content Include="images\captures\GanSoft Pro_5.jpg" />
+    <Content Include="images\captures\GanSoft Pro_6.jpg" />
+    <Content Include="images\captures\GanSoft Pro_8.jpg" />
+    <Content Include="images\captures\GanSoft Pro_9.jpg" />
     <Content Include="images\logo_gansoft.png" />
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
@@ -226,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\" />
-    <Folder Include="images\captures\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
