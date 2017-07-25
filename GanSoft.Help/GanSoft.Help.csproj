@@ -104,7 +104,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\captures\Archivo.jpg" />
+    <Content Include="images\captures\ayuda.jpg" />
     <Content Include="images\captures\Demostrativa_con_datos_2.jpg" />
+    <Content Include="images\captures\estadistica.jpg" />
+    <Content Include="images\captures\evento.jpg" />
     <Content Include="images\captures\GanSoft Pro.jpg" />
     <Content Include="images\captures\GanSoft Pro_1.jpg" />
     <Content Include="images\captures\GanSoft Pro_10.jpg" />
@@ -115,6 +119,12 @@
     <Content Include="images\captures\GanSoft Pro_6.jpg" />
     <Content Include="images\captures\GanSoft Pro_8.jpg" />
     <Content Include="images\captures\GanSoft Pro_9.jpg" />
+    <Content Include="images\captures\hacienda.jpg" />
+    <Content Include="images\captures\herramientas.jpg" />
+    <Content Include="images\captures\registro.jpg" />
+    <Content Include="images\captures\reportes.jpg" />
+    <Content Include="images\captures\ventana.jpg" />
+    <Content Include="images\captures\ver.jpg" />
     <Content Include="images\logo_gansoft.png" />
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
