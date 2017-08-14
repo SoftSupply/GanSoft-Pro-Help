@@ -119,8 +119,11 @@
     <Content Include="images\captures\avisos_2.jpg" />
     <Content Include="images\captures\ayuda.jpg" />
     <Content Include="images\captures\barra_de_estado.jpg" />
+    <Content Include="images\captures\barra_de_estado_ver.jpg" />
     <Content Include="images\captures\barra_de_menu.jpg" />
+    <Content Include="images\captures\barra_de_menu_ver.jpg" />
     <Content Include="images\captures\barra_de_navegacion.jpg" />
+    <Content Include="images\captures\barra_de_navegacion_ver.jpg" />
     <Content Include="images\captures\bienvenida.jpg" />
     <Content Include="images\captures\bienvenida_1.jpg" />
     <Content Include="images\captures\buscar_actualizaciones.jpg" />
@@ -175,6 +178,12 @@
     <Content Include="images\captures\GanSoft Pro_6.jpg" />
     <Content Include="images\captures\GanSoft Pro_8.jpg" />
     <Content Include="images\captures\GanSoft Pro_9.jpg" />
+    <Content Include="images\captures\generador_de_reporte.jpg" />
+    <Content Include="images\captures\generador_de_reporte_1.jpg" />
+    <Content Include="images\captures\generador_de_reporte_2.jpg" />
+    <Content Include="images\captures\generador_de_reporte_3.jpg" />
+    <Content Include="images\captures\generador_de_reporte_4.jpg" />
+    <Content Include="images\captures\generador_de_reporte_5.jpg" />
     <Content Include="images\captures\hacienda.jpg" />
     <Content Include="images\captures\hacienda_codigos_1.jpg" />
     <Content Include="images\captures\hacienda_codigos_2.jpg" />
