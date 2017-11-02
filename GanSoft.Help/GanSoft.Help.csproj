@@ -24,6 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,6 +105,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="images\brand.png" />
     <Content Include="images\captures\abortos.jpg" />
     <Content Include="images\captures\abortos_1.jpg" />
     <Content Include="images\captures\acerca_de.jpg" />
@@ -325,11 +328,11 @@
     <Content Include="images\captures\vientres_1.jpg" />
     <Content Include="images\captures\vientres_reportes.jpg" />
     <Content Include="images\captures\vientres_reportes_1.jpg" />
-    <Content Include="images\logo_gansoft.png" />
+    <Content Include="images\logo.png" />
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
     <Content Include="bower.json" />
-    <Content Include="content\Navegation map\PrincipalN.cshtml" />
+    <Content Include="content\Inicio\Navegacion.cshtml" />
     <Content Include="content\Menu principal\Principal.cshtml" />
     <Content Include="content\Menu principal\Archive.cshtml" />
     <Content Include="content\Menu principal\View.cshtml" />
@@ -414,11 +417,12 @@
     <Content Include="content\Sub Menu Help\About.cshtml" />
     <Content Include="content\Sub Menu Help\Upgrade.cshtml" />
     <Content Include="content\Sub Menu Help\Commet.cshtml" />
-    <Content Include="content\Install\Requeriment.cshtml" />
-    <Content Include="content\Install\Start install.cshtml" />
-    <Content Include="content\Install\Installing.cshtml" />
-    <Content Include="content\Install\Ending.cshtml" />
-    <Content Include="content\Install\Configuration.cshtml" />
+    <Content Include="content\Inicio\Requerimientos.cshtml" />
+    <Content Include="content\Inicio\Instalacion.cshtml" />
+    <Content Include="content\Inicio\Configuracion.cshtml" />
+    <Content Include="images\GanSoft.svg" />
+    <Content Include="content\Inicio\Bienvenido.cshtml" />
+    <Content Include="images\cd-top-arrow.svg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -427,6 +431,8 @@
     </None>
     <Content Include="_AppStart.cshtml" />
     <Content Include="_SiteLayout.cshtml" />
+    <Content Include="_Navbar.cshtml" />
+    <Content Include="_Sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".bowerrc">
@@ -438,16 +444,13 @@
     </Content>
     <Content Include="content\Unistall\PrincipalU.cshtml" />
     <None Include="scripts\_references.js" />
-    <Content Include="styles\gansoft.css" />
     <Content Include="styles\site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="fonts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
