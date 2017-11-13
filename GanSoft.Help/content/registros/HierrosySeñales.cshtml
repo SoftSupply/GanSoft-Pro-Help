@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Hierros y señales";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción permite al usuario ver una lista de los hierros que se encuentran registrados en la base de datos.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Hierrosyseñales">Hierros y señales</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Hierrosyseñales">Hierros y señales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para Agregar un Hierro, el usuario debe hacer clic en el botón agregar
+                    ubicado en la barra de botones, en ese momento se activa una ventana donde deberá colocar los siguientes datos de registro:
+                </p>
+                <ul>
+                    <li> Descripción </li>
+                    <li> Nombre del Propietario.</li>
+                    <li> Número de Registro del Hierro.</li>
+                    <li>
+                        Seleccione una imagen (si lo desea), para esto haga clic en el icono de Imágenes de Hierros, aparecerá una ventana de búsqueda en la que deberá ubicar el archivo (bmp, gif o jpg) que corresponda a la imagen. Seleccione una imagen haciendo clic y presione el botón abrir
+                        o la tecla enter, o en su defecto, haga doble clic sobre la imagen del hierro.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/hierros_y_señales.jpg" class="thumbnail" data-lightbox="Hierrosyseñales" data-title="Menú hierros y señales">
+                    <img class="img-responsive" src="~/images/captures/hierros_y_señales.jpg" alt="Menú hierros y señales" />
+                </a>
+                <a href="~/images/captures/hierros_y_señales_1.jpg" data-lightbox="Hierrosyseñales" data-title="Ventana de hierros y señales"></a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p>
+                Para modificar la información de un hierro, haga clic en el botón correspondiente, realice los cambios que considere necesarios y luego presione el botón guardar
+                Para eliminar un registro, selecciónelo y haga clic en el botón eliminar, si realiza este procedimiento y el hierro está relacionado con algún animal, recibirá una advertencia para confirmar si realmente lo desea eliminar.
+                Adicionalmente esta ventana le permitirá imprimir un Listado de hierros, con la información básica de estos, el cual podrá exportar de ser necesario.
+            </p>
+            <div class="alert alert-info row" role="alert">
+                <div class="col-md-1">
+                    <i class="fa fa-5x fa-info"></i>
+                </div>
+                <div class="col-md-10">
+                    <strong>Importante!</strong><br />
+                    Nota: El sistema se encargará automáticamente de realizar la optimización del tamaño y calidad de la imagen de forma de minimizar el espacio que ocupa en la base de datos,
+                    Al escribir la información haga clic en el botón guardar
+                    Una vez Agregado un hierro, el usuario podrá Modificarlo o de ser necesario eliminarlo.
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

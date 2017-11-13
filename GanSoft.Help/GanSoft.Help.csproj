@@ -334,7 +334,7 @@
     <Content Include="bower.json" />
     <Content Include="content\Inicio\Navegacion.cshtml" />
     <Content Include="content\Menu principal\Principal.cshtml" />
-    <Content Include="content\Menu principal\Archive.cshtml" />
+    <Content Include="content\archivo\Archive.cshtml" />
     <Content Include="content\Menu principal\View.cshtml" />
     <Content Include="content\Menu principal\Estate.cshtml" />
     <Content Include="content\Menu principal\Registry.cshtml" />
@@ -345,37 +345,34 @@
     <Content Include="content\Menu principal\Windows.cshtml" />
     <Content Include="content\Menu principal\Help.cshtml" />
     <Content Include="content\Sub Menu Archive\Conection Change.cshtml" />
-    <Content Include="content\Sub Menu Archive\Import Data.cshtml" />
-    <Content Include="content\Sub Menu Archive\Import Templates.cshtml" />
-    <Content Include="content\Sub Menu Archive\Back up Data.cshtml" />
-    <Content Include="content\Sub Menu Archive\Restore Data.cshtml" />
-    <Content Include="content\Sub Menu Archive\Sign off.cshtml" />
-    <Content Include="content\Sub Menu Archive\Get Out.cshtml" />
-    <Content Include="content\Sub Menu View\Menu Bar.cshtml" />
-    <Content Include="content\Sub Menu View\Nav Bar.cshtml" />
-    <Content Include="content\Sub Menu View\Status Bar.cshtml" />
-    <Content Include="content\Sub Menu Estate\Selection.cshtml" />
-    <Content Include="content\Sub Menu Estate\General Data.cshtml" />
-    <Content Include="content\Sub Menu Estate\Configuration.cshtml" />
-    <Content Include="content\Sub Menu Estate\Inventary.cshtml" />
-    <Content Include="content\Sub Menu Estate\Notice.cshtml" />
-    <Content Include="content\Sub Menu Estate\Health plans.cshtml" />
-    <Content Include="content\Sub Menu Estate\Code.cshtml" />
-    <Content Include="content\Sub Menu Registry\Search.cshtml" />
-    <Content Include="content\Sub Menu Registry\DeleteA.cshtml" />
-    <Content Include="content\Sub Menu Registry\BackupA.cshtml" />
-    <Content Include="content\Sub Menu Registry\Enter Animal.cshtml" />
-    <Content Include="content\Sub Menu Registry\Changestate.cshtml" />
-    <Content Include="content\Sub Menu Registry\Familytree.cshtml" />
-    <Content Include="content\Sub Menu Registry\General Data.cshtml" />
-    <Content Include="content\Sub Menu Registry\Reproductor.cshtml" />
-    <Content Include="content\Sub Menu Registry\Bellies.cshtml" />
-    <Content Include="content\Sub Menu Registry\No Bellies.cshtml" />
-    <Content Include="content\Sub Menu Registry\Technical.cshtml" />
-    <Content Include="content\Sub Menu Registry\Irons.cshtml" />
-    <Content Include="content\Sub Menu Registry\Movements.cshtml" />
-    <Content Include="content\Sub Menu Registry\Move.cshtml" />
-    <Content Include="content\Sub Menu Event\Service.cshtml" />
+    <Content Include="content\archivo\ImportarDatos.cshtml" />
+    <Content Include="content\archivo\PlantillasdeImportacion.cshtml" />
+    <Content Include="content\archivo\RespaldarDatos.cshtml" />
+    <Content Include="content\archivo\RestaurarDatos.cshtml" />
+    <Content Include="content\archivo\CerrarSesion.cshtml" />
+    <Content Include="content\archivo\Salir.cshtml" />
+    <Content Include="content\Ver\Barras.cshtml" />
+    <Content Include="content\hacienda\Seleccionar.cshtml" />
+    <Content Include="content\hacienda\DatosGenerales.cshtml" />
+    <Content Include="content\hacienda\Inventario.cshtml" />
+    <Content Include="content\hacienda\Avisos.cshtml" />
+    <Content Include="content\hacienda\PlanesSanitarios.cshtml" />
+    <Content Include="content\hacienda\Codigo.cshtml" />
+    <Content Include="content\registros\Buscaranimal.cshtml" />
+    <Content Include="content\registros\EliminarAnimal.cshtml" />
+    <Content Include="content\registros\RecuperarAnimales.cshtml" />
+    <Content Include="content\registros\IngresarAnimal.cshtml" />
+    <Content Include="content\registros\CambiosdeEstado.cshtml" />
+    <Content Include="content\registros\ArbolGenealogico.cshtml" />
+    <Content Include="content\registros\DatosGenerales.cshtml" />
+    <Content Include="content\registros\Reproductores.cshtml" />
+    <Content Include="content\registros\Vientres.cshtml" />
+    <Content Include="content\registros\NoVientres.cshtml" />
+    <Content Include="content\registros\Tecnicos.cshtml" />
+    <Content Include="content\registros\HierrosySeñales.cshtml" />
+    <Content Include="content\registros\MovimientosdeInventario.cshtml" />
+    <Content Include="content\registros\TrasladarAnimales.cshtml" />
+    <Content Include="content\eventos\Servicios.cshtml" />
     <Content Include="content\Sub Menu Event\Reviews.cshtml" />
     <Content Include="content\Sub Menu Event\Birthdays.cshtml" />
     <Content Include="content\Sub Menu Event\Abortions.cshtml" />
@@ -423,6 +420,7 @@
     <Content Include="images\GanSoft.svg" />
     <Content Include="content\Inicio\Bienvenido.cshtml" />
     <Content Include="images\cd-top-arrow.svg" />
+    <Content Include="content\hacienda\Configuracion.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -450,7 +448,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="content\Sub Menu Registry\" />
+    <Folder Include="content\Sub Menu View\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,15 +1,30 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Eliminar Animal";
-    Page.SubTitle = "Opciones del menú registro";
+    Page.Title = "Eliminar animal";
+    Page.SubTitle = "";
 }
 
-<div class="row">
-    <div class="col-md-8">
-        <div class="row">
-            <div class="col-md-12">
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Desde esta opción podrá realizar las operaciones correspondientes a venta, eliminación o muerte del animal dentro de la hacienda.
+        </p>
 
-                <p>Desde esta opción es posible llevar a cabo las siguientes acciones:</p>
+        <div class="col-md-12">
+            <ul class="index">
+                <li>
+                    <a href="#Eliminaranimal">Eliminar animal</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Eliminaranimal">Eliminar animal</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Desde esta opción es posible llevar a cabo las siguientes acciones
+                </p>
                 <ul>
                     <li>Inactivar a un animal o un grupo de animales.                                                                                                                                                                                                                  </li>
                     <li>Eliminar de la base de datos animales de referencia                                                                                                                                                                                                            </li>
@@ -17,12 +32,12 @@
                     <li>Para efectuar la eliminación deberá seleccionar el método a utilizar (por animal o por grupo), posteriormente, realice la búsqueda de los animales a eliminar, detalle los datos del evento; fecha, causa, técnico responsable de la eliminación y comentario. </li>
                 </ul>
             </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/eliminar_animales_1.jpg" class="thumbnail" data-lightbox="Eliminaranimal" data-title="Menú de eliminación">
+                    <img class="img-responsive" src="~/images/captures/eliminar_animales_1.jpg" alt="Menú eliminar" />
+                </a>
+                <a href="~/images/captures/eliminar_animales_2.jpg" data-lightbox="Eliminaranimal" data-title="Ventana de eliminación"></a>
+            </div>
         </div>
     </div>
-    <div class="col-md-4 text-center">
-        <a href="~/images/captures/eliminar_animales_1.jpg" data-lightbox="roadtrip" data-title="">
-            <img class="img-responsive" src="~/images/captures/eliminar_animales_1.jpg" alt="Eliminar Animales" />
-            <a href="~/images/captures/eliminar_animales_2.jpg" data-lightbox="roadtrip"></a>
-        </a>
-    </div>
-</div>
+</article>
