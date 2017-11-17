@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Crecimiento";
+    Page.SubTitle = "Opciones del menú estadisticas";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Para ver esta evaluación, siga los siguientes pasos:
+                </p>
+                <p>
+                    Seleccione de lista la estadística que desea que el sistema calcule:
+                </p>
+                <ul>
+                    <li> 1.- Peso de nacimiento del animal.                 </li>
+                    <li> 2.- Peso al Destete del animal.                    </li>
+                    <li> 3.- Peso ajustados a los 205 días del animal.      </li>
+                    <li> 4.- Peso ajustados a los 365 días del animal.      </li>
+                    <li> 5.- Peso ajustado a los 18 meses del animal.       </li>
+                    <li> 6.- Peso ajustado a los 24 meses del animal.       </li>
+                    <li> 7.- Altura al Nacer del animal.                    </li>
+                    <li> 8.- Altura al Destete del animal.                  </li>
+                    <li> 9.- Altura ajustada a los 205 días.                </li>
+                    <li> 10.- Altura ajustada a los 365 días.               </li>
+                    <li> 11.- Altura ajustada a los 18 meses.               </li>
+                    <li> 12.- Altura ajustada a los 24 meses.               </li>
+                </ul>
+
+                <p>
+                    Luego haga clic en el botón Calcular
+                    , sin embargo, adicionalmente puede ser más específico en la evaluación que desea calcular:
+                </p>
+                <p>
+                    Mediante la lista desplegable que se encuentra en la parte superior de la ventana, puede seleccionar la manera de agrupar los datos, a través de:
+                    La Composición Racial: si selecciona esta opción las estadísticas estarán agrupadas de acuerdo a las diferentes composiciones raciales que se encuentran registrados en el sistema. Para el caso de animales que no tengan composición racial, serán agrupados en un mismo conjunto como si fuera una composición definida (composición en blanco).
+                    El Código único del Padre: al seleccionar esta opción el reporte de estadística estará agrupado por el código único del padre, es decir por el código de los diferentes reproductores registrados.
+                    Año de nacimiento: Agrupa los valores de históricos de crecimiento de acuerdo al año del nacimiento del animal.
+                    El Número de Partos de la Madre: si selecciona esta opción el reporte de la estadística estará agrupado como su nombre lo indica, según el número de partos de la madre.
+                </p>
+                <p>
+                    Para evaluar las estadísticas de Crecimiento de un animal:
+                </p>
+                <p>
+                    Seleccione la raza del animal, puede consultar la ventana de Códigos Varios presionando el ícono ubicado del lado derecho de la casilla. Si desea analizar todas las razas, deje la casilla en blanco.
+                    Puede determinar el toro (padre del grupo de animales que se van a evaluar estadísticamente), colocando el número de él en la casilla o consultando el archivo de toros. Para ello haga doble clic en la casilla o presione el ícono ubicado al lado de ella. Si no desea evaluar a los animales en función del toro (padre) deje la casilla en blanco
+                    Puede evaluar entre fechas, para ello cuenta con un calendario que lo ayuda en dicho proceso. Coloque una fecha mínima y una fecha tope. Si no establece ninguna fecha el sistema tomará todo el rango de fechas.
+                    Puede incluir también en la estadística de Crecimiento los animales eliminados.
+                </p>
+                <p>
+                    Una vez hechas las selecciones, puede visualizar la información contenida en el listado haciendo clic en el botón Calcular.
+                </p>
+                <p>
+                    Los resultados obtenidos los puede visualizar en forma de datos o de gráfica. Adicionalmente, presenta los totales en la parte inferior y los resultados de distribución normal para la curva, el cual incluye un enlace directo al reporte de animales que entran en cada categoría de los valores obtenidos. Esto le permitirá hacer un seguimiento a los animales que se encuentren a los extremos de la curva o en cualquier parte de ella.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/crecimiento_estadisticas.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/crecimiento_estadisticas.jpg" alt="Crecimiento" />
+            <a href="~/images/captures/crecimiento_estadisticas_1.jpg" data-lightbox="roadtrip"></a>
+        </a>
+    </div>
+</div>

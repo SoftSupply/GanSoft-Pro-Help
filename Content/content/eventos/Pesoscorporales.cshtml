@@ -1,0 +1,90 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Pesos corporales";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Es el proceso que permite incorporar los pesos corporales y alturas de cada uno de los animales de la hacienda. Para ello, debe seleccionar el tipo de animal, si es reproductor, vientre o no vientre.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Pesoscorporales">Pesos corporales</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Pesoscorporales">Pesos corporales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Luego debe indicar el número del animal y presionar la tecla enter
+                    , también puede seleccionar al animal a través de la ventana seleccionar vientre, que se muestra haciendo doble clic en el cuadro de texto del código (práctico o único). Visualizará del lado derecho los pesajes corporales anteriores que ha tenido ese animal. Proceda a ingresar los datos correspondientes al secado:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/pesos_corporales.jpg" class="thumbnail" data-lightbox="Pesoscorporales" data-title="Menú de pesos corporales">
+                    <img class="img-responsive" src="~/images/captures/pesos_corporales.jpg" alt="Menú hierros y señales" />
+                </a>
+                <a href="~/images/captures/pesos_corporales_1.jpg" data-lightbox="Pesoscorporales" data-title="Ventana de pesos corporales"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Día, mes y año en que se efectúa el peso corporal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Tipo</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Seleccione el tipo de medida que está reportando; dependiendo del animal seleccionado y de los pesajes anteriores, puede seleccionar entre: Al nacer, Al destete, Al ingreso, General, A la venta, Servicio, Al parto y Al secado, estos tres últimos son únicamente para los vientres.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Peso</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Indique el peso corporal (en kilogramos) que obtuvo el animal. El programa actualizará esa información en el histórico de pesos corporales.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Altura</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    si lo desea indique la altura (en metros) que obtuvo el animal o deje en blanco si no la conoce, ya que es un campo opcional. El programa actualizará esa información en el histórico de pesos corporales.
+                    Cuando usted notifica un peso al destete a un becerro o becerra, el sistema hará el cambio de estado automáticamente, pasando esos animales a maute y mauta respectivamente
+                </p>
+            </div>
+        </div>
+        <p>
+            El sistema incluirá sólo aquellos pesos en los animales cuya fecha sea mayor a la del último pesaje, es decir, no permite incluir pesos históricos.
+        </p>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Antes de reportar los resultados del evento peso corporal, también puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. Para esto sólo debe posicionarse en los cuadros de texto de la parte inferior de la ventana y luego notificar el servicio.
+            </div>
+        </div>
+    </div>
+</article>

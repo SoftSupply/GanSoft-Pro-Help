@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Celos sin servicio";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción permite notificar los celos detectados (sin servicio) a los animales que existen en el archivo de vientres.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Celossinservicio">Celos sin servicio</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Celossinservicio">Celos sin servicio</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para agregar un nuevo celo sin servicio debe escribir el número del animal (código práctico o único) y presionar la tecla enter, también puede seleccionar al animal a través de la ventana seleccionar vientre, que se muestra haciendo doble clic en la casilla del código (práctico o único). En esta ventana verá del lado derecho los eventos reproductivos anteriores que ha tenido ese vientre, llene los campos del nuevo celo:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/celos_sin_servicios.jpg" class="thumbnail" data-lightbox="Celossinservicio" data-title="Menú de celos sin servicio">
+                    <img class="img-responsive" src="~/images/captures/celos_sin_servicios.jpg" alt="Menú hierros y señales" />
+                </a>
+                <a href="~/images/captures/celos_sin_servicios_1.jpg" data-lightbox="Celossinservicio" data-title="Ventana de celos sin servicio"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    esta debe ser en orden cronológico con respecto al último evento reproductivo. Luego presione la tecla Enter o posicione el cursor en la siguiente casilla.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Técnico</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    indique el técnico responsable del evento.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Comentario</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    puede complementar el evento indicando un comentario adicional.
+                    Luego haga clic en el botón guardar
+                    ubicado en la barra de botones.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Antes de guardar el celo sin servicio también puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. Para esto sólo debe posicionarse en las casillas de la parte inferior de la ventana y luego notificar el servicio.
+            </div>
+        </div>
+        <p>
+            El sistema aceptará sólo fechas de celos sin servicios que sean mayores a la fecha del último celo (si tuviera un celo ó servicio reportado), mayor a la última revisión (si tuviera una revisión) y mayor al último parto/aborto (si es vientre). La información suministrada actualizará los datos del animal y será asumido que el animal se encuentra vacío.
+            Este proceso actualizará la información del histórico de reproducción del animal.
+            Si desea cancelar el nuevo servicio salga de la ventana haciendo clic al ícono de cancelar o ESC.
+        </p>
+    </div>
+</article>

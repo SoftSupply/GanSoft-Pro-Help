@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Mantenimiento";
+    Page.SubTitle = "Opciones del menú herramientas";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Al seleccionar esta opción el sistema ejecutará un mantenimiento de la base de datos sin afectar el funcionamiento del sistema. Este procedimiento verifica la integridad de la estructura de datos, comparando cada animal y su relación con los datos detallados y resumidos.
+                </p>
+                <p>
+                    Es recomendable antes de efectuar esta operación que realice un respaldo preventivo de los datos. El tiempo de ejecución de éste proceso varía en función de la cantidad de animales que registrados en el sistema y la rapidez del equipo. Puede cancelar la operación presionando la tecla Esc.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/distribucion_inventario.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/distribucion_inventario.jpg" alt="Distribucion" />
+            <a href="~/images/captures/distribucion_estatus_reproductivo.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/distribucion_lotes.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/distribucion_productivo.jpg" data-lightbox="roadtrip"></a>
+        </a>
+    </div>
+</div>

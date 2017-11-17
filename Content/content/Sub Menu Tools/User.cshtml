@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Usuarios";
+    Page.SubTitle = "Opciones del menú herramientas";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Desde ésta opción es posible realizar mantenimiento al archivo de usuarios. En ella aparece una lista con todos los usuarios adscritos al sistema, es decir aquellas personas que tienen acceso al mismo y por ende tienen una cuenta establecida. Puede realizar varias operaciones por medio de esta ventana.
+                </p>
+                <p>
+                    Para Agregar
+                    un nuevo usuario debe especificar el nombre completo, usuario con el cual ingresará al sistema, contraseña, confirmación de contraseña y además deberá seleccionar una pregunta secreta y escribir la respuesta de la misma para recuperar la clave en caso de olvido. En la parte derecha de la ventana se presenta un cuadro de niveles por haciendas, donde se deberá especificar el nivel de permisos del usuario para el manejo de cada una de las haciendas registradas en el sistema.
+                </p>
+                <p>
+                    Para eliminar algún usuario debe seleccionarlo de la lista desplegable y presionar el botón Eliminar
+                    situado en la barra de botones, luego de realizada esta operación se presenta un mensaje de confirmación. Las personas autorizadas podrán adicionalmente desactivar a un usuario, esto lo inhabilita por completo para tener acceso al programa.
+                </p>
+                <p>
+                    El sistema trae inicialmente un único usuario registrado: ADMIN, cuya clave es: ADMIN. Éste usuario tiene total acceso al sistema (sin restricciones) y es el que permite ingresar por primera vez a GanSoft. Una vez inicializado el sistema y realizada la personalización puede proceder a registrar los usuarios que tendrán acceso a la aplicación y cambiar la contraseña del usuario demo para evitar el acceso de personal no autorizado en el sistema por medio de ésta clave.
+                </p>
+                <p>
+                    Debe tomar en cuenta que si realizó la migración de datos de GanSoft desde la versión 6.1, es decir, es un usuario con una base de datos ya establecida, la migración de los datos realizada no incluye la recuperación de los usuarios, es decir, luego de efectuada la migración de sus datos, deberá registrar a los usuarios que tendrán acceso al sistema GanSoft 7 estableciendo además el nivel de permisología para cada hacienda registrada.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/usuarios_herramientas.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/usuarios_herramientas.jpg" alt="Usuarios" />
+            <a href="~/images/captures/usuarios_herramientas_1.jpg" data-lightbox="roadtrip"></a>
+        </a>
+    </div>
+</div>

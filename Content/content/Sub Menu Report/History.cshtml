@@ -1,0 +1,376 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Históricos";
+    Page.SubTitle = "Opciones del menú reportes";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta opción se ubica dentro del menú Reportes, y concentra cada uno de los listados correspondientes a los históricos y otros informes de interés para el usuario. Esta opción se compone de los siguientes listados:
+                </p>
+                <ul>
+                    <li> Histórico de Reproducción                       </li>
+                    <li> Histórico de Lactancias                         </li>
+                    <li> Histórico de Pesajes de Leche                   </li>
+                    <li> Histórico de Pruebas de Mastitis                </li>
+                    <li> Historia Clínica                                </li>
+                    <li> Histórico de Pesos Corporales                   </li>
+                    <li> Histórico de Cambios de Condición Corporal      </li>
+                    <li> Histórico de Cambios de Locación                </li>
+                    <li> Histórico de Inventario                         </li>
+                    <li> Histórico de Comentarios                        </li>
+                    <li> Histórico de Movimientos de Inventario          </li>
+                    <li> Histórico de Planes Sanitarios                  </li>
+                </ul>
+
+                <p>
+                    Reporte del Histórico de Reproducción
+                    Esta ventana permite ver la información de todos los eventos reproductivos introducidos al Vientre seleccionado. El usuario tiene varias opciones para ubicar el animal:
+                </p>
+                <p>
+                    Código Práctico:
+                    Permite filtrar a partir de un código específico, el intervalo entre uno y otro, o todos los códigos, hasta un valor determinado. Si no se establece un código el sistema automáticamente tomará todo el rango de códigos.
+                </p>
+                <p>
+                    Código único:
+                    Permite filtrar a partir de un código específico, el intervalo entre uno y otro, o todos los códigos, hasta un valor determinado. Si no se establece un código el sistema automáticamente tomará todo el rango de códigos.
+                </p>
+                <p>
+                    Fecha de Evento:
+                    Permite filtrar los eventos entre dos fechas, a partir de una señalada, o hasta una fecha en específico. Si no se establece una fecha el sistema automáticamente tomará todo el rango de fechas.
+                </p>
+                <p>
+                    Estatus del animal:
+                    Puede seleccionar entre animales activos e inactivos o ambos
+                </p>
+                <p>
+                    Número de Evento:
+                    Permite filtrar los eventos a partir de un número específico, entre uno y otro o hasta un número de evento seleccionado. Si no se establece un número, el sistema automáticamente tomará todo el rango de números.
+                    Técnico
+                    Permite filtrar los eventos a partir de un número de técnicos.
+                </p>
+                <p>
+                    Tipo de Evento:
+                    Debe seleccionar el tipo de evento que se desea analizar: parto, aborto, monta, inseminación, trasplante de embrión, revisión, celo sin servicio, lactancia inducida o producción de embriones; marcando la casilla correspondiente en cada caso. Puede seleccionar varios eventos a la vez, e incluso dejar todos seleccionados. Así se generará un reporte con todos los eventos reproductivos.
+                    Para el caso de selecciones de eventos individuales, se deben llenar o seleccionar datos asociados a cada reporte. Por ejemplo, si sólo se selecciona el evento aborto, se debe indicar que tipo de aborto (A, B ó ambos) se desea incluir en el reporte. Para el caso de la monta se debe indicar el rango de códigos de los toros de monta. Si no se especifica ninguno, el sistema tomara todos los códigos. De forma similar se procede para el resto de los eventos seleccionados de forma individual.
+                </p>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código único, código práctico, fecha, tipo de evento; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar
+                    para crear la vista previa.
+                </p>
+                <p>
+                    Nota: Las casillas que se encuentran en blanco significan que ese encabezado no aplica para el evento seleccionado.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Lactancia
+                <p>
+                    A través de esta ventana el usuario puede revisar el histórico de lactancia. Para ubicar cualquier grupo de registros que desee debe filtrar él, o los campos que se presentan en la ventana, utilizando las diferentes opciones que brinda este reporte: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, así el sistema realizara la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li> Código Práctico.        </li>
+                    <li> Código Único.           </li>
+                    <li> Fecha.                  </li>
+                    <li> Estatus del animal.     </li>
+                    <li> Número de Lactancia.    </li>
+                    <li> Días en Producción.     </li>
+                    <li> Producción Total.       </li>
+                    <li> Producción 244 Días.    </li>
+                    <li> Producción 270 Días.    </li>
+                    <li> Producción 305 Días.    </li>
+                    <li> Fecha de Secado.        </li>
+                </ul>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar
+                    para crear la vista previa.
+                </p>
+                <p>
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Pesajes de Leche
+                    A través de esta ventana el usuario puede revisar a voluntad el archivo de pesajes de leche para ubicar cualquier grupo de registros que desee. Esto lo logra filtrando el registro, utilizando las diferentes opciones que brinda esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, así el sistema realizara la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li>Código Práctico.       </li>
+                    <li>Código único.          </li>
+                    <li>Fecha.                 </li>
+                    <li>Estatus del animal.    </li>
+                    <li>Peso1.                 </li>
+                    <li>Peso2.                 </li>
+                    <li>Peso3.                 </li>
+                    <li>Peso.                  </li>
+                    <li>Total.                 </li>
+                </ul>
+                <p>
+                    También debe indicar qué tipo de fecha desea incluir:
+                </p>
+                <ul>
+                    <li>Comienzo de Lactancia.     </li>
+                    <li>Fecha Pesaje.              </li>
+                    <li>Fecha Pesaje.              </li>
+                </ul>
+
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código único, código práctico y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar
+                    para crear la vista previa.
+                </p>
+                <p>
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte Histórico de Pruebas de Mastitis
+                    Al seleccionar esta opción aparecerá una ventana en la que el usuario puede establecer los diferentes filtros para obtener el reporte del histórico de pruebas de mastitis registradas en el sistema. Esto lo logra filtrando el reporte utilizando las diferentes opciones que brinda esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, así el sistema realizara la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul></ul>
+                <li>Tipo de reporte                </li>
+                <li>Detalle                        </li>
+                <li>Reincidente                    </li>
+                <li>Resumen                        </li>
+                <li>Listado por Vaqueras           </li>
+                <li>Plantilla de recolección       </li>
+                <li>Diagnóstico                    </li>
+                <li>Negativos                      </li>
+                <li>Trazas                         </li>
+                <li>SubClínica 1                   </li>
+                <li>SubClínica 2                   </li>
+                <li>SubClínica 3                   </li>
+                <li>Clínica                        </li>
+                <li>Perdidas                       </li>
+                <li>Fecha de la prueba             </li>
+                <p>
+                    Para imprimir este reporte, podrá seleccionar una fecha en la cual se ha realizado la prueba mastitis. Igualmente, puede marcar los diagnósticos que se desean en el Reporte, como por ejemplo se puede seleccionar solo aquellos animales que tenga en uno de sus pezones Trazas y que también sean Negativos.
+                    El reporte detallado de Prueba de Mastitis se encuentra dividido en 4 partes que se describen a continuación:
+                    La primera parte del reporte contiene la información actual del vientre, como el Código Practico, el Número de Lactancia Actual y Días de la lactancia actual o última Lactancia.
+                    La segunda parte contiene los Resultados de cada pezón para la prueba realizada a la fecha previamente seleccionada en el filtro.
+                    La tercera parte presenta información sobre la cantidad de días que existen entre la prueba de la fecha seleccionada y la fecha de la vez anterior en la cual cada pezón estuvo afectado con los diagnostico (T, 1, 2, 3, C); así como el diagnostico registrado para cada pezón en esa prueba.
+                    En esta última parte se encuentra información estadística de cada pezón, como la cantidad de veces que ha sido afectado cada pezón, un promedio de cada cuanto día se afecta el pezón y la Desviación Estándar, que es la medida de la dispersión de los días que ha estado afectado el pezón.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código único, código práctico y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte de Historia Clínica
+                    Al seleccionar esta opción aparecerá una ventana en la que el usuario puede revisar el archivo de la historia clínica para ubicar cualquier grupo de registros que desee. Esto lo logra filtrando el reporte utilizando las diferentes opciones que brinda esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, así el sistema realizara la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li> Código Práctico     </li>
+                    <li> Código Único        </li>
+                    <li> Fecha               </li>
+                    <li> Estatus del animal  </li>
+                    <li> Diagnósticos        </li>
+                    <li> Tratamientos        </li>
+                    <li> Eficiencia          </li>
+                </ul>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único, fecha y diagnostico; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomara ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar
+                </p>
+                <p>
+                    para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Pesos Corporales
+                    Por medio de ésta opción el usuario puede visualizar la información contenida en el archivo histórico de pesos corporales para ubicar cualquier grupo de registros que desee. Para ello es necesario filtrar el reporte, utilizando las diferentes opciones que se encuentran en esta ventana: ya sea indicando un rango de valores, o un valor específico para cada parámetro, de forma tal que el sistema lleve a cabo la búsqueda en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li> Código Práctico       </li>
+                    <li> Código Único          </li>
+                    <li> Fecha de Peso         </li>
+                    <li> Estatus del animal    </li>
+                    <li> Peso                  </li>
+                    <li> Altura                </li>
+                    <li> Ganancia Peso         </li>
+                    <li> Ganancia Altura       </li>
+                </ul>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                </p>
+                <p>
+                    También debe señalar el tipo de peso a incluir en el reporte:
+                </p>
+                <ul>
+                    <li> Al Nacer      </li>
+                    <li> Al Ingreso    </li>
+                    <li> Al Destete    </li>
+                    <li> General       </li>
+                    <li> A la Venta    </li>
+                    <li> Servicio      </li>
+                    <li> Al Parto      </li>
+                    <li> Al Secado     </li>
+                </ul>
+
+                <p>
+                    Y el estado del animal de acuerdo a la especie seleccionada en la configuración.
+                </p>
+                <p>
+                    Nota: Es posible seleccionar varios tipos de pesos, así como también diferentes estados del animal, inclusive puede dejar toda la selección, de forma tal que serán incluidos en el reporte todos los animales, con sus pesos correspondientes.
+                </p>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                </p>
+                <p>
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar
+                    para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Condición Corporal
+                    Por medio de ésta opción el usuario puede visualizar la información contenida en el archivo histórico de condición corporal para ubicar cualquier grupo de registros que desee. Para ello es necesario filtrar el reporte, utilizando las diferentes opciones que se encuentran en esta ventana: ya sea indicando un rango de valores, o un valor específico para cada parámetro, de forma tal que el sistema lleve a cabo la búsqueda en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li>Código Práctico       </li>
+                    <li>Código Único          </li>
+                    <li>Fecha                 </li>
+                    <li>Estatus del animal    </li>
+                    <li>Condición Corporal    </li>
+                </ul>
+                <p>
+                    Y el estado del animal de acuerdo a la especie seleccionada en la configuración.
+                </p>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único, fecha y condición; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                </p>
+                <p>
+                    Reporte del Histórico de Cambios de Locación
+                    Éste reporte permite visualizar el archivo de cambios de locación para ubicar cualquier grupo de registros que cumplan los criterios establecidos. Para ello, es necesario filtrar los archivos utilizando las diferentes opciones que brinda esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, de ésta forma el sistema realizará la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li>Código Práctico      </li>
+                    <li>Código Único         </li>
+                    <li>Fecha del Cambio     </li>
+                    <li>Estatus del animal   </li>
+                    <li>Locación             </li>
+                </ul>
+                <p>
+                    También debe señalar el estado del animal que desea incluir en el reporte de acuerdo a la especie de animal seleccionado en la configuración del sistema.
+                </p>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                </p>
+                <p>
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único, fecha y locación; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                </p>
+                <p>
+                    Reporte del Histórico de Inventario
+                    Éste reporte permite visualizar información del evento Notificar Inventario Físico para ubicar cualquier grupo de registros que cumplan los criterios establecidos. Para ello, es necesario filtrar los archivos utilizando las diferentes opciones que contiene esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, de ésta forma el sistema realizará la búsqueda, en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li>Código Práctico       </li>
+                    <li>Código Único          </li>
+                    <li>Fecha                 </li>
+                    <li>Estatus del animal    </li>
+                    <li>Locación              </li>
+                </ul>
+
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                <p>
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único, fecha y locación; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                </p>
+                <p>
+                    Reporte del Histórico de Comentarios
+                    Por medio de esta ventana el usuario puede revisar el archivo de histórico de comentarios para ubicar cualquier grupo de registros que desee. Esto es posible filtrando el archivo haciendo uso de las diferentes opciones que se presentan en la ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, de forma tal que el sistema pueda ejecutar la búsqueda en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li>Código Práctico.     </li>
+                    <li>Código Único.        </li>
+                    <li>Fecha.               </li>
+                    <li>Estatus del animal   </li>
+                </ul>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                </p>
+                <p>
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Movimientos
+                    A través de esta ventana el usuario puede revisar el archivo del histórico de Movimientos de Inventario para ubicar cualquier grupo de registros de acuerdo a los parámetros establecidos. Esto lo logra filtrando el archivo, utilizando las diferentes opciones que brinda esta ventana: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, de forma tal que el sistema realice la búsqueda en función de los valores colocados para:
+                </p>
+                <ul>
+                    <li> Código Práctico.      </li>
+                    <li> Código Único.         </li>
+                    <li> Fecha.                </li>
+                    <li> Estatus del animal.   </li>
+                </ul>
+
+                <p>
+                    También debe señalar los tipos movimientos que desea incluir en el reporte:
+                    <ul>
+                        <li> Entrada:           </li>
+                        <li> Ajuste positivo    </li>
+                        <li> Nacimiento         </li>
+                        <li> Compra             </li>
+                        <li> Donación           </li>
+                        <li> Traslado           </li>
+                        <li> Salida:            </li>
+                        <li> Muerte             </li>
+                        <li> Donación           </li>
+                        <li> Traslado           </li>
+                        <li> Venta              </li>
+                        <li> Ajuste negativo    </li>
+                        <li> Sacrificio         </li>
+                        <li> Robo               </li>
+                    </ul>
+                <p>
+                    También debe indicar los cambios de estado (estado origen y estado destino) así como el tipo de animal que desea, tomando en cuenta la especie seleccionada en la configuración del sistema.
+                </p>
+                <p>
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                </p>
+                <p>
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomara ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                    Reporte del Histórico de Plan Sanitario
+                    En ésta opción es posible generar un listado basado en el archivo Histórico de Plan Sanitario, ubicando un grupo de registros tomando en cuenta los parámetros establecidos. Para ello, se requiere filtrar el archivo, utilizando las diferentes opciones que se presentan: el usuario puede filtrar indicando un rango de valores, o un valor específico para cada parámetro, así el sistema realizara la búsqueda, en función de los valores colocados para:
+                </p>
+                <p>
+                    Última Aplicación
+                    Próxima Aplicación
+                    Código de Plan Sanitario
+                    Nota: Si deja en blanco algún parámetro, el sistema incluirá todo el rango de valores.
+                    Puede ordenar el reporte en 2 órdenes: indique si desea ver de forma ascendente o descendente el código práctico, código único y fecha; en la primera y segunda columna. En la segunda instancia puede seleccionar Ninguno, y no se tomará ningún orden para la segunda columna.
+                    Luego de hacer las selecciones deseadas, haga clic en el botón aceptar para crear la vista previa.
+                    La vista preliminar del reporte puede imprimirla utilizando el botón de la impresora ubicado en la barra de botones, si lo desea, también puede Exportar esta información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/images/captures/historicos_reproduccion.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/images/captures/historicos_reproduccion.jpg" alt="Historicos" />
+            <a href="~/images/captures/historicos_reproduccion_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_lactancias.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_lactancias_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pesajes_de_leche.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pesajes_de_leche_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pruebas_de_mastitis.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pruebas_de_mastitis_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_clinica.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_clinica_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pesos_corporales.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_pesos_corporales_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_cambios_de_condicion_corporal.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_cambios_de_condicion_corporal_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_cambios_de_locacion.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_cambios_de_locacion_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_inventario.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_inventario_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_comentarios.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_comentarios_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_movimientos.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_movimientos_1.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_planes_sanitarios.jpg" data-lightbox="roadtrip"></a>
+            <a href="~/images/captures/historicos_planes_sanitarios_1.jpg" data-lightbox="roadtrip"></a>
+        </a>
+    </div>
+</div>

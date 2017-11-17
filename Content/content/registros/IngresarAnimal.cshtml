@@ -1,0 +1,128 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Ingresar Animal";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta ventana se efectúa el registro de todos los animales por primera vez en el sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Ingresaranimal">Ingresar animal</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Ingresaranimal">Ingresar animal</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Seleccionando el estatus (activo, inactivo, referencia) y el estado del animal. Adicionalmente, deberá especificar los siguientes datos que se encuentran divididos en pestañas tal como se detalla a continuación:
+                </p>
+                <h4>Identificación y locación</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            En esta sección deberá especificar el código práctico y código único del animal, la vaquera en la que se encuentra, la fecha del ingreso, el tipo de movimiento (ajuste positivo, compra o donación entrante), comentario y técnico responsable.
+                        </p>
+                    </div>
+                </div>
+                <h4>Datos generales</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            A través de esta pestaña el usuario puede complementar los datos básicos del animal que está registrando como: fecha de nacimiento, nombre, identificador electrónico, padre, madre. También le permite detallar características del animal como raza, color, composición racial, clasificación y propietario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/ingresar_animal_1.jpg" class="thumbnail" data-lightbox="Ingresaranimal" data-title="Menú ingresar animal">
+                    <img class="img-responsive" src="~/images/captures/ingresar_animal_1.jpg" alt="Menú ingresar animal" />
+                </a>
+                <a href="~/images/captures/ingresar_animal_2.jpg" data-lightbox="Ingresaranimal" data-title="Ventana para ingresar al animal"></a>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Es importante tomar en cuenta que el identificador electrónico puede estar registrado en un (1) solo animal ACTIVO en toda la base de datos, es decir, para los casos de los productores que reutilizan los identificadores electrónicos, deberán inactivar al animal anterior para posteriormente realizar el registro del identificador electrónico en un animal activo.
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p>
+            La composición racial le permite establecer con mayor precisión el mestizaje de un animal, es decir, la fracción o porcentaje de raza pura que posee un animal mestizo. Para ello, debe tildar la opción y se desplegará una ventana con la lista de razas disponibles, donde deberá especificar el valor que representa el porcentaje de cada raza y al cerrar la ventana se actualizará el campo con la composición racial correspondiente.
+            Por ejemplo, un animal mestizo puede ser media sangre Brahman blanco y pardo suizo, es decir, tener un 50% de cada una de esas razas.
+            Es importante destacar, que Cada vez que se realiza una modificación en la composición racial del animal, también se modificará la composición racial de sus descendientes.
+            La suma de los porcentajes de las razas no debe ser mayor de 100%, si ésta llegara a exceder de 100, el sistema emitirá una advertencia y deberá corregir el valor porcentual.
+        </p>
+        <h4>Último parto o aborto</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    En esta sección puede especificar los datos del último parto o aborto del animal. Cabe destacar que esta opción solo se encuentra activa para los vientres.
+                </p>
+            </div>
+        </div>
+        <h4>Especifique los datos del parto</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    fecha, tipo, parto número, código único del padre; datos de la cría (s) especificaciones del sexo y peso de las crías.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Las crías que va especificando en esta sección se muestran en la parte inferior de la ventana en la lista denominada detalles, donde podrá especificar si la cría se registrará o no en el sistema.
+            </div>
+        </div>
+        <h4>Último servicio y/o revisión</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta sección está activa únicamente para las vacas y novillas y permite detallar el último servicio y última revisión del animal.
+                </p>
+            </div>
+        </div>
+        <h4>Foto</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    A través de esta pestaña podrá agregar una fotografía del animal, detallando la fecha de captura y agregando un título a la misma. Esta foto se guardará con un formato y calidad optimizados para ocupar el mínimo espacio posible en la base de datos y automáticamente será la foto principal del animal. Podrá ingresar más fotos a través de la opción datos generales del animal.
+                    Esta opción se encuentra activa para todas las categorías de animal.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Al momento de ingresar un animal únicamente es requerida la información contenida en la pestaña identificación y locación, el resto de la información es complementaria.
+            </div>
+        </div>
+        <p>
+            Recuerde que puede agregar animales en tres estados diferentes:
+        </p>
+        <ul>
+            <li>Inactivo: Anteriormente denominado animales eliminados. Es un estado utilizado para animales muertos, perdidos, robados, entre otros, es decir, animales que ya no se encuentran en la hacienda, pero debemos conservar sus datos históricos.</li>
+            <li>Activo: Animales que se encuentran en la hacienda.</li>
+            <li>Referencia: Aquellos animales que físicamente no se encuentran en la hacienda o no forman parte de nuestro rebaño, pero deseamos tenerlo como referencia en el sistema para información genealógica, por ejemplo.</li>
+        </ul>
+    </div>
+</article>
