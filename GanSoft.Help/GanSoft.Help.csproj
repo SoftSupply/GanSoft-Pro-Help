@@ -392,13 +392,13 @@
     <Content Include="content\eventos\Otroscambios.cshtml" />
     <Content Include="content\Estadisticas\Reproduccion.cshtml" />
     <Content Include="content\Estadisticas\Produccion.cshtml" />
-    <Content Include="content\Sub Menu Estatics\Increase.cshtml" />
-    <Content Include="content\Sub Menu Estatics\Milkwighing.cshtml" />
-    <Content Include="content\Sub Menu Estatics\Closures.cshtml" />
-    <Content Include="content\Sub Menu Report\Generator.cshtml" />
-    <Content Include="content\Sub Menu Report\General Data.cshtml" />
-    <Content Include="content\Sub Menu Report\Familytree.cshtml" />
-    <Content Include="content\Sub Menu Report\Reproductors.cshtml" />
+    <Content Include="content\Estadisticas\Crecimiento.cshtml" />
+    <Content Include="content\Estadisticas\Pesajesdeleche.cshtml" />
+    <Content Include="content\Estadisticas\Cierres.cshtml" />
+    <Content Include="content\Reportes\Generador.cshtml" />
+    <Content Include="content\Reportes\Datosgenerales.cshtml" />
+    <Content Include="content\Reportes\Arbolgenealogico.cshtml" />
+    <Content Include="content\Reportes\Reproductores.cshtml" />
     <Content Include="content\Sub Menu Report\Billies.cshtml" />
     <Content Include="content\Sub Menu Report\No Billies.cshtml" />
     <Content Include="content\Sub Menu Report\Technical.cshtml" />
@@ -448,10 +448,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="content\Sub Menu Registry\" />
-    <Folder Include="content\Sub Menu View\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
