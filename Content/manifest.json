@@ -1,43 +1,32 @@
 {
   "Name": "GanSoftPro",
   "Title": "GanSoft Pro",
-  "Description": "Quisque ultricies nulla velit. Vivamus mattis lacinia urna, eget finibus sapien ornare et. Aenean ut dapibus metus. Donec interdum dolor nec erat porttitor, quis lobortis sapien tempus.",
+  "Description": "Software especializado para el manejo de rebaños",
   "Index": [
     {
-      "Title": "<b>Curabitur ullamcorper</b>",
+      "Title": "<b>Inicio</b>",
       "Items": [
         {
-          "Title": "Praesent",
-          "Link": ""
+          "Title": "Bienvenido",
+          "Link": "GanSoftPro?id=Inicio&key=Bienvenido"
         },
         {
-          "Title": "Placerat",
-          "Link": ""
-        }
-      ]
-    },
-    {
-      "Title": "Suspendisse",
-      "Items": [
-        {
-          "Title": "Curabitur",
-          "Link": ""
+          "Title": "Requerimientos",
+          "Link": "GanSoftPro?id=Inicio&key=Requerimientos"
         },
         {
-          "Title": "Aliquam",
-          "Link": ""
+          "Title": "Instalación",
+          "Link": "GanSoftPro?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Configuración",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        },
+        {
+          "Title": "Navegación",
+          "Link": "GanSoftPro?id=Inicio&key=Navegacion"
         }
       ]
-    },
-    {
-      "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
-      "Link": "http://www.google.com/",
-      "Target": "_blank"
-    },
-    {
-      "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
-      "Link": "/",
-      "Class": "alert alert-warning"
     }
   ]
 }

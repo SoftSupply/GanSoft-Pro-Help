@@ -9,9 +9,13 @@ namespace SoftSupply.Help.Areas.GanSoftPro.Content
     public class DefaultController : Controller
     {
         // GET: GanSoftPro/Default
-        public ActionResult Index()
+        public ActionResult Index(string id = "", string key = "")
         {
-            return View();
+            if (string.IsNullOrEmpty(id))
+                return View();
+            else
+                return View($"{id}/{key}");
         }
+
     }
 }
