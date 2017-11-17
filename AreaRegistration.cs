@@ -2,7 +2,7 @@ using System.Web.Mvc;
 
 namespace SoftSupply.Help.Areas.GanSoftPro
 {
-    public class GenericAreaRegistration : AreaRegistration
+    public class GanSoftProAreaRegistration : AreaRegistration
     {
         public override string AreaName
         {
