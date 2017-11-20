@@ -399,10 +399,10 @@
     <Content Include="content\Reportes\Datosgenerales.cshtml" />
     <Content Include="content\Reportes\Arbolgenealogico.cshtml" />
     <Content Include="content\Reportes\Reproductores.cshtml" />
-    <Content Include="content\Sub Menu Report\Billies.cshtml" />
-    <Content Include="content\Sub Menu Report\No Billies.cshtml" />
-    <Content Include="content\Sub Menu Report\Technical.cshtml" />
-    <Content Include="content\Sub Menu Report\History.cshtml" />
+    <Content Include="content\Reportes\Vientres.cshtml" />
+    <Content Include="content\Reportes\Novientres.cshtml" />
+    <Content Include="content\Reportes\Tecnicos.cshtml" />
+    <Content Include="content\Reportes\Historicos.cshtml" />
     <Content Include="content\Sub Menu Report\Other Report.cshtml" />
     <Content Include="content\Sub Menu Tools\Options.cshtml" />
     <Content Include="content\Sub Menu Tools\User.cshtml" />
