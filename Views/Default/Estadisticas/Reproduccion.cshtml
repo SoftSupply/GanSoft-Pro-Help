@@ -4,61 +4,128 @@
     Page.SubTitle = "";
 }
 
-<div class="row">
-    <div class="col-md-8">
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción permite al usuario ver las estadísticas de reproducción de cada uno de sus animales dentro de la hacienda.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Reproduccion">Reproducción</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reproduccion">Reproducción</h3>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <p>
                     Para evaluar las estadísticas de reproducción de un animal siga el proceso que se describe a continuación:
                 </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/reproduccion_estadisticas.jpg" class="thumbnail" data-lightbox="Reproduccion" data-title="Menú de reproducción">
+                    <img class="img-responsive" src="~/images/captures/reproduccion_estadisticas.jpg" alt="Menú hierros y señales" />
+                </a>
+                <a href="~/images/captures/reproduccion_estadisticas_1.jpg" data-lightbox="Reproduccion" data-title="Ventana de reproducción"></a>
+            </div>
+        </div>
+        <p>
+            Indicar la forma de agrupar los datos, permite agrupar los datos de los históricos reproductivos de acuerdo a tres formas, usted sólo debe (mediante la lista desplegable) seleccionar entre:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h4>La Composición Racial</h4>
+        <div class="row">
+            <div class="col-md-12">
                 <p>
-                    Indicar la forma de agrupar los datos, permite agrupar los datos de los históricos reproductivos de acuerdo a tres formas, usted sólo debe (mediante la lista desplegable) seleccionar entre:
-                    La Composición Racial: si selecciona esta opción las estadísticas estarán agrupadas de acuerdo a las diferentes composiciones raciales que estén registradas en el sistema. Los animales que no tengan composición racial, serán agrupados con una composición en blanco.
-                    El Código único del Padre: al seleccionar esta opción, el reporte estará agrupado por el código único de los padres (reproductores) y el total de lactancias que sus hijas tengan registradas.
-                    El Número del parto: si selecciona esta opción el reporte de la estadística estará agrupado, según el número del parto, es decir, todos los primeros partos encontrados serán analizadas de acuerdo a la variable seleccionada y así sucesivamente.
-                    Año de ocurrencia: Permite establecer como criterio de grupo el año de ocurrencia del parto, de forma tal de que el cálculo de la estadística se realice tomando en cuenta este criterio.
-                </p>
-                <p>
-                    Nota: Si no se selecciona por cuál parámetro se va a agrupar, el sistema lo agrupará por el año de ocurrencia.
-                </p>
-                <p>
-                    Seleccionar la raza del grupo de animales a evaluar, puede consultar la ventana de Códigos Varios presionando el botón ubicado del lado derecho de la casilla. Si desea analizar todas las razas, deje la casilla en blanco.
-                    Evaluar entre fechas de comienzo de ocurrencia del parto, para ello cuenta con un calendario que lo ayuda en dicho proceso. Coloque una fecha mínima y una fecha tope. Si no establece ninguna fecha el sistema tomará todo el rango de fechas.
-                    Puede incluir también en la estadística de Producción los animales eliminados.
-                    Una vez establecidos los criterios correspondientes, puede visualizar la información contenida en el listado haciendo clic en el botón Calcular.
-                    Seguidamente aparecerá en pantalla una vista preliminar la cual puede imprimir, presionando el botón de la impresora o si lo prefiere puede Exportar dicha información.
-                </p>
-                <p>
-                    Puede incluir también en la estadística de Reproducción los animales eliminados.
-                    Seleccione de lista la estadística que desea que el sistema calcule:
-                </p>
-                <ul>
-                    <li> 1.- Edad al primer Servicio – Meses.                </li>
-                    <li> 2.-Edad al primer Parto – Meses.                    </li>
-                    <li> 3.- Promedio Parto primer Celo – Días.              </li>
-                    <li> 4.- Promedio Parto primer Servicio – Días.          </li>
-                    <li> 5.- Promedio Días Gestación.                        </li>
-                    <li> 6.- Promedio Parto-Concepción – Días.               </li>
-                    <li> 7.- Promedio Parto-Parto – Días.                    </li>
-                    <li> 8.- Promedio primer Servicio-Concepción – Días.     </li>
-                    <li> 9.- Promedio días entre Celos.                      </li>
-                    <li> 10.- Promedio días entre Revisiones.                </li>
-                    <li> 11.- Promedio de Inseminaciones por Concepción.     </li>
-                    <li> 12.- Promedio de Montas por Concepción.             </li>
-                    <li> 13.- Promedio de Transplantes por Concepción.       </li>
-                    <li> 14.- Promedio de Servicios por Concepción.          </li>
-                    <li> 15.- Promedio de Revisiones entre Partos.           </li>
-                </ul>
-                <p>
-                    Los resultados obtenidos los puede visualizar en forma de datos o de gráfica. Adicionalmente, presenta los totales en la parte inferior y los resultados de distribución normal para la curva, el cual incluye un enlace directo al reporte de animales que entran en cada categoría de los valores obtenidos. Esto le permitirá hacer un seguimiento a los animales que se encuentren a los extremos de la curva o en cualquier parte de ella.
+                    si selecciona esta opción las estadísticas estarán agrupadas de acuerdo a las diferentes composiciones raciales que estén registradas en el sistema. Los animales que no tengan composición racial, serán agrupados con una composición en blanco.
                 </p>
             </div>
         </div>
     </div>
-    <div class="col-md-4 text-center">
-        <a href="~/images/captures/reproduccion_estadisticas.jpg" data-lightbox="roadtrip" data-title="">
-            <img class="img-responsive" src="~/images/captures/reproduccion_estadisticas.jpg" alt="Reproducción" />
-            <a href="~/images/captures/reproduccion_estadisticas_1.jpg" data-lightbox="roadtrip"></a>
-        </a>
+    <div class="col-md-12">
+        <h4>El Código único del Padre</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    al seleccionar esta opción, el reporte estará agrupado por el código único de los padres (reproductores) y el total de lactancias que sus hijas tengan registradas.
+                </p>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="col-md-12">
+        <h4>El Número del parto</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    si selecciona esta opción el reporte de la estadística estará agrupado, según el número del parto, es decir, todos los primeros partos encontrados serán analizadas de acuerdo a la variable seleccionada y así sucesivamente.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Año de ocurrencia</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Permite establecer como criterio de grupo el año de ocurrencia del parto, de forma tal de que el cálculo de la estadística se realice tomando en cuenta este criterio.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Si no se selecciona por cuál parámetro se va a agrupar, el sistema lo agrupará por el año de ocurrencia.
+            </div>
+        </div>
+        <p>
+            Seleccionar la raza del grupo de animales a evaluar, puede consultar la ventana de códigos varios presionando el botón ubicado del lado derecho de la casilla. Si desea analizar todas las razas, deje la casilla en blanco.
+            Evaluar entre fechas de comienzo de ocurrencia del parto, para ello cuenta con un calendario que lo ayuda en dicho proceso. Coloque una fecha mínima y una fecha tope. Si no establece ninguna fecha el sistema tomará todo el rango de fechas.
+            Puede incluir también en la estadística de Producción los animales eliminados
+        </p>
+        <p>
+            Una vez establecidos los criterios correspondientes, puede visualizar la información contenida en el listado haciendo clic en el botón Calcular.
+            Seguidamente aparecerá en pantalla una vista preliminar la cual puede imprimir, presionando el botón de la impresora o si lo prefiere puede Exportar dicha información.
+        </p>
+        <p>
+            Puede incluir también en la estadística de reproducción los animales eliminados.
+            Seleccione de lista la estadística que desea que el sistema calcule:
+        </p>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li> 1.- Edad al primer servicio – meses.                </li>
+            <li> 2.-Edad al primer parto – meses.                    </li>
+            <li> 3.- Promedio parto primer celo – días.              </li>
+            <li> 4.- Promedio parto primer servicio – días.          </li>
+            <li> 5.- Promedio días gestación.                        </li>
+            <li> 6.- Promedio parto-concepción – cías.               </li>
+            <li> 7.- Promedio parto-parto – días.                    </li>
+            <li> 8.- Promedio primer servicio-concepción – días.     </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li> 9.- Promedio días entre celos.                      </li>
+            <li> 10.- Promedio días entre revisiones.                </li>
+            <li> 11.- Promedio de inseminaciones por concepción.     </li>
+            <li> 12.- Promedio de montas por concepción.             </li>
+            <li> 13.- Promedio de trasplantes por concepción.       </li>
+            <li> 14.- Promedio de servicios por concepción.          </li>
+            <li> 15.- Promedio de revisiones entre partos.           </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <p>
+            Los resultados obtenidos los puede visualizar en forma de datos o de gráfica. Adicionalmente, presenta los totales en la parte inferior y los resultados de distribución normal para
+            la curva, el cual incluye un enlace directo al reporte de animales que entran en cada categoría de los valores obtenidos. Esto le permitirá hacer un seguimiento a los animales
+            que se encuentren a los extremos de la curva o en cualquier parte de ella.
+        </p>
+    </div>
+</article>
