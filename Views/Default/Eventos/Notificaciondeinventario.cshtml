@@ -1,10 +1,21 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Notificación de inventario";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificación de inventario";
+    ViewBag.SubTitle =
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
-
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Por medio de ésta ventana es posible ingresar eventos relacionados con el inventario físico de los animales, de forma tal que sea posible llevar el control de los animales que se encuentran en la hacienda, así como también de comentarios específicos relacionados con cada animal, que provienen de observaciones directas realizadas en el campo. Esta operación puede realizarse tanto por animal como por grupo.

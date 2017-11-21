@@ -1,10 +1,21 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Otros cambios";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Otros cambios";
+    ViewBag.SubTitle =
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
-
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Por medio de esta opción el usuario puede cambiar los siguientes datos generales de los animales que seleccione: Raza, Color, Clasificación, Cruzar con.., Nombre, Procedencia, Nº de registro, Fecha de registro, Asociación, Código único del padre, Código único de la madre, Número de tetas, Origen de nacimiento, Portadora, Número del parto de la madre, Tipo de explotación, Descartado, Fecha de nacimiento y Composición Racial del animal.
