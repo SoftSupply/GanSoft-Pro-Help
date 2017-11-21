@@ -325,7 +325,7 @@
       "Items": [
         {
           "Title": "Ventanas",
-          "Link": "GanSoftPro?id=Menu principal&key=Ventana"
+          "Link": "GanSoftPro?id=Principal&key=Ventana"
         }
       ]
     },
@@ -341,7 +341,7 @@
           "Link": "GanSoftPro?id=Ayuda&key=Contenido"
         },
         {
-          "Title": "Acercade",
+          "Title": "Acerca de",
           "Link": "GanSoftPro?id=Ayuda&key=Acercade"
         },
         {
