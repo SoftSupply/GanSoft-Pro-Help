@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
     ViewBag.Title = "Configuración";
-    ViewBag.SubTitle = ViewContext.RouteData.Values["action"];
+    ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 

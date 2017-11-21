@@ -1,10 +1,22 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Producción";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Producción";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Con esta opción, el usuario podrá evaluar variables relacionadas con la producción del rebaño y en cada caso podrá observar los siguientes estadísticos básicos: Número de Elementos, Valor Promedio, Desviación Estándar, mínimo y máximo.

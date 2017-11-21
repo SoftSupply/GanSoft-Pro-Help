@@ -1,11 +1,22 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
     ViewBag.Title = "Instalación";
-    ViewBag.SubTitle = ViewContext.RouteData.Values["action"];
+    ViewBag.SubTitle ="";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             El programa de instalación de GanSoft, puede ser descargado directamente desde nuestra página web <a href="https://www.softsupply.com/" target="_blank">https://www.softsupply.com/</a>, o instalado desde un medio externo de almacenamiento (disco óptico o unidad USB).

@@ -1,10 +1,22 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Acerca de";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Acerca de";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             A través de esta opción es posible desplegar una nueva ventana que contiene las especificaciones de la versión, así como también los créditos del diseño

@@ -1,10 +1,22 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Buscar actualizaciones";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Actualizaciones";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Si el usuario posee conexión a Internet, por medio de esta opción podrá verificar desde el sistema, si en la página web www.softsupply.com se encuentra
