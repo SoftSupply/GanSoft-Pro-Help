@@ -1,10 +1,22 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Requerimientos";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Requerimientos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Antes de comenzar a utilizar GanSoft, verifique si el equipo donde realizará la instalación cumple con los siguientes requerimientos.

@@ -1,30 +1,59 @@
 {
   "Name": "GanSoftPro",
   "Title": "GanSoft Pro",
-  "Description": "Software especializado para el manejo de reba駉s",
+  "Description": "Software especializado para el manejo de reba帽os",
   "Index": [
     {
       "Title": "<b>Inicio</b>",
       "Items": [
         {
-          "Title": "Bienvenido",
-          "Link": "GanSoftPro?id=Inicio&key=Bienvenido"
-        },
-        {
           "Title": "Requerimientos",
           "Link": "GanSoftPro?id=Inicio&key=Requerimientos"
         },
         {
-          "Title": "Instalaci髇",
+          "Title": "Instalaci贸n",
           "Link": "GanSoftPro?id=Inicio&key=Instalacion"
         },
         {
-          "Title": "Configuraci髇",
+          "Title": "Configuraci贸n",
           "Link": "GanSoftPro?id=Inicio&key=Configuracion"
         },
         {
-          "Title": "Navegaci髇",
+          "Title": "Navegaci贸n",
           "Link": "GanSoftPro?id=Inicio&key=Navegacion"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Archivo</b>",
+      "Items": [
+        {
+          "Title": "Cambiar conexi贸n",
+          "Link": "GanSoftPro?id=Archivo&key=Archive"
+        },
+        {
+          "Title": "Importar datos",
+          "Link": "GanSoftPro?id=Archivo&key=ImportarDatos"
+        },
+        {
+          "Title": "Plantillas de importaci贸n",
+          "Link": "GanSoftPro?id=Archivo&key=PlantillasdeImportacion"
+        },
+        {
+          "Title": "Respaldar datos",
+          "Link": "GanSoftPro?id=Archivo&key=RespaldarDatos"
+        },
+        {
+          "Title": "Restaurar datos",
+          "Link": "GanSoftPro?id=Archivo&key=RestaurarDatos"
+        },
+        {
+          "Title": "Cerrar sesi贸n",
+          "Link": "GanSoftPro?id=Archivo&key=CerrarSesion"
+        },
+        {
+          "Title": "Salir",
+          "Link": "GanSoftPro?id=Archivo&key=Salir"
         }
       ]
     }

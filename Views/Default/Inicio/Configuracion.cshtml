@@ -1,7 +1,8 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Configuración";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Configuración";
+    ViewBag.SubTitle = ViewContext.RouteData.Values["action"];
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <article class="row">
