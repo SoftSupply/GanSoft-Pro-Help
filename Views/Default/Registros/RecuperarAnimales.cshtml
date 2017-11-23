@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Recuperar animales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta opción el usuario podrá restaurar a un animal en estado inactivo
+        </p>
+        <div class="col-md-12">
+            <ul class="index">
+                <li>
+                    <a href="#Recuperaranimales">Recuperar animales</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Recuperaranimales">Recuperar animales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    De esta forma el animal volverá a existir en la hacienda y será tomado en cuenta nuevamente en el inventario de la hacienda.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/recuperar_animales_1.jpg" class="thumbnail" data-lightbox="Recuperaranimales" data-title="Menú de Recuperación">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/recuperar_animales_1.jpg" alt="Recuperar un animal" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/recuperar_animales_2.jpg" data-lightbox="Recuperaranimales" data-title="Ventana de Recuperación"></a>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Baras de menús";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Las barras presentan de manera agrupada las opciones del sistema para simplificar la manera de trabajo de los usuarios
+        </p>
+        <div class="col-md-12">
+            <ul class="index">
+                <li>
+                    <a href="#Barrademenu">Barra de menú</a>
+                </li>
+                <li>
+                    <a href="#Barradenavegacion">Barra de navegación</a>
+                </li>
+                <li>
+                    <a href="#Barradeestado">Barra de estado</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Barrademenu">Barra de menú</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/barra_de_menu_ver.jpg" class="thumbnail" data-lightbox="Barra de menu" data-title="Barra de menú">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/barra_de_menu_ver.jpg" alt="Barra de menú" />
+                </a>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    Presenta de manera agrupada cada uno de los módulos del sistema y a través de la cual podemos desplazarnos para ingresar a las opciones y operaciones del sistema.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Barradenavegacion">Barra de navegación</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/barra_de_navegacion_ver.jpg" class="thumbnail" data-lightbox="Barra de navegacion" data-title="Barra de navegación">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/barra_de_navegacion_ver.jpg" alt="Barra de navegación" />
+                </a>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    Presenta un cuadro de búsqueda a través del cual es posible filtrar la información contenida en la ventana activa. Esto nos facilita la búsqueda de registros específicos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Barradeestado">Barra de estado</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/barra_de_estado_ver.jpg" class="thumbnail" data-lightbox="Barra de estado" data-title="Barra de estado">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/barra_de_estado_ver.jpg" alt="Barra de estado" />
+                </a>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    Muestra detalles de la sesión activa como el usuario, haciendo y avisos activos.  Así mismo, en esta barra puede visualizar el serial que identifica su licencia. Podrá llevar a cabo el cierre de sesión (cambiar de usuario) de una forma más rápida, para ello, deberá hacer doble clic en el nombre de usuario activo que se muestra en la barra de estado y se desplegará la ventana correspondiente en la que deberá escribir su nombre de usuario y contraseña.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

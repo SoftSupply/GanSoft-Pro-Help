@@ -1,0 +1,122 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Crecimiento";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción permite al usuario ver la evaluación de crecimiento de los animales que se encuentran dentro de la hacienda.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Crecimiento">Crecimiento</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Crecimiento">Crecimiento</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para ver esta evaluación, siga los siguientes pasos y seleccione de la lista de estadística lo que desea que el sistema calcule:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/crecimiento_estadisticas.jpg" class="thumbnail" data-lightbox="Crecimiento" data-title="Menú de crecimiento">
+                    <img class="img-responsive" src="~/images/captures/crecimiento_estadisticas.jpg" alt="Menú de crecimiento" />
+                </a>
+                <a href="~/images/captures/crecimiento_estadisticas_1.jpg" data-lightbox="Crecimiento" data-title="Ventana de crecimiento"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li> 1.- Peso de nacimiento del animal.                 </li>
+            <li> 2.- Peso al destete del animal.                    </li>
+            <li> 3.- Peso ajustados a los 205 días del animal.      </li>
+            <li> 4.- Peso ajustados a los 365 días del animal.      </li>
+            <li> 5.- Peso ajustado a los 18 meses del animal.       </li>
+            <li> 6.- Peso ajustado a los 24 meses del animal.       </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li> 7.- Altura al nacer del animal.                    </li>
+            <li> 8.- Altura al destete del animal.                  </li>
+            <li> 9.- Altura ajustada a los 205 días.                </li>
+            <li> 10.- Altura ajustada a los 365 días.               </li>
+            <li> 11.- Altura ajustada a los 18 meses.               </li>
+            <li> 12.- Altura ajustada a los 24 meses.               </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <p>
+            Luego haga clic en el botón Calcular, sin embargo, adicionalmente puede ser más específico en la evaluación que desea calcular
+            Mediante la lista desplegable que se encuentra en la parte superior de la ventana, puede seleccionar la manera de agrupar los datos, a través de:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h4>La composición racial</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Si selecciona esta opción las estadísticas estarán agrupadas de acuerdo a las diferentes composiciones raciales que se encuentran registrados en el sistema. Para el caso de animales que no tengan composición racial, serán agrupados en un mismo conjunto como si fuera una composición definida (composición en blanco).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>El código único del padre</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Al seleccionar esta opción el reporte de estadística estará agrupado por el código único del padre, es decir por el código de los diferentes reproductores registrados.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Año de nacimiento</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Agrupa los valores de históricos de crecimiento de acuerdo al año del nacimiento del animal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>El número de partos de la madre</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Si selecciona esta opción el reporte de la estadística estará agrupado como su nombre lo indica, según el número de partos de la madre.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p>
+            Para evaluar las estadísticas de crecimiento de un animal seleccione la raza del animal, puede consultar la ventana de códigos varios presionando el ícono ubicado del lado derecho de la casilla. Si desea analizar todas las razas, deje la casilla en blanco.
+        </p>
+        <p>
+            Puede determinar el toro (padre del grupo de animales que se van a evaluar estadísticamente), colocando el número de él en la casilla o consultando el archivo de toros. Para ello haga doble clic en la casilla o presione el ícono ubicado al lado de ella. Si no desea evaluar a los animales en función del toro (padre) deje la casilla en blanco
+        </p>
+        <p>
+            Puede evaluar entre fechas, para ello cuenta con un calendario que lo ayuda en dicho proceso. Coloque una fecha mínima y una fecha tope. Si no establece ninguna fecha el sistema tomará todo el rango de fechas.
+        </p>
+        <p>
+            Puede incluir también en la estadística de Crecimiento los animales eliminados.
+        </p>
+        <p>
+            Una vez hechas las selecciones, puede visualizar la información contenida en el listado haciendo clic en el botón calcular.
+        </p>
+        <p>
+            Los resultados obtenidos los puede visualizar en forma de datos o de gráfica. Adicionalmente, presenta los totales en la parte inferior y los resultados de distribución normal para la curva, el cual incluye un enlace directo al reporte de animales que entran en cada categoría de los valores obtenidos. Esto le permitirá hacer un seguimiento a los animales que se encuentren a los extremos de la curva o en cualquier parte de ella.
+        </p>
+    </div>
+</article>

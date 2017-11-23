@@ -1,0 +1,257 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Otros reportes";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción se ubica dentro del menú reportes, y concentra cada uno de los listados correspondientes a los históricos y otros informes de interés para el usuario.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Otrosreportes">Otros reportes</a>
+            </li>
+            <li>
+                <a href="#Descendientes">Descendientes</a>
+            </li>
+            <li>
+                <a href="#Reportecomportamientoreproductivo">Reporte comportamiento reproductivo</a>
+            </li>
+            <li>
+                <a href="#Reporteanalisisdeinventario">Reporte análisis de inventario</a>
+            </li>
+            <li>
+                <a href="#Reportepesajesultimos12meses">Reporte pesajes últimos 12 meses</a>
+            </li>
+            <li>
+                <a href="#Reportecalculodealimentoconcentrado">Reporte cálculo de alimento concentrado</a>
+            </li>
+            <li>
+                <a href="#Reportecodigosvarios">Reporte códigos varios</a>
+            </li>
+            <li>
+                <a href="#Formulariosvarios">Formularios varios</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Otrosreportes">Otros reportes</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estos se describen detalladamente a continuación:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_descendientes.jpg" class="thumbnail" data-lightbox="Otrosreportes" data-title="Menú otros reportes">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_descendientes.jpg" alt="Menú otros reportes" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_descendientes_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de otros reportes"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_comportamiento.jpg" data-lightbox="Otrosreportes" data-title="Ventana de comportamiento"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_comportamiento_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de comportamiento"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_analisis.jpg" data-lightbox="Otrosreportes" data-title="Ventana de analisis"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_analisis_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de analisis"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_pesajes.jpg" data-lightbox="Otrosreportes" data-title="Ventana de pesajes"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_pesajes_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de pesajes"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_calculo.jpg" data-lightbox="Otrosreportes" data-title="Ventana de calculo"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_calculo_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de calculo"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_propietarios.jpg" data-lightbox="Otrosreportes" data-title="Ventana de propietarios"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_propietarios_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de propietarios"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_etiquetas.jpg" data-lightbox="Otrosreportes" data-title="Ventana de etiquetas"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_etiquetas_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de etiquetas"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_codigos.jpg" data-lightbox="Otrosreportes" data-title="Ventana de codigos"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_codigos_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de codigos"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_formularios.jpg" data-lightbox="Otrosreportes" data-title="Ventana de formularios"></a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_reportes_formularios_1.jpg" data-lightbox="Otrosreportes" data-title="Ventana de formularios"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Descendientes">Descendientes</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Por medio de ésta opción, es posible generar una lista de los descendientes (crías de una madre). Para ello, se procede a activar las casillas de verificación
+                    correspondientes a los estatus de las madres, vaqueras y códigos para generar el listado de las madres.
+                </p>
+                <p>
+                    Una vez establecidos los filtros, se genera un listado con las madres que cumplen con las condiciones establecidas en la parte superior de la ventana.
+                    Posteriormente, haga clic sobre el botón aceptar, para visualizar el reporte que presenta las crías que provienen de las madres previamente seleccionadas.
+                </p>
+                <p>
+                    En el reporte se presentan los datos básicos de la madre y el detalle de los descendientes. Al momento de tener la vista previa del reporte, puede hacer
+                    clic en el botón imprimir ubicado en la barra de botones, asimismo, en caso de que lo desee puede Exportar la información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reportecomportamientoreproductivo">Reporte comportamiento reproductivo</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Es un reporte incorporado en el menú de otros reportes, que permite visualizar el detalle del comportamiento reproductivo de los vientres que se
+                    encuentran en las vaqueras seleccionadas.
+                </p>
+                <p>
+                    Antes de obtener el listado, debe establecer los parámetros del filtro que se presentan para obtener los resultados requeridos. Puede filtrar los animales
+                    por estatus, vaquera, código, estatus reproductivo y fecha entre valores, esto dará como resulta un listado de los animales que cumplen con todos los criterios
+                    indicados en la parte superior de la ventana. En este listado podrá tildar los animales que desee listar en el reporte y posteriormente hacer clic en el
+                    botón aceptar.
+                </p>
+                <p>
+                    Luego de seleccionar los parámetros para generar el reporte, se visualiza el listado con los datos básicos y comportamiento reproductivo de los vientres.
+                    Al momento de tener la vista previa del reporte, puede hacer clic en el botón Imprimir ubicado en la barra de botones, asimismo, en caso de que lo desee
+                    puede Exportar la información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reporteanalisisdeinventario">Reporte análisis de inventario</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Por medio de este reporte es posible obtener un listado que presenta el estatus de los inventarios efectuados en un periodo determinado, es decir,
+                    obtener el listado y el resumen de animales no inventarios en el periodo, así como el listado y resumen de animales inventariados en el periodo.
+                    Para ello, solo deberá especificar el periodo que desea analizar y el tipo de reporte que desea generar, posteriormente, haga clic en el botón aceptar
+                    para tener acceso a la vista previa del reporte.
+                </p>
+                <p>
+                    Al momento de tener la vista previa del reporte, puede hacer clic en el botón imprimir
+                    ubicado en la barra de botones, asimismo, en caso de que lo desee puede Exportar la información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reportepesajesultimos12meses">Reporte pesajes últimos 12 meses</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    A través de este reporte es posible visualizar un comparativo de los pesajes procesados en los últimos 12 meses, de forma tal de lograr detectar con
+                    facilidad el incremento o disminución de los pesajes de acuerdo a la locación y o a la fecha de pesaje previamente establecida como parámetro de
+                    filtro para generar el reporte.
+                </p>
+                <p>
+                    Una vez obtenido el listado, puede tener la vista previa del reporte y hacer clic en el botón imprimir
+                    ubicado en la barra de botones si así lo desea, asimismo, tiene la posibilidad de exportar la información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reportecalculodealimentoconcentrado">Reporte cálculo de alimento concentrado</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    A través de este reporte es posible visualizar los resultados obtenidos para el cálculo de alimento concentrado. Los parámetros para el cálculo
+                    de alimento concentrado son obtenidos de lo establecido en el módulo hacienda, opción configuración, en la pestaña concentrados, donde se define
+                    inicialmente las fórmulas a aplicar para posteriormente obtener los resultados a través de este reporte.
+                </p>
+                <p>
+                    Una vez obtenido el listado, puede tener la vista previa del reporte y hacer clic en el botón imprimir
+                    ubicado en la barra de botones si así lo desea, asimismo, tiene la posibilidad de exportar la información.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Reportecodigosvarios">Reporte códigos varios</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    A través de esta ventana el usuario puede revisar el archivo Códigos Varios para ubicar cualquier registro que desee. Esto lo logra filtrando el
+                    archivo utilizando las diferentes opciones que brinda esta ventana, el usuario puede filtrar el archivo indicando qué tipos de códigos desea
+                    incluir en el reporte, entre los cuales están:
+                </p>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Condición Corporal. </li>
+                    <li>Vaqueras. </li>
+                    <li>Razas. </li>
+                    <li>Colores. </li>
+                    <li>Diagnósticos No Reproductivos. </li>
+                    <li>Tratamientos No Reproductivos. </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Clasificaciones. </li>
+                    <li>Plan Sanitario. </li>
+                    <li>Diagnósticos Reproductivos. </li>
+                    <li>Tratamientos Reproductivos. </li>
+                    <li>Propietario.</li>
+                    <li>Etiqueta. </li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            Luego de hacer las selecciones deseadas, haga clic en el botón de aceptar
+            para crear la vista previa. Esta vista preliminar puede imprimirla utilizando el icono de la impresora, pero si el usuario lo desea, también puede
+            exportar dicha información.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Formulariosvarios">Formularios varios</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta ventana le permite imprimir
+                    reportes para que el usuario pueda llevarlos al campo y recopilar información de:
+                </p>
+                <ul>
+                    <li> Inventario de Animales     </li>
+                    <li> Pesos Corporales           </li>
+                    <li> Pesajes de Leche           </li>
+                </ul>
+                <p>
+                    Para manipular esta ventana debe:
+                </p>
+                <p>
+                    Seleccionar el tipo de listado que desea imprimir. Puede ser: Inventario, Pesos Corporales o Pesajes de Leche.
+                </p>
+                <p>
+                    Indique la locación en la que se encuentran los animales que desea listar. Si no coloca una vaquera, el sistema por defecto tomará todas las vaqueras.
+                </p>
+                <p>
+                    Seleccione el o los estados del animal que desea listar, para ello active la casilla correspondiente según cada estado, si deja seleccionadas todas las casillas,
+                    el listado será del total de animales activos dentro del sistema.
+                </p>
+                <p>
+                    Haga clic en el botón aceptar para que el programa haga la selección.
+                    En la parte inferior se presenta una sección denominada Parámetros del Listado, en la que se muestra el número de páginas y de columnas por página que contendrá
+                    el reporte. Haga clic en el botón de imprimir para generar el reporte.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Estos listados son enviados directamente a la impresora.
+                La información que se presentará para inventario de animales y pesos corporales es la siguiente: Código Práctico del Animal y una línea en blanco
+                (sólo para Pesos corporales). Y en el listado para Pesajes de Leche se mostrará: Código Práctico de la vaca y una línea en blanco.
+            </div>
+        </div>
+    </div>
+</article>

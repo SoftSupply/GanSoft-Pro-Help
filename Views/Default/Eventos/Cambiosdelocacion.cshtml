@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Cambios de locación";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Al seleccionar esta opción se despliega una ventana por medio de la que es posible notificar los cambios de ubicación que ocurren a los animales de la hacienda. Puede especificar los cambios de locaciones por animal o por grupo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Cambiosdelocaciones">Cambios de locaciones</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Cambiosdelocaciones">Cambios de locaciones</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Por animal, Indique el tipo de animal (reproductor, Vientre o No Vientre), el código práctico o el código único y presione la tecla enter
+                    También puede seleccionar al animal por medio del listado que se despliega situándose en el cuadro de texto del código o haciendo doble clic en el mismo, en éste podrá seleccionar el animal requerido con doble clic o con un clic y presionando la tecla enter
+                    Por Grupo, Por medio de esta opción puede reportar un mismo evento a un grupo de animales.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/cambios_de_locaciones.jpg" class="thumbnail" data-lightbox="cambiosdelocaciones" data-title="Menú cambios de locaciones">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/cambios_de_locaciones.jpg" alt="Menú cambios de locaciones" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/cambios_de_locaciones_1.jpg" data-lightbox="cambiosdelocaciones" data-title="Ventana de cambios de locaciones"></a>
+            </div>
+        </div>
+        <p>
+            Para ambos casos, debe seguir el procedimiento descrito a continuación:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    indique el día, mes y año en que ocurrió  el evento a los animales seleccionados.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Indique la nueva Vaquera</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    para ello escriba el código de la vaquera y luego presione enter
+                    también puede hacer doble clic en el cuadro de texto y consultar los códigos de vaqueras y condiciones corporales en la ventana de códigos varios.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Técnico</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    indique el nombre del técnico responsable del cambio de locación.
+                </p>
+            </div>
+            <p>
+                Indique el comentario si lo desea, ya que es un dato de tipo opcional.
+                Una vez suministrados los datos necesarios, haga clic en el botón Guardar
+                que se encuentra activo en la barra de botones.
+            </p>
+            <p>
+                Toda la información procesada a través de esta opción, se guardará en el histórico de vaqueras de cada animal
+            </p>
+        </div>
+    </div>
+</article>

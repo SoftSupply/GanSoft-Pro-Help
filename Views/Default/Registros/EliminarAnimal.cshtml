@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Eliminar animales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Desde esta opción podrá realizar las operaciones correspondientes a venta, eliminación o muerte del animal dentro de la hacienda.
+        </p>
+
+        <div class="col-md-12">
+            <ul class="index">
+                <li>
+                    <a href="#Eliminaranimal">Eliminar animal</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Eliminaranimal">Eliminar animal</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Desde esta opción es posible llevar a cabo las siguientes acciones
+                </p>
+                <ul>
+                    <li>Inactivar a un animal o un grupo de animales.                                                                                                                                                                                                                  </li>
+                    <li>Eliminar de la base de datos animales de referencia                                                                                                                                                                                                            </li>
+                    <li>Eliminar de la base de datos animales con el estatus inactivo. Esta opción no es recomendable ya que perderá toda la información histórica del animal. Al tener al animal en estatus inactivo podrá consultar sus datos en el momento requerido.               </li>
+                    <li>Para efectuar la eliminación deberá seleccionar el método a utilizar (por animal o por grupo), posteriormente, realice la búsqueda de los animales a eliminar, detalle los datos del evento; fecha, causa, técnico responsable de la eliminación y comentario. </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/eliminar_animales_1.jpg" class="thumbnail" data-lightbox="Eliminaranimal" data-title="Menú de eliminación">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/eliminar_animales_1.jpg" alt="Menú eliminar" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/eliminar_animales_2.jpg" data-lightbox="Eliminaranimal" data-title="Ventana de eliminación"></a>
+            </div>
+        </div>
+    </div>
+</article>

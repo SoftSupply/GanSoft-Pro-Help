@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Actualizaciones";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Si el usuario posee conexión a Internet, por medio de esta opción podrá verificar desde el sistema, si en la página web www.softsupply.com se encuentra
+            disponible una versión más actualizada con respecto a la que está instalada en su equipo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Buscaractualizaciones">Buscar actualizaciones</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Buscaractualizaciones">Buscar actualizaciones</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    De esta forma (tomando en cuenta si tiene activa la póliza de mantenimiento GanSoft), podrá descargarla e instalarla, disfrutando de las mejoras
+                    incorporadas en cada una de las actualizaciones del programa.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/buscar_actualizaciones.jpg" class="thumbnail" data-lightbox="Buscaractualizaciones" data-title="Buscar actualizaciones">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/buscar_actualizaciones.jpg" alt="Actualizaciones" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

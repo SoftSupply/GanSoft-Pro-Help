@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Pesajes de Leche";
+    Page.SubTitle = "Opciones del menú estadisticas";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Esta ventana permite incorporar el pesaje de leche de cada una de los vientres registrados.
+                </p>
+                <p>
+                    Para agregar un nuevo pesaje de leche debe indicar el número del animal (código práctico o único) y presionar la tecla Enter, también puede seleccionar al animal a través de la ventana Seleccionar Vientre, que se muestra haciendo doble clic en el cuadro de texto del código (práctico o único). Luego de seleccionar el vientre, visualizará la ventana Detalle del Pesaje de Leche, en la cual se muestran del lado derecho los Pesajes de Leche anteriores que ha tenido ese vientre. Ingrese los datos correspondientes al nuevo pesaje:
+                </p>
+                <p>
+                    Fecha, día mes y año, en orden cronológico con respecto al último pesaje. Luego presione la tecla Enter o sitúe el cursor en el siguiente cuadro de texto.
+                    Peso 1, 2 o 3, indique el o los pesos de la leche, de acuerdo a la cantidad de ordeños al día, luego presione la tecla Enter o haga clic en el botón de Guardar
+                    . El sistema automáticamente calculará el total.
+                    Posteriormente, haga clic en el botón de Guardar
+                    o presione la tecla Enter
+                    hasta que la notificación pase a la sección pesajes de Leche en esta sesión.
+                </p>
+                <p>
+                    Nota: Antes de pasar a notificar un pesaje de leche a otro animal, puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con de la vaca a la cual le acaba de notificar el pesaje.
+                </p>
+                <p>
+                    El sistema incluirá sólo aquellos pesajes en vientres cuya fecha sea mayor a la del último pesaje, es decir, no permite incluir pesajes históricos. Ni podrá reportar pesajes a vientres que estén secas.
+
+                    El proceso permite incluir varios pesajes en el mes y la información en los históricos será almacenada de la misma manera como fue introducida. Este procedimiento actualiza y calcula los valores de la producción actual del animal tales como días en producción, promedio de producción a 244 días, etc.
+
+                    El proceso intenta ser flexible, debido a que la cantidad de información que se introduce es, en la mayoría de los casos, bastante voluminosa, a la hora de introducir los datos de los pesajes de un grupo de vientres, el sistema pedirá sólo la primera vez la fecha del pesaje, para el resto de los pesajes introducidos en la misma sesión asume que son de la misma fecha.
+
+                    Por último, el sistema está supervisado por una variable que no permite introducir un pesaje mayor al establecido en la producción máxima por avío (valor establecido por el usuario en la configuración de la hacienda).
+
+                    Si la hacienda está configurada por el usuario para utilizar Factor para el Cálculo de Pesajes de Leche, debe incluir el peso total de la mañana y el peso total de la tarde para los cálculos necesarios y luego el peso de leche del animal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <a href="~/Areas/GanSoftPro/Content/images/captures/pesajes_de_leche_estadisticas.jpg" data-lightbox="roadtrip" data-title="">
+            <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/pesajes_de_leche_estadisticas.jpg" alt="Pesajes de leche" />
+            <a href="~/Areas/GanSoftPro/Content/images/captures/pesajes_de_leche_estadisticas_1.jpg" data-lightbox="roadtrip"></a>
+        </a>
+    </div>
+</div>

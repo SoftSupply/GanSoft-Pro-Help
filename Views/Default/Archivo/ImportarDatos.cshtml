@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Importar datos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta opción es posible incorporar bases de datos y registros provenientes de diferentes fuentes.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Importaciondedatos">Importación de datos</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Importación de datos">Importación de datos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los datos para la importación proveniente desde Excel, puede prepararlos haciendo uso de la opción Plantilla de Importación.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <ul>
+            <li>Libro de Excel 97-2003 (.xls)</li>
+            <li>Libro de Excel 2007-2013 (.xlsx)</li>
+            <li>Eventos desde GanSoft Móvil  (.gsb)</li>
+        </ul>
+    </div>
+</article>

@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Condiciones corporales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            A través de este evento es posible reportar los cambios en condiciones corporales ocurridos en un animal o un grupo de animales. Para ello, deberá seleccionar al animal o filtrar el grupo de animales correspondientes al cambio de condición corporal a reportar.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Condicionescorporales">Condiciones corporales</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Condicionescorporales">Condiciones corporales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Una vez realizado esto, deberá indicar los siguientes datos:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/condiciones_corporales.jpg" class="thumbnail" data-lightbox="Condicionescorporales" data-title="Menú condiciones corporales">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/condiciones_corporales.jpg" alt="Menú condiciones corporales" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/condiciones_corporales_1.jpg" data-lightbox="Condicionescorporales" data-title="Ventana de codiciones corporales"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Indique el día, mes y año del cambio en condición corporal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Condición Corporal</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Establezca el valor de la condición corporal según corresponda.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Técnico</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Indique el nombre del técnico responsable.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Comentario</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Especifique cualquier otro detalle que desee para complementar la información del evento reportado.
+                </p>
+            </div>
+        </div>
+        <p>
+            Igualmente, puede activar la opción mantener comentario para aplicar el mismo comentario a los próximos eventos de condiciones corporales a procesar.
+        </p>
+    </div>
+</article>

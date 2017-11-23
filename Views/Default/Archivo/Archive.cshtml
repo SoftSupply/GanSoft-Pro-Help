@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Archivo";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta sección encontrara las principales funciones que se despliegan al momento de utilizar el menú de archivos
+        </p> 
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Cambiodeconexion">Cambio de conexión</a>
+            </li>
+            <li>
+                <a href="#Personalizaciondelicencia">Personalización del sistema con una nueva licencia</a>
+            </li>
+            <li>
+                <a href="#Datosdemostrativos">Datos demostrativos</a>
+            </li>
+            <li>
+                <a href="#Conectarseaunabasededatosexistente">Conectarse a una base de datos existente</a>
+            </li>
+            <li>
+                <a href="#recuperardatosdesdeunrespaldo">Recuperar datos desde un respaldo</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Cambiodeconexion">Cambio de conexión</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Al hacer clic en esta opción se presenta una ventana que le permitirá seleccionar el método de conexión que desee, presentando las diferentes alternativas que tiene
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Personalizaciondelicencia">Personalización del sistema con una nueva licencia</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Utilice esta opción en caso de que sea un nuevo usuario del programa y haya adquirido la licencia,
+                    su proveedor le hará entrega de un archivo personalizado en un CD o vía correo electrónico.
+                    El sistema lo guiará para la recuperación del archivo. Solo debe tomar en cuenta la ruta donde se encuentra almacenado el archivo.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Datosdemostrativos">Datos demostrativos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Seleccionando esta opción tendrá acceso al programa GanSoft con datos que le permitirán evaluar el comportamiento del sistema en el manejo
+                    de gráficas, estadísticas, reportes ya que contiene registros previos que facilitarán la visualización
+                    de resultados a través del sistema.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Conectarseaunabasededatosexistente">Conectarse a una base de datos existente</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    A través de esta opción el usuario tendrá la posibilidad de establecer conexión desde diferentes fuentes. Cada una de las cuales se indican a continuación:
+                </p>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Servidor Web: Para aquellos casos en los que el usuario tenga la base de datos hospedada en un servidor web, por medio de esta opción es posible establecer conexión. Para ello, el usuario debe hacer clic en opciones avanzadas e indicar los parámetros de seguridad para la conexión.</li>
+                        <li>Servidor en Red: Si dispone de una conexión en red, puede establecer conexión con la base de datos instalada en el servidor, indicando para ello los parámetros de conexión requeridos. Haga clic en opciones avanzadas y especifique el nombre del servidor con el que desea establecer conexión y haga clic en conectar. Al establecer la conexión se mostrarán las bases de datos disponibles. Seleccione la que desea utilizar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="recuperardatosdesdeunrespaldo">Recuperar datos desde un respaldo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Por medio de esta opción es posible recuperar un respaldo de los datos previamente realizado en la versión 7.0
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
