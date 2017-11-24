@@ -266,7 +266,7 @@
       "Title": "<b>Reportes</b>",
       "Items": [
         {
-          "Title": "Producción",
+          "Title": "Generador",
           "Link": "GanSoftPro?id=Reportes&key=Generador"
         },
         {
@@ -315,7 +315,7 @@
           "Link": "GanSoftPro?id=Herramientas&key=Usuarios"
         },
         {
-          "Title": "Herramientas",
+          "Title": "Niveles",
           "Link": "GanSoftPro?id=Herramientas&key=Niveles"
         }
       ]
