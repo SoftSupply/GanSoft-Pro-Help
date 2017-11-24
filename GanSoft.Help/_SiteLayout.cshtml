@@ -1,0 +1,171 @@
+﻿@{
+    Page.MainTitle = "Manual de ";
+    Page.Product = "GanSoft-Pro";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@Page.MainTitle @Page.Product - @Page.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-touch-icon" content="~/images/logo.png">
+
+    <!-- Styles -->
+    <link href="~/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/components/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/components/font-gansoft/css/font-gansoft.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/components/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+
+    @*<link href="~/styles/site.css" rel="stylesheet" type="text/css" />*@
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    @RenderSection("Styles", required: false)
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+    <header>
+        @RenderPage("_Navbar.cshtml")
+    </header>
+
+    <div id="0" class="container" style="padding-top: 64px;">
+        <div class="row">
+            <nav class="col-sm-3 hidden-print hidden-xs affix-top" style="margin-top: 32px;" role="complementary">
+                @RenderPage("_Sidebar.cshtml")
+            </nav>
+            <div class="col-sm-9 col-xs-12" role="main">
+                <div class="page-header">
+                    <h1>
+                        @Page.Title
+                        @if (!string.IsNullOrEmpty(Page.SubTitle))
+                        {
+                            <br /><small>@Page.SubTitle</small>
+                        }
+                    </h1>
+                </div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <footer class="container" style="padding-bottom: 64px;">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <hr />
+                <small>
+                    © @(DateTime.Now.Year) - TDPro, C.A. J-29636526-1, Maracaibo - Venezuela
+                </small>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .cd-top.cd-fade-out {
+            opacity: .5;
+        }
+
+        .cd-top.cd-is-visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+            -webkit-transition: opacity .3s 0s,visibility 0s 0s;
+            -moz-transition: opacity .3s 0s,visibility 0s 0s;
+            transition: opacity .3s 0s,visibility 0s 0s;
+        }
+
+        @@media(min-width: 768px) .cd-top {
+        }
+
+        .cd-top {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            bottom: 20%;
+            right: 0;
+            box-shadow: 0 0 10px rgba(0,0,0,.05);
+            z-index: 10;
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            background: #c1c1c1 url(/images/cd-top-arrow.svg) no-repeat center 50%;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: opacity .3s 0s,visibility 0s .3s;
+            -moz-transition: opacity .3s 0s,visibility 0s .3s;
+            transition: opacity .3s 0s,visibility 0s .3s;
+        }
+    </style>
+
+    <a href="#0" class="cd-top fa fa-chevron-up cd-fade-out">Arriba</a>
+
+    <!-- Scripts -->
+    <script src="~/components/jquery/dist/jquery.min.js"></script>
+    <script src="~/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+    <script src="~/components/lightbox2/dist/js/lightbox.min.js"></script>
+
+    <script>
+        window.addEventListener("hashchange", function () { scrollBy(0, -72) })
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        $(document).ready(function ($) {
+            // browser window scroll (in pixels) after which the "back to top" link is shown
+            var offset = 300,
+                //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                offset_opacity = 1200,
+                //duration of the top scrolling animation (in ms)
+                scroll_top_duration = 700,
+                //grab the "back to top" link
+                $back_to_top = $('.cd-top');
+
+            //hide or show the "back to top" link
+            $(window).scroll(function () {
+                ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if ($(this).scrollTop() > offset_opacity) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+
+            //smooth scroll to top
+            $back_to_top.on('click', function (event) {
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop: 0,
+                }, scroll_top_duration
+                );
+            });
+
+        });
+    </script>
+
+
+</body>
+</html>

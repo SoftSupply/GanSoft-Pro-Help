@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Niveles";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta opción se establecen los permisos de acceso para los usuarios. Se activan las condiciones y permisos de acceso
+            deseadas para la realización de acciones dentro del programa, lo cual le proporciona mayor seguridad y confiabilidad al sistema GanSoft.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Niveles">Niveles</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Niveles">Niveles</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Inicialmente todas las acciones se presentan desactivadas, es decir, no autorizadas. Se deben ir seleccionando aquellas que se consideren necesarias
+                    para el nuevo nivel.
+                </p>
+                <p>
+                    Para ello, en la sección denominada acciones, se encuentran todas las opciones contenidas en el menú de opciones de GanSoft. Deberá tildar cada una de las
+                    opciones a las que tendrá acceso el nivel que se encuentra registrando. Para modificar un nivel de acceso, se debe seleccionar en la lista y, el sistema le
+                    permitirá realizar los cambios necesarios.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/niveles_herramientas.jpg" class="thumbnail" data-lightbox="Niveles" data-title="Menú niveles">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/niveles_herramientas.jpg" alt="Menú niveles" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures//niveles_herramientas_1.jpg" data-lightbox="Niveles" data-title="Ventana de niveles"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p>
+            Para eliminar un registro, selecciónelo y haga clic en el botón de Eliminar
+            ubicado en la barra de botones, luego aparecerá una ventana de confirmación en la que deberá indicar si está seguro de eliminar el nivel seleccionado.
+        </p>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: El usuario inicial que trae el sistema GanSoft por defecto (ADMIN), tiene como nivel de acceso administrador, es decir, tiene todas las opciones autorizadas.
+            </div>
+        </div>
+    </div>
+</article>

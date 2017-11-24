@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Lactancias inducidas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Este evento se incorporó para aquellos casos en los cuales se suministran hormonas al vientre para provocar la lactancia.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Lactanciasinducidas">Lactancias inducidas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Lactanciasinducidas">Lactancias inducidas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El usuario deberá indicar los siguientes datos para proceder a registrar el evento:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/lactancias_inducidas.jpg" class="thumbnail" data-lightbox="Lactanciasinducidas" data-title="Menú de lactancias inducidas">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/lactancias_inducidas.jpg" alt="Menú hierros y señales" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/lactancias_inducidas_1.jpg" data-lightbox="Lactanciasinducidas" data-title="Ventana de lactancias inducidas"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    deberá especificar el día, mes y año en que inicia la lactancia inducida.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Tratamiento</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    detalle de la hormona suministrada para provocar la lactancia.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Fecha tratamiento</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    deberá especificar el día, mes y año de la aplicación del tratamiento para la lactancia inducida.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Técnico</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    especifique el nombre del técnico responsable del evento.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Comentario</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    puede especificar mayores detalles acerca de la aplicación del tratamiento.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Nota: Antes de registrar la lactancia inducida también puede realizar un cambio de vaquera, actualizar el número de pezones, agregar una nueva condición corporal y modificar el servir con. Para esto sólo debe posicionarse en los cuadros de texto de la parte inferior de la ventana y luego notificar el servicio.
+            </div>
+        </div>
+    </div>
+</article>

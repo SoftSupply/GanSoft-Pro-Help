@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Inventario";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Permite consultar la cantidad de animales que se encuentran en la hacienda activa.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Inventario">Inventario</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Inventario">Inventario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Por defecto se muestran todas las vaqueras, si lo desea puede especificar solo alguna(s) de ellas para visualizar el detalle en forma gráfica y totales de animales.
+                    Además, es posible generar un reporte detallado del inventario, en el cual se presenta tanto el total de animales por categoría como el total por vaquera. Para ello, debe hacer clic en el botón Imprimir
+                    situado en la barra de menú y se desplegará una nueva ventana con el gráfico y los totales existentes en la hacienda, la cual podrá imprimir o exportar hacia otras aplicaciones haciendo uso de los botones ubicados en la parte superior de la misma.
+                </p>
+                <p>
+
+                    El inventario no puede ser modificado, ya que el sistema se encarga de su actualización automática a medida que se agregan y eliminan animales, así como también al informar eventos de partos, destetes, entre otros.
+                    Si el usuario selecciona alguna vaquera en particular, al presionar el botón Imprimir visualizará un listado con los datos básicos de los animales que se encuentran en la vaquera o corral seleccionado. Estos datos son: Código Práctico, Código Único, Estado, Fecha de Nacimiento, Padre, Madre, Color y composición Racial.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/inventario_1.jpg" class="thumbnail" data-lightbox="Inventario" data-title="Inventario">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/inventario_1.jpg" alt="Inventario" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/inventario_2.jpg" data-lightbox="Inventario" data-title="Vista del inventario"></a>
+            </div>
+        </div>
+    </div>
+</article>

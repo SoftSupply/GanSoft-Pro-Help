@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Código";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana permite al Usuario Agregar, Modificar y Eliminar los códigos que utilizará en el sistema para identificar cada descripción
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Codigo">Código</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Codigo">Código</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>Generales</li>
+                    <li>Vaqueras </li>
+                    <li>Razas </li>
+                    <li>Clasificaciones </li>
+                    <li>Condiciones corporales </li>
+                    <li>Colores </li>
+                    <li>Etiquetas </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Propietarios </li>
+                    <li>Diagnósticos</li>
+                    <li>Clínicos </li>
+                    <li>Reproductivos </li>
+                    <li>Tratamientos</li>
+                    <li>Clínicos </li>
+                    <li>Reproductivos </li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/hacienda_codigos_1.jpg" class="thumbnail" data-lightbox="Codigos" data-title="Menú códigos">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/hacienda_codigos_1.jpg" alt="Menú códigos" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/hacienda_codigos_2.jpg" data-lightbox="Codigos" data-title="Vista de la sección de códigos"></a>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    Para Agregar un código vario debe primero seleccionar de la lista que aparece del lado izquierdo de la ventana, qué tipo de código procede a agregar. En la barra de botones se activan todas las opciones disponibles.
+                </p>
+                <p>
+                    escriba un código que identifique al registro que dese hacer (puede ser alfanumérico). Por medio de este código podrá hacer referencia a esta opción mientras trabaje con el sistema.
+                    Descripción, indique el significado del código que está registrando en el programa. Luego haga clic en el botón de Guardar, el sistema efectuará los cambios y la ventana se cerrará automáticamente.
+                </p>
+                <div class="alert alert-info row" role="alert">
+                    <div class="col-md-1">
+                        <i class="fa fa-5x fa-info"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <strong>Importante!</strong><br />
+                        Nota: A partir de la versión 7.0 de GanSoft se incorporan los códigos varios para propietarios donde puede registrar los familiares que comparten licencia y etiquetas que es una bandera de identificación de color que se presenta en la ficha del animal a través dl cual podrá incluir al animal en una categoría especial, por ejemplo: en venta, no eliminar.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

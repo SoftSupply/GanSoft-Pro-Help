@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Cambios de estado";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción le permitirá registrar un cambio de estado del animal o sexo del mismo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Cambiosdeestadoysexo">Cambios de estado y sexo</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Cambiosdeestadoysexo">Cambios de estado y sexo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta opción será utilizada para aquellos casos en que se requiera generar el registro manualmente ya que debe tomar en cuenta que el sistema se encargará de realizar el cambio de estado automático de un animal (becerro o becerra) al notificar el destete. Para ello, se tomará como base los parámetros previamente establecidos en la configuración.
+                    Para hacer uso de esta opción, debe seleccionar la opción por animal o por grupo, realizar el filtrado de los animales correspondientes, especificar los datos del evento como fecha, nuevo estado, técnico responsable y comentario. En la parte inferior de la ventana se mostrará un resumen de los eventos procesados.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/cambios_de_estado_y_sexo.jpg" class="thumbnail" data-lightbox="Cambiosdeestado" data-title="Cambios de estado y sexo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/cambios_de_estado_y_sexo.jpg" alt="Menú de cambios de estado y sexo" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/cambios_de_estado_y_sexo_1.jpg" data-lightbox="Cambiosdeestado" data-title="Ventana para cambio de estado y sexo"></a>
+            </div>
+        </div>
+    </div>
+</article>

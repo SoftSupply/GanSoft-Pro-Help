@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Configuración";
+    Page.SubTitle = "";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Una vez instalado GanSoft, iniciamos el sistema a través del acceso directo inicial y comenzará la configuración de la instalación.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Servidor">Servidor</a>
+            </li>
+            <li>
+                <a href="#Personalizacion">Personalización</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Servidor">Servidor</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Automáticamente el asistente para la configuración de la instalación de GanSoft,
+                    seleccionara la instancia de datos local predeterminada <code>(localdb)\GanSoft</code>.
+                    Si éste detecta que en su equipo e inclusive en su red, hay más de una instancia de Microsoft SQL Server
+                     instalada, deberá confirmar y conectarse con la instancia deseada.
+                </p>
+                <p>
+                    Si la conexión con la instancia/servidor es correcta el asistente le mostrará el siguiente
+                    mensaje:
+                </p>
+                <p>Una vez confirmado presione Siguiente para continuar.</p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/GanSoft Pro_8.jpg" class="thumbnail" data-lightbox="configuracion" data-title="Selección del servidor">
+                    <img class="img-responsive" src="~/images/captures/GanSoft Pro_8.jpg" alt="Configuración" />
+                </a>
+            </div>
+        </div>
+        <h3 id="Personalizacion">Personalización</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El asistente le mostrará las principales opciones disponibles para comenzar a utilizar
+                    GanSoft.
+                </p>
+                <p>
+                    Si adquirió recientemente una licencia de GanSoft puede utilizar la opción: Personalizar
+                    el sistema con una nueva licencia.
+                    Si desea evaluar las funciones y características de GanSoft puede utilizar la opción: Iniciar
+                    utilizando datos demostrativos, donde podrá generar una licencia con datos de
+                    ejemplos y otra sin datos limitada a 20 animales.
+                    Si está instalando GanSoft en estaciones de trabajo puede utilizar la opción Conectarse a
+                    una base de datos existente para trabajar con bases de datos remotas o con otras
+                    licencias locales.
+                </p>
+                <p>Una vez finalizado contará con un acceso directo a sus rebaños en su escritorio.</p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/images/captures/GanSoft Pro_9.jpg" class="thumbnail" data-lightbox="personalizacion" data-title="Personalización del sistema">
+                    <img class="img-responsive" src="~/images/captures/GanSoft Pro_9.jpg" alt="Personalización" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

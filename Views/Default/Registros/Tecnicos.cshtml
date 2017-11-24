@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Técnicos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta sección podrá encontrar toda la información relacionada con sus técnicos tanto por nombre como por código y evaluación de su eficiencia
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Tecnicos">Técnicos</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Tecnicos">Técnicos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta ventana es la ficha de información del técnico seleccionado y se muestra, código, nombre del técnico, información sobre la cantidad de inseminaciones que esta persona ha realizado y una evaluación sobre su eficiencia.
+                </p>
+                <p>
+                    La cantidad de inseminaciones o servicios aparece discriminada de acuerdo al diagnóstico general; aquellos que tienen diagnóstico de preñez son positivos, los de resultado vacía son negativos y aquellos que están en condición de espera se muestran de esa forma.
+                </p>
+                <p>
+                    También se pueden realizar algunas evaluaciones sobre la persona seleccionada, para ello, consulte el histórico de servicios donde se presenta el detalle de los servicios aplicados por el técnico en el periodo seleccionado.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/tecnicos.jpg" class="thumbnail" data-lightbox="Tecnicos" data-title="Menú técnicos">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/tecnicos.jpg" alt="Menú tecnicos" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/tecnicos_1.jpg" data-lightbox="Tecnicos" data-title="Ventana técnicos"></a>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    En esta ventana usted puede Agregar un nuevo técnico. Haga clic en el botón agregar, escriba el código, pulse la tecla enter, escriba el nombre de la persona, vuelva a presionar enter y luego con el ratón pulse el botón guardar ubicado en la barra de botones. También en esta ventana puede modificar los datos de algún técnico, además puede utilizar la opción para desactivar/activar un técnico y realizar alguna evaluación.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

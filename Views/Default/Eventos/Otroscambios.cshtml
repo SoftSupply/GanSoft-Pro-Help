@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Otros cambios";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta opción el usuario puede cambiar los siguientes datos generales de los animales que seleccione: Raza, Color, Clasificación, Cruzar con.., Nombre, Procedencia, Nº de registro, Fecha de registro, Asociación, Código único del padre, Código único de la madre, Número de tetas, Origen de nacimiento, Portadora, Número del parto de la madre, Tipo de explotación, Descartado, Fecha de nacimiento y Composición Racial del animal.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Otroscambios">Otros cambios</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Otroscambios">Otros cambios</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los cambios pueden ser realizados por animal o por grupo:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_cambios_eventos.jpg" class="thumbnail" data-lightbox="Otroscambios" data-title="Menú otros cambios">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/images/captures/otros_cambios_eventos.jpg" alt="Menú otros cambios" />
+                </a>
+                <a href="~/Areas/GanSoftPro/Content/images/captures/otros_cambios_eventos_1.jpg" data-lightbox="Otroscambios" data-title="Ventana de otros cambios"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p>
+            Por animal, Indique el tipo de animal, el código práctico o el código único y presione la tecla enter
+            También puede seleccionar al animal por medio del listado que se despliega situándose en el cuadro de texto del código o haciendo doble clic en el mismo, en éste podrá seleccionar el animal requerido con doble clic o con un clic y presionando la tecla enter
+        </p>
+        <p>
+            Por Grupo, Por medio de esta opción puede reportar un mismo evento a un grupo de animales. Para ello, debe seguir el procedimiento descrito a continuación:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h4>Genere una lista de animales</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    para ello seleccione el o los tipos de animales que desea ver en el listado, luego haga clic en el botón de Agregar
+                    Si todos los tipos de animales permanecen activados y no fue indicada ninguna vaquera, el sistema toma por defecto el total de animales que se encuentren en la hacienda.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Seleccione los animales</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    de la lista que se muestra deberá indicar los animales a los cuales se les reportará el evento, para ello deberá hacer clic en la casilla de verificación de cada animal. También puede utilizar los iconos Marcar todos, Desmarcar todos e Invertir marcas y así agilizar el proceso de selección.
+                    Independientemente de la opción que seleccionó para reportar el evento, el sistema pedirá que suministre los siguientes datos:
+                </p>
+                <p>
+                    Cambiar, seleccione el tipo de cambio a realizar. Haga clic sobre el cuadro de texto o en la flecha hacia abajo y de la lista que se despliega seleccione el cambio necesario.
+                </p>
+                <p>
+                    Indique el Nuevo Valor, dependiendo del tipo de cambio que seleccionó, este cuadro de texto cambiará para adaptarse. Por ejemplo, si desea cambiar la Fecha de nacimiento de un animal, el nuevo valor muestra un estilo para fecha, pero si va a cambiar la Composición Racial de algún animal, entonces el nuevo valor se presenta como un cuadro de texto en blanco para que escriba la composición resumida. Luego, presione la tecla Enter
+                </p>
+                <p>
+                    Establezca la fecha en la que se realizó el evento a los animales seleccionados.
+                    Una vez suministrados los datos necesarios, haga clic en el botón guardar
+                    ubicado en la barra de botones.
+                </p>
+                <div class="alert alert-info row" role="alert">
+                    <div class="col-md-1">
+                        <i class="fa fa-5x fa-info"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <strong>Importante!</strong><br />
+                        Nota: al momento de realizar los cambios, debe tener presente que, si ya existen datos registrados, el sistema borrará la información y la actualizará con los datos nuevos, es decir, reemplazará el registro anterior. Si ingresa un cambio en la composición racial del animal, el sistema por defecto, calculará la composición racial de sus descendientes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
