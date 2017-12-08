@@ -1,10 +1,19 @@
 ﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Pesajes de leche";
-    Page.SubTitle = "";
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Pesajes de leche";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
-
 <article class="row">
+    <div class="page-header">
+        <h1>
+            @ViewBag.Title
+            @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+            {
+                <br /><small>@ViewBag.SubTitle</small>
+            }
+        </h1>
+    </div>
     <div class="col-md-12">
         <p class="lead">
             Esta ventana permite incorporar el pesaje de leche de cada una de los vientres registrados.
@@ -31,10 +40,10 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <a href="~/images/captures/pesajes_de_leche_estadisticas.jpg" class="thumbnail" data-lightbox="Pesajesdeleche" data-title="Menú pesajes de leche">
-                    <img class="img-responsive" src="~/images/captures/pesajes_de_leche_estadisticas.jpg" alt="Menú pesajes de leche" />
+                <a href="~/Areas/GanSoftPro/Content/img/captures/pesajes_de_leche_estadisticas.jpg" class="thumbnail" data-lightbox="Pesajesdeleche" data-title="Menú pesajes de leche">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/pesajes_de_leche_estadisticas.jpg" alt="Menú pesajes de leche" />
                 </a>
-                <a href="~/images/captures/pesajes_de_leche_estadisticas_1.jpg" data-lightbox="Pesajesdeleche" data-title="Ventana de pesajes de leche"></a>
+                <a href="~/Areas/GanSoftPro/Content/img/captures/pesajes_de_leche_estadisticas_1.jpg" data-lightbox="Pesajesdeleche" data-title="Ventana de pesajes de leche"></a>
             </div>
         </div>
         <p>

@@ -16,6 +16,5 @@ namespace SoftSupply.Help.Areas.GanSoftPro.Content
             else
                 return View($"{id}/{key}");
         }
-
     }
 }
