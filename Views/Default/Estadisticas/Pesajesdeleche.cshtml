@@ -5,14 +5,8 @@
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 <article class="row">
-    <div class="page-header">
-        <h1>
-            @ViewBag.Title
-            @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
-            {
-                <br /><small>@ViewBag.SubTitle</small>
-            }
-        </h1>
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
     </div>
     <div class="col-md-12">
         <p class="lead">
