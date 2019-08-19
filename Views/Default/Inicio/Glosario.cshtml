@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Glosario de términos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Al ingresar al sistema pueden visualizarse diferentes barras y menús que nos permiten interactuar con el sistema, personalizarlo y realizar todas las operaciones deseadas. Cada uno de los elementos que forman parte de la ventana principal del programa.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Interfaz">Interfaz</a>
+            </li>
+                   </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Interfaz">Interfaz</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <ul>
+                    <li>Barra de Título: Presenta el nombre de la aplicación o ventana activa. </li>
+                    <li>Barra de Menú: Presenta de manera agrupada cada uno de los módulos del sistema y a través de la cual podemos desplazarnos para ingresar a las opciones y operaciones del sistema.</li>
+                    <li>Barra de Botones: Muestra de forma gráfica los botones que nos permiten tener acceso rápido a las opciones utilizadas con mayor frecuencia como imprimir, desplazarnos entre los registros, organizar la ventana de navegación, entre otros.</li>
+                    <li>Barra de Navegación: Presenta un cuadro de búsqueda a través del cual es posible filtrar la información contenida en la ventana activa. Esto nos facilita la búsqueda de registros específicos.</li>
+                    <li>Barra de Estado: Muestra detalles de la sesión activa como el usuario, haciendo y avisos activos.</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Pantalla principal">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" alt="Principal" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

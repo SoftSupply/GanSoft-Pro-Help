@@ -21,6 +21,18 @@
         {
           "Title": "Navegación",
           "Link": "GanSoftPro?id=Inicio&key=Navegacion"
+        },
+        {
+          "Title": "Conceptos básicos",
+          "Link": "GanSoftPro?id=Inicio&key=ConceptosBasicos"
+        },
+        {
+          "Title": "Primera vez",
+          "Link": "GanSoftPro?id=Inicio&key=PrimeraVez"
+        },
+        {
+          "Title": "Glosario de términos",
+          "Link": "GanSoftPro?id=Inicio&key=Navegacion"
         }
       ]
     },
