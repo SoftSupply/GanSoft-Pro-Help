@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    El Estado del animal se refiere a la categoría o grupo etario, El sistema maneja 10 estados:
+                    El Estado del animal se refiere a la categoría o grupo etario, El sistema maneja 10 estados:<br>
                     <b>Hembras:</b>
                     <ul>
                         <li>Cría lactante</li>
@@ -108,13 +108,13 @@
                     El sistema maneja 3 estatus:
                     <ul>
                         <li>
-                            Activo: es el animal que existe en la finca o hacienda. El semen y embriones deben registrarse siempre como activos pero no afectan el inventario de animales.
+                            <b>Activo:</b> es el animal que existe en la finca o hacienda. El semen y embriones deben registrarse siempre como activos pero no afectan el inventario de animales.
                         </li>
                         <li>
-                            Inactivo: animales que existieron físicamente en la finca pero fueron eliminados por muerte, venta u otra causa.
+                            <b>Inactivo:</b> animales que existieron físicamente en la finca pero fueron eliminados por muerte, venta u otra causa.
                         </li>
                         <li>
-                            Referencia: son animales que nunca existieron en la finca pero se desean registrar porque son padres o madres, abuelos o bisabuelos de algún otro animal.
+                            <b>Referencia:</b> son animales que nunca existieron en la finca pero se desean registrar porque son padres o madres, abuelos o bisabuelos de algún otro animal.
                         </li>
                     </ul>
 
@@ -131,9 +131,17 @@
             <div class="col-md-8">
                 <p>
                     El sistema maneja 3 estatus reproductivos:
-                    1.- Preñada: GanSoft reconoce un vientre preñado sólo si tiene reportada o estimada la monta, inseminación o transferencia, adicionalmente debe tener la fecha de revisión con diagnóstico “P”.
-                    2.- Espera: Una vez reportada o estimada una fecha de servicio el sistema coloca el animal en estatus reproductivo “E”.
-                    3.- Vacía: GanSoft reconoce el diagnóstico “P” como “Preñada”, el diagnóstico “E” como “En espera” y cualquier otro diagnóstico será considerado como Vacía. También se asume “Vacía” a una “Hembra adulta sin servicios”.
+                    <ol>
+                        <li>
+                            <b>Preñada:</b> GanSoft reconoce un vientre preñado sólo si tiene reportada o estimada la monta, inseminación o transferencia, adicionalmente debe tener la fecha de revisión con diagnóstico “P”.
+                        </li>
+                        <li>
+                            <b>Espera:</b> Una vez reportada o estimada una fecha de servicio el sistema coloca el animal en estatus reproductivo “E”.
+                        </li>
+                        <li>
+                            <b>Vacía:</b> GanSoft reconoce el diagnóstico “P” como “Preñada”, el diagnóstico “E” como “En espera” y cualquier otro diagnóstico será considerado como Vacía. También se asume “Vacía” a una “Hembra adulta sin servicios”.
+                        </li>
+                    </ol>
                 </p>
             </div>
             <div class="col-md-4">
@@ -147,11 +155,18 @@
             <div class="col-md-8">
                 <p>
                     El sistema maneja 3 estatus productivos:
-                    1.- Criando: GanSoft reconoce una “Hembra adulta con parto” en este estatus productivo cuando está recién parida y/o no se le ha reportado ningún pesaje de leche.
-                    2.- Ordeño: Se considera que una “Hembra adulta con parto” se encuentra en este estatus productivo si al menos se le ha notificado 1 pesaje de leche y no ha sido notificado el “Secado”.
-                    3.- Seca: Una “Hembra adulta con parto” que se le haya notificado el “Secado”, pasa automáticamente a estatus productivo “Seca”, haya tenido o no pesajes de leche.
+                    <ol>
+                        <li>
+                            <b>Criando:</b> GanSoft reconoce una “Hembra adulta con parto” en este estatus productivo cuando está recién parida y/o no se le ha reportado ningún pesaje de leche.
+                        </li>
+                        <li>
+                            <b>Ordeño:</b> Se considera que una “Hembra adulta con parto” se encuentra en este estatus productivo si al menos se le ha notificado 1 pesaje de leche y no ha sido notificado el “Secado”.
+                        </li>
+                        <li>
+                            <b>Seca:</b> Una “Hembra adulta con parto” que se le haya notificado el “Secado”, pasa automáticamente a estatus productivo “Seca”, haya tenido o no pesajes de leche.
+                        </li>
+                    </ol>
                 </p>
-            </div>
             </div>
             <div class="col-md-4">
                 <a href="~/Areas/GanSoftPro/Content/img/captures/EstatusProductivo.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus productivo">
@@ -163,21 +178,22 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    La composición racial permite establecer el porcentaje de cada raza dentro del mestizaje del animal, posteriormente, todos sus descendientes heredan esta información automáticamente 
+                    La composición racial permite establecer el porcentaje de cada raza dentro del mestizaje del animal, posteriormente, todos sus descendientes heredan esta información automáticamente
                     calculada de la composición racial de sus padres.
                 </p>
             </div>
-            @*<div class="col-md-4">
-                <a href="~/Areas/GanSoftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Pantalla principal">
-                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" alt="Principal" />
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/ComposicionRacial.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Composición racial">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/ComposicionRacial.jpg" alt="Composición racial" />
                 </a>
-            </div>*@
+            </div>
         </div>
         <h3 id="Codigos">Códigos y tipos de códigos</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
                     Los códigos son variables creadas por el Usuario para identificar los diferentes tipos de Lotes, Raza, Color, Clasificación y Propietario entre otros.
+                    <br>
                     Tipos de códigos
                     <ul>
                         <li>
@@ -192,12 +208,12 @@
                     </ul>
                 </p>
             </div>
-            @*<div class="col-md-4">
+            <div class="col-md-4">
                 <a href="~/Areas/GanS
-            oftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Pantalla principal">
-                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Demostrativa_con_datos_2.jpg" alt="Principal" />
+            oftPro/Content/img/captures/Codigos.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Códigos">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Codigos.jpg" alt="Códigos" />
                 </a>
-            </div>*@
+            </div>
         </div>
     </div>
 </article>
