@@ -1,5 +1,12 @@
 ﻿Todos los cambios recientes son reflejados en este documento
 
+## [1.0.4]
+### Correciones
+**Nuevo
+  - Glosario de términos
+  - Conceptos básicos
+  - Primera vez
+
 ## [1.0.3]
 ### Correciones
 - Ajuste de imágenes
