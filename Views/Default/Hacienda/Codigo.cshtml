@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Código";
+    ViewBag.Title = "Códigos varios";
     ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
@@ -11,42 +11,68 @@
     </div>
     <div class="col-md-12">
         <p class="lead">
-            Esta ventana permite al Usuario Agregar, Modificar y Eliminar los códigos que utilizará en el sistema para identificar cada descripción
+            Los códigos varios son definiciones de ciertas características que el usuario puede codificar para manipular información como locaciones, colores, etc..<br>
+            Ésta opción permite al usuario Agregar, Modificar y Eliminar los códigos que se utilizarán en el sistema para identificar cada característica.
         </p>
     </div>
     <div class="col-md-12">
         <ul class="index">
             <li>
-                <a href="#Codigo">Código</a>
+                <a href="#Codigo">Códigos</a>
             </li>
         </ul>
     </div>
     <div class="col-md-12">
-        <h3 id="Codigo">Código</h3>
+        <h3 id="Codigo">Códigos</h3>
         <div class="row">
-            <div class="col-md-4">
-                <ul>
-                    <li>Generales</li>
-                    <li>Vaqueras </li>
-                    <li>Razas </li>
-                    <li>Clasificaciones </li>
-                    <li>Condiciones corporales </li>
-                    <li>Colores </li>
-                    <li>Etiquetas </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul>
-                    <li>Propietarios </li>
-                    <li>Diagnósticos</li>
-                    <li>Clínicos </li>
-                    <li>Reproductivos </li>
-                    <li>Tratamientos</li>
-                    <li>Clínicos </li>
-                    <li>Reproductivos </li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-8">
+                <p>
+                    En la constitución de los códigos varios se maneja un código y una descripción, y se recomienda que el código utilizado correspondan a las 4 primeras letras de la palabra, por ejemplo, 
+                    si desea registrar el color blanco el código seria BLAN y la descripción color blanco.
+                    Existen varios tipos de códigos:
+                    <ul>
+                        <li>
+                            <b>Vaqueras / Lote / Locación: </b>Término utilizado para identificar la locación de un animal dentro de un grupo o lote. Puede hacer
+                            referencia a una estructura física (vaquera, matera, corral) o a una serie de grupos (o lotes) de animales, en los cuales se necesite
+                            organizar los animales para tener un mejor control y manejo. El sistema posee un código reservado "PRED" que no puede ser alterado que 
+                            se interpreta como la locación predeterminada.
+                        </li>
+                        <li>
+                            <b>Razas: </b>Código dentro del archivo de Códigos Varios, que el usuario crea (si lo desea) para calificar a un animal de acuerdo a la predominancia racial.
+                        </li>
+                        <li>
+                            <b>Clasificaciones: </b>Categoría en la que una Asociación Ganadera ubica a un animal.
+                        </li>
+                        <li>
+                            <b>Condiciones corporales: </b>Es un método subjetivo para determinar la cantidad de grasa que tiene un animal, puede ser muy sencilla, como: flaca, regular y buena; o puede ser en base a una escala numérica.
+                        </li>
+                        <li>
+                            <b>Colores: </b>Permite identificar y codificar los colores de los animales.
+                        </li>
+                        <li>
+                            <b>Etiquetas: </b>Es una bandera de identificación de colores que se presenta en la ficha del animal a través del cual podrá incluir caracteristicas o especficiaciones a un animal, por ejemplo: en venta, no inseminar, no eliminar, entre otros.
+                        </li>
+                        <li>
+                            <b>Propietarios: </b>Opción para identificar animales de otros propietarios dentro del rebaño.
+                        </li>
+                        <li>
+                            <b>Diagnósticos clínicos: </b>Permite establecer los códigos de diagnósticos clínicos (no reproductivos)
+                        </li>
+                        <li>
+                            <b>Diagnósticos reproductivos: </b>Permite establecer los códigos de diagnósticos reproductivos, el sistema posee 2 códigos reservados que no pueden ser alterados,
+                            el código "   P" que se interpreta como preñada, el código "   E" que se interpreta como en espera (servida sin revisión) y cualquier código que agregue el usuario se interpretará como vacía.
+                            Los códigos generados en este procedimiento pueden ser códgos principales o sub-diagnósticos de acuerdo a la conveniencia del usuario.
+                        </li>
+                        <li>
+                            <b>Tratamientos clínicos: </b>Permite establecer los códigos de tratamientos clínicos aplicados a los animales.
+                        </li>
+                        <li>
+                            <b>Tratamientos reproductivos: </b>Permite establecer los códigos de tratamientos reproductivos aplicados a los animales.
+                        </li>
+                    </ul>
+                </p>
+</div>
+              <div class="col-md-4 text-center">
                 <a href="~/Areas/GanSoftPro/Content/img/captures/hacienda_codigos_1.jpg" class="thumbnail" data-lightbox="Codigos" data-title="Menú códigos">
                     <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/hacienda_codigos_1.jpg" alt="Menú códigos" />
                 </a>
@@ -54,21 +80,24 @@
             </div>
             <div class="col-md-12">
                 <p>
-                    Para Agregar un código vario debe primero seleccionar de la lista que aparece del lado izquierdo de la ventana, qué tipo de código procede a agregar. En la barra de botones se activan todas las opciones disponibles.
+                    Para agregar un código debe seleccionar de la lista que aparece del lado izquierdo de la ventana, qué tipo de código procede a agregar. 
+                    En la barra de botones se activan todas las opciones disponibles.
                 </p>
                 <p>
-                    escriba un código que identifique al registro que dese hacer (puede ser alfanumérico). Por medio de este código podrá hacer referencia a esta opción mientras trabaje con el sistema.
-                    Descripción, indique el significado del código que está registrando en el programa. Luego haga clic en el botón de Guardar, el sistema efectuará los cambios y la ventana se cerrará automáticamente.
+                    Escriba un código que identifique al registro que desea hacer (puede ser alfanumérico). Por medio de éste código podrá hacer referencia a esta característica
+                    mientras trabaje con el sistema.
+                    Indique la Descripción, que sería el significado del código que está registrando. Al seleccionar la opción Guardar, el sistema efectuará los cambios y la ventana se cerrará automáticamente.
                 </p>
-                <div class="alert alert-info row" role="alert">
+                @*<div class="alert alert-info row" role="alert">
                     <div class="col-md-1">
                         <i class="fa fa-5x fa-info"></i>
                     </div>
                     <div class="col-md-10">
                         <strong>Importante!</strong><br />
-                        Nota: A partir de la versión 7.0 de GanSoft se incorporan los códigos varios para propietarios donde puede registrar los familiares que comparten licencia y etiquetas que es una bandera de identificación de color que se presenta en la ficha del animal a través dl cual podrá incluir al animal en una categoría especial, por ejemplo: en venta, no eliminar.
+                        <b>Nota:</b> A partir de la versión 7.0 de GanSoft Pro, se incorporan los códigos varios para propietarios donde puede registrar los familiares que comparten licencia y etiquetas, que es una bandera 
+                        de identificación de color que se presenta en la ficha del animal a través del cual podrá incluir al animal en una categoría especial, por ejemplo: en venta, no eliminar.
                     </div>
-                </div>
+                </div>*@
             </div>
         </div>
     </div>

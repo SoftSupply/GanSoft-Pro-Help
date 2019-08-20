@@ -1,0 +1,633 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Glosario de términos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En ésta sección se explican detalladamente los conceptos y significados de cada uno de los términos resaltantes en el manejo del sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#AbortoA">Aborto tipo A</a>
+            </li>
+            <li>
+                <a href="#AbortoB">Aborto tipo B</a>
+            </li>
+            <li>
+                <a href="#Avio">Avío</a>
+            </li>
+            <li>
+                <a href="#Becerra">Becerra</a>
+            </li>
+            <li>
+                <a href="#Becerro">Becerro</a>
+            </li>
+            <li>
+                <a href="#Clasificacion">Clasificación</a>
+            </li>
+            <li>
+                <a href="#CodigoPractico">Código práctico</a>
+            </li>
+            <li>
+                <a href="#CodigoUnico">Código único</a>
+            </li>
+            <li>
+                <a href="#ComposicionRacial">Composición racial</a>
+            </li>
+            <li>
+                <a href="#CondicionCorporal">Condición corporal</a>
+            </li>
+            <li>
+                <a href="#Desconocido">Desconocido</a>
+            </li>
+            <li>
+                <a href="#Destete">Destete</a>
+            </li>
+            <li>
+                <a href="#DesviacionEstandar">Desviación estándar</a>
+            </li>
+            <li>
+                <a href="#DiasProduccion">Días en producción</a>
+            </li>
+            <li>
+                <a href="#DiasSeca">Días seca</a>
+            </li>
+            <li>
+                <a href="#Embrion">Embrión</a>
+            </li>
+            <li>
+                <a href="#Estado">Estado o grupo etario</a>
+            </li>
+            <li>
+                <a href="#Estatus">Estatus</a>
+            </li>
+            <li>
+                <a href="#EstatusReproductivo">Estatus reproductivo</a>
+            </li>
+            <li>
+                <a href="#EstatusProductivo">Estatus productivo</a>
+            </li>
+            <li>
+                <a href="#Eventos">Eventos</a>
+            </li>
+            <li>
+                <a href="#GananciaServicio">Ganancia entrada al servicio</a>
+            </li>
+            <li>
+                <a href="#GananciaPartos">Ganancia entre parto</a>
+            </li>
+            <li>
+                <a href="#Hierro">Hierro</a>
+            </li>
+            <li>
+                <a href="#Historicos">Históricos</a>
+            </li>
+            <li>
+                <a href="#Indefinido">Indefinido</a>
+            </li>
+            <li>
+                <a href="#IntervaloPartos">Intervalo entre parto</a>
+            </li>
+            <li>
+                <a href="#Lactancia">Lactancia</a>
+            </li>
+            <li>
+                <a href="#MacroReproductivo">Macroíndice reproductivo</a>
+            </li>
+            <li>
+                <a href="#Mauta">Mauta</a>
+            </li>
+            <li>
+                <a href="#Maute">Maute</a>
+            </li>
+            <li>
+                <a href="#NoVientres">No Vientres</a>
+            </li>
+            <li>
+                <a href="#Novilla">Novilla</a>
+            </li>
+            <li>
+                <a href="#Novillo">Novillo</a>
+            </li>
+            <li>
+                <a href="#Ordeño">Ordeño</a>
+            </li>
+            <li>
+                <a href="#ProduccionParto">Producción entre parto</a>
+            </li>
+            <li>
+                <a href="#Raza">Raza</a>
+            </li>
+            <li>
+                <a href="#Reporte">Reporte</a>
+            </li>
+            <li>
+                <a href="#Secado">Secado</a>
+            </li>
+            <li>
+                <a href="#Semen">Semen</a>
+            </li>
+            <li>
+                <a href="#Tecnico">Técnico responsable</a>
+            </li>
+            <li>
+                <a href="#Toro">Toro</a>
+            </li>
+            <li>
+                <a href="#Usuario">Usuario</a>
+            </li>
+            <li>
+                <a href="#Vaca">Vaca</a>
+            </li>
+            <li>
+                <a href="#VaqueraLote">Vaquera / Lote</a>
+            </li>
+            <li>
+                <a href="#Vientre">Vientre</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="AbortoA">Aborto tipo A</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Aborto que ocurre cuando el animal tiene hasta 152 días (5 meses) de gestación.
+                    Se considera que el animal no genera lactancia en este caso, así que el número de lactancias no
+                    cambia y si el animal es una vaca, la fecha de comienzo de la lactancia continúa siendo la fecha del último parto.
+                </p>
+            </div>
+        </div>
+        <h3 id="AbortoB">Aborto tipo B</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Aborto que ocurre cuando el animal tiene más de 152 días (5 meses) de gestación. Se considera que el animal genera
+                    una nueva lactancia en este caso. Y si el animal estaba en producción, automáticamente su fecha de secado corresponde
+                    al día anterior del aborto.
+                </p>
+            </div>
+        </div>
+        <h3 id="Avio">Avío</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Sinónimo de ordeño.
+                </p>
+            </div>
+        </div>
+        <h3 id="Becerra">Becerra (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a una hembra que no ha sido destetada.
+                </p>
+            </div>
+        </div>
+        <h3 id="Becerro">Becerro (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a un macho que no ha sido destetado.
+                </p>
+            </div>
+        </div>
+        <h3 id="Clasificacion">Clasificación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Categoría en la que una Asociación Ganadera ubica a un animal.
+                </p>
+            </div>
+        </div>
+        <h3 id="CodigoPractico">Código práctico</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    También es llamado número de campo, es una identificación sencilla para el manejo de los animales a nivel de campo, éste código o número puede ser repetido en la finca, pero no dentro de un mismo archivo.
+                </p>
+            </div>
+        </div>
+        <h3 id="CodigoUnico">Código único</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es una identificación más compleja que el código práctico. Se puede decir que es la cédula del animal, ya que nunca puede repetirse en la finca. Esto es lo que da confiabilidad al árbol genealógico.
+                </p>
+            </div>
+        </div>
+        <h3 id="ComposicionRacial">Composición racial</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    La composición racial permite establecer el porcentaje de cada raza dentro del mestizaje del animal, posteriormente, todos sus descendientes heredan esta información automáticamente
+                    calculada de la composición racial de sus padres.
+                </p>
+            </div>
+        </div>
+        <h3 id="CondicionCorporal">Condición corporal</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un método subjetivo para determinar la cantidad de grasa que tiene un animal, puede ser muy sencilla, como: flaca, regular y buena; o puede ser en base a una escala numérica.
+                </p>
+            </div>
+        </div>
+        <h3 id="Desconocido">Desconocido</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un código reservado asignado a un toro que el programa crea en forma automática, para reportar con éste los servicios de Monta Natural desconocida.
+                </p>
+            </div>
+        </div>
+        <h3 id="Destete">Destete</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es el momento en el cual se separa al becerro de su madre.
+                </p>
+            </div>
+        </div>
+        <h3 id="DesviacionEstandar">Desviación estándar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un concepto estadístico, que estima el grado de dispersión de los datos con respecto a un valor promedio.
+                </p>
+            </div>
+        </div>
+        <h3 id="DiasProduccion">Días en producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cantidad de días que una vaca está produciendo leche durante una lactancia determinada. Equivale al tiempo transcurrido desde que el animal pare o tiene un aborto tipo b, hasta que se reporta el secado.
+                </p>
+            </div>
+        </div>
+        <h3 id="DiasSeca">Días seca</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cantidad de días que una vaca permanece sin estar en producción de leche. Corresponde al tiempo desde que se reporta el secado hasta que la vaca empieza de nuevo una lactancia.
+                </p>
+            </div>
+        </div>
+        <h3 id="Embrion">Embrión</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Células embrionarias que se utilizan en la notificación de servicios de transplante.
+                </p>
+            </div>
+        </div>
+        <h3 id="Estado">Estado o grupo etario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Se refiere a la categoría o grupo etario.
+                    El sistema maneja 10 estados:
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Hembras</th>
+                            <th>Ejemplo, vacunos</th>
+                        </tr>
+                        <tr>
+                            <td>Cría lactante</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becerra</td>
+                        </tr>
+                        <tr>
+                            <td>Joven destetada</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mauta</td>
+                        </tr>
+                        <tr>
+                            <td>Adulta sin parto</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novilla</td>
+                        </tr>
+                        <tr>
+                            <td>Adulta con parto o aborto</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vaca</td>
+                        </tr>
+                        <tr>
+                            <th>Machos</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td>Cría lactante</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becerro</td>
+                        </tr>
+                        <tr>
+                            <td>Joven destetado</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maute</td>
+                        </tr>
+                        <tr>
+                            <td>Adulto no reproductor</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novillo</td>
+                        </tr>
+                        <tr>
+                            <td>Adulto reproductor</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toro</td>
+                        </tr>
+                        <tr>
+                            <th>Otros</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td>Semen</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Embrión</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <h3 id="Estatus">Estatus</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El Estatus del animal es un concepto que tiene que ver con la permanencia del mismo en la finca.
+                    El sistema maneja 3 estatus:
+                    <ul>
+                        <li>
+                            <b>Activo:</b> es el animal que existe en la finca o hacienda. El semen y embriones deben registrarse siempre como activos pero no afectan el inventario de animales.
+                        </li>
+                        <li>
+                            <b>Inactivo:</b> animales que existieron físicamente en la finca pero fueron eliminados por muerte, venta u otra causa.
+                        </li>
+                        <li>
+                            <b>Referencia:</b> son animales que nunca existieron en la finca pero se desean registrar porque son padres o madres, abuelos o bisabuelos de algún otro animal.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <h3 id="EstatusReproductivo">Estatus reproductivo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema maneja 3 estatus reproductivos:
+                    <ol>
+                        <li>
+                            <b>Preñada:</b> GanSoft reconoce un vientre preñado sólo si tiene reportada o estimada la monta, inseminación o transferencia, adicionalmente debe tener la fecha de revisión con diagnóstico “P”.
+                        </li>
+                        <li>
+                            <b>Espera:</b> Una vez reportada o estimada una fecha de servicio el sistema coloca el animal en estatus reproductivo “E”.
+                        </li>
+                        <li>
+                            <b>Vacía:</b> GanSoft reconoce el diagnóstico “P” como “Preñada”, el diagnóstico “E” como “En espera” y cualquier otro diagnóstico será considerado como Vacía. También se asume “Vacía” a una “Hembra adulta sin servicios”.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <h3 id="EstatusProductivo">Estatus productivo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema maneja 3 estatus productivos:
+                    <ol>
+                        <li>
+                            <b>Criando:</b> GanSoft reconoce una “Hembra adulta con parto” en este estatus productivo cuando está recién parida y/o no se le ha reportado ningún pesaje de leche.
+                        </li>
+                        <li>
+                            <b>Ordeño:</b> Se considera que una “Hembra adulta con parto” se encuentra en este estatus productivo si al menos se le ha notificado 1 pesaje de leche y no ha sido notificado el “Secado”.
+                        </li>
+                        <li>
+                            <b>Seca:</b> Una “Hembra adulta con parto” que se le haya notificado el “Secado”, pasa automáticamente a estatus productivo “Seca”, haya tenido o no pesajes de leche.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <h3 id="Eventos">Eventos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Menú dentro del sistema en el que se deben notificar el total de actividades (relacionadas con el rebaño) que ocurren en la finca.
+                </p>
+            </div>
+        </div>
+        <h3 id="GananciaServicio">Ganancia entrada al servicio</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Ganancia de peso (en gramos por día) que un vientre registra al momento de reportarse un peso al servicio.
+                </p>
+            </div>
+        </div>
+        <h3 id="GananciaParto">Ganancia entre parto</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Ganancia de peso al momento del destete (en gramos por día), que un vientre registra de sus descendientes, dividida entre el Intervalo Parto-Parto.
+                </p>
+            </div>
+        </div>
+        <h3 id="Hierro">Hierro</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Marca de identificación (dibujo o signo) que se graba en el cuero de los animales para indicar su procedencia o a qué finca pertenece.
+                </p>
+            </div>
+        </div>
+        <h3 id="Historicos">Históricos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son los registros de toda la información (productiva, reproductiva, de crecimiento o cualquier otra) que se ha incluido a un animal dentro del programa.
+                </p>
+            </div>
+        </div>
+        <h3 id="Indefinido">Indefinido</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un código reservado asignado a un toro que el programa crea en forma automática, para reportar con éste los servicios de Monta Natural desconocida.
+                </p>
+            </div>
+        </div>
+        <h3 id="IntervaloParto">Intervalo entre parto</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cantidad de días que transcurren desde un parto a otro.
+                </p>
+            </div>
+        </div>
+        <h3 id="Lactancia">Lactancia</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En sistema de producción, es el tiempo que la vaca produce leche, desde un determinado parto (o aborto tipo b) hasta su fecha de secado.
+                </p>
+            </div>
+        </div>
+        <h3 id="MacroReproductivo">Macroíndice reproductivo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Índice de evaluación que permite medir la situación reproductiva de un rebaño. Este parámetro se calcula como el cociente entre la cantidad de
+                    vacas con más de 150 días vacías entre la cantidad total de vacas vacías del rebaño, el resultado se multiplica por 100 para expresar el valor en porcentaje.
+                </p>
+            </div>
+        </div>
+        <h3 id="Mauta">Mauta (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a una hembra que ha sido destetada o que ya alcanzó un peso o edad determinada.
+                </p>
+            </div>
+        </div>
+        <h3 id="Maute">Maute (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a un macho que ha sido destetado o que ya alcanzó un peso o edad determinada.
+                </p>
+            </div>
+        </div>
+        <h3 id="NoVientres">No vientres</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El término “No Vientres” se utiliza para identificar indistintamente a los becerros(as), mautes(as) y novillos. Las novillas son consideradas Vientres.
+                </p>
+            </div>
+        </div>
+        <h3 id="Novilla">Novilla (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a una hembra que tiene plena capacidad reproductiva y no ha parido/abortado. Conserva este nombre hasta que pare o aborta, luego cambia al estado Vaca.
+                </p>
+            </div>
+        </div>
+        <h3 id="Novillo">Novillo (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado del animal que corresponde a un macho que ya alcanzó un peso determinado (sigue siendo un No Vientre).
+                </p>
+            </div>
+        </div>
+        <h3 id="Ordeño">Ordeño</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Actividad diaria que se realiza para extraer la leche a las vacas.
+                </p>
+            </div>
+        </div>
+        <h3 id="PesajeLeche">Pesaje de leche</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Actividad con una frecuencia semanal, quincenal o mensual, en donde se pesa la cantidad de leche que cada una de las vacas produce en ese día.
+                </p>
+            </div>
+        </div>
+        <h3 id="ProduccionParto">Producción entre parto</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cantidad de leche que una vaca produce entre dos partos sucesivos, dividido entre el Intervalo Parto-Parto.
+                </p>
+            </div>
+        </div>
+        <h3 id="Raza">Raza</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Código dentro del archivo de Códigos Varios, que el usuario crea (si lo desea) para calificar a un animal de acuerdo a la predominancia racial.
+                </p>
+            </div>
+        </div>
+        <h3 id="Reporte">Reporte</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son una serie de informes escritos que el usuario puede imprimir y en algunas secciones también los puede diseñar.
+                </p>
+            </div>
+        </div>
+        <h3 id="Secado">Secado</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un proceso fisiológico natural o provocado por el productor, donde se suspende la producción de leche de la vaca o su equivalente según la especie.
+                </p>
+            </div>
+        </div>
+        <h3 id="Semen">Semen</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Pajuela o pajilla que se utiliza en la notificación de servicios de inseminación.
+                </p>
+            </div>
+        </div>
+        <h3 id="Tecnico">Técnico responsable</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Persona encargada de notificar o realizar los diferentes sucesos o eventos en los rebaños.
+                </p>
+            </div>
+        </div>
+        <h3 id="Toro">Toro (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Macho adulto reproductor que se utiliza para notificar las montas en los vientres.
+                </p>
+            </div>
+        </div>
+        <h3 id="Usuario">Usuario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es la persona que está utilizando el programa en un momento determinado. Se pueden crear tantos usuarios como sean necesarios.
+                </p>
+            </div>
+        </div>
+        <h3 id="Vaca">Vaca (o su equivalente según la especie)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Estado, categoría o grupo etario del animal correspondiente a las hembras adultas que ya tienen reportado un parto o un aborto.
+                </p>
+            </div>
+        </div>
+        <h3 id="Vaquera">Vaquera / Lote / Locación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Término utilizado para identificar la locación de un animal dentro de un grupo o lote. Puede hacer referencia a una estructura física (vaquera, matera, corral) o a una serie de grupos (o lotes) de animales,
+                    en los cuales se necesite organizar los animales para tener un mejor control y manejo.
+                </p>
+            </div>
+        </div>
+        <h3 id="Vientre">Vientre</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El término “Vientres” se utiliza para identificar indistintamente a las vacas y novillas o su equivalente.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

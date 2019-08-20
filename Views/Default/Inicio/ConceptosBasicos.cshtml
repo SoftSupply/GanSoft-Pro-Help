@@ -1,0 +1,222 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Conceptos básicos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Existen conceptos determinantes a la hora de trabajar con GanSoft que son parte esencial para un buen manejo y definición del sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#CodigoPractico">Código práctico</a>
+            </li>
+            <li>
+                <a href="#CodigoUnico">Código único</a>
+            </li>
+            <li>
+                <a href="#Estado">Estado o grupo etario</a>
+            </li>
+            <li>
+                <a href="#Estatus">Estatus</a>
+            </li>
+            <li>
+                <a href="#EstatusReproductivo">Estatus reproductivo</a>
+            </li>
+            <li>
+                <a href="#EstatusProductivo">Estatus productivo</a>
+            </li>
+            <li>
+                <a href="#ComposicionRacial">Composición racial</a>
+            </li>
+            <li>
+                <a href="#Codigos">Códigos</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="CodigoPractico">Código práctico</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es el número que se observa en el animal o número de campo, es el número de la chapeta/arete ó el número con hierro quemado en el cuerpo. GanSoft permite sólo un código práctico activo dentro de cada rebaño.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/CodigoPractico.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Código práctico">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/CodigoPractico.jpg" alt="Codigo práctico" />
+                </a>
+            </div>
+        </div>
+        <h3 id="CodigoUnico">Código único</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un número irrepetible, equivalente al número de cédula del animal, GanSoft sólo permite un código único en toda la base de datos. El sistema más común utilizado por nuestros usuarios es que el código único sea una combinación del año de nacimiento y el código práctico, ejemplo: 025-17.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/CodigoUnico.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Código único">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/CodigoUnico.jpg" alt="Código único" />
+                </a>
+            </div>
+        </div>
+        <h3 id="Estado">Estado o grupo etario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El Estado del animal se refiere a la categoría o grupo etario.
+                    <br>
+                    El sistema maneja 10 estados:
+                    <br>
+                    <b>Hembras:</b>
+                    <ul>
+                        <li>Cría lactante</li>
+                        <li>Joven destetada</li>
+                        <li>Adulta sin parto </li>
+                        <li>Adulta con parto o aborto</li>
+                    </ul>
+                    <b>Machos:</b>
+                    <ul>
+                        <li>Cría lactante</li>
+                        <li>Joven destetado</li>
+                        <li>Adulto no reproductor</li>
+                        <li>Adulto reproductor</li>
+                    </ul>
+                    <b>Otros:</b>
+                    <ul>
+                        <li>Semen</li>
+                        <li>Embrión</li>
+                    </ul>
+                    Éste concepto es muy importante para el manejo y desarrollo del sistema.
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Estado.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estado o grupo etario">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Estado.jpg" alt="Estado" />
+                </a>
+            </div>
+        </div>
+        <h3 id="Estatus">Estatus</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El Estatus del animal es un concepto que tiene que ver con la permanencia del mismo en la finca.
+                    El sistema maneja 3 estatus:
+                    <ul>
+                        <li>
+                            <b>Activo:</b> es el animal que existe en la finca o hacienda. El semen y embriones deben registrarse siempre como activos pero no afectan el inventario de animales.
+                        </li>
+                        <li>
+                            <b>Inactivo:</b> animales que existieron físicamente en la finca pero fueron eliminados por muerte, venta u otra causa.
+                        </li>
+                        <li>
+                            <b>Referencia:</b> son animales que nunca existieron en la finca pero se desean registrar porque son padres o madres, abuelos o bisabuelos de algún otro animal.
+                        </li>
+                    </ul>
+
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Estatus.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Estatus.jpg" alt="Estatus" />
+                </a>
+            </div>
+        </div>
+        <h3 id="EstatusReproductivo">Estatus reproductivo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema maneja 3 estatus reproductivos:
+                    <ol>
+                        <li>
+                            <b>Preñada:</b> GanSoft reconoce un vientre preñado sólo si tiene reportada o estimada la monta, inseminación o transferencia, adicionalmente debe tener la fecha de revisión con diagnóstico “P”.
+                        </li>
+                        <li>
+                            <b>Espera:</b> Una vez reportada o estimada una fecha de servicio el sistema coloca el animal en estatus reproductivo “E”.
+                        </li>
+                        <li>
+                            <b>Vacía:</b> GanSoft reconoce el diagnóstico “P” como “Preñada”, el diagnóstico “E” como “En espera” y cualquier otro diagnóstico será considerado como Vacía. También se asume “Vacía” a una “Hembra adulta sin servicios”.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/EstatusReproductivo.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus reproductivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/EstatusReproductivo.jpg" alt="Estatus reproductivo" />
+                </a>
+            </div>
+        </div>
+        <h3 id="EstatusProductivo">Estatus productivo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema maneja 3 estatus productivos:
+                    <ol>
+                        <li>
+                            <b>Criando:</b> GanSoft reconoce una “Hembra adulta con parto” en este estatus productivo cuando está recién parida y/o no se le ha reportado ningún pesaje de leche.
+                        </li>
+                        <li>
+                            <b>Ordeño:</b> Se considera que una “Hembra adulta con parto” se encuentra en este estatus productivo si al menos se le ha notificado 1 pesaje de leche y no ha sido notificado el “Secado”.
+                        </li>
+                        <li>
+                            <b>Seca:</b> Una “Hembra adulta con parto” que se le haya notificado el “Secado”, pasa automáticamente a estatus productivo “Seca”, haya tenido o no pesajes de leche.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/EstatusProductivo.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus productivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/EstatusProductivo.jpg" alt="Estatus productivo" />
+                </a>
+            </div>
+        </div>
+        <h3 id="ComposicionRacial">Composición racial</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    La composición racial permite establecer el porcentaje de cada raza dentro del mestizaje del animal, posteriormente, todos sus descendientes heredan esta información automáticamente
+                    calculada de la composición racial de sus padres.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/ComposicionRacial.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Composición racial">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/ComposicionRacial.jpg" alt="Composición racial" />
+                </a>
+            </div>
+        </div>
+        <h3 id="Codigos">Códigos y tipos de códigos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los códigos son variables creadas por el usuario para identificar los diferentes tipos de lotes, raza, color, clasificación y propietario entre otros.
+                    <br>
+                    <b>Tipos de códigos</b>
+                    <ul>
+                        <li>
+                            Generales.
+                        </li>
+                        <li>
+                            Diagnóstico.
+                        </li>
+                        <li>
+                            Tratamiento.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Codigos.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Códigos">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Codigos.jpg" alt="Códigos" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
