@@ -31,7 +31,7 @@
           "Link": "GanSoftPro?id=Inicio&key=PrimeraVez"
         },
         {
-          "Title": "Glosario de términos",
+          "Title": "Glosario",
           "Link": "GanSoftPro?id=Inicio&key=Glosario"
         }
       ]
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "Title": "<b>Hacienda</b>",
+      "Title": "<b>Haciendas</b>",
       "Items": [
         {
           "Title": "Seleccionar",
@@ -106,7 +106,7 @@
           "Link": "GanSoftPro?id=Hacienda&key=PlanesSanitarios"
         },
         {
-          "Title": "Código",
+          "Title": "Códigos varios",
           "Link": "GanSoftPro?id=Hacienda&key=Codigo"
         }
       ]
