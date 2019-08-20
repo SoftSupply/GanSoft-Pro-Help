@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Glosario";
+    ViewBag.Title = "Glosario de términos";
     ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
@@ -21,9 +21,6 @@
             </li>
             <li>
                 <a href="#AbortoB">Aborto tipo B</a>
-            </li>
-            <li>
-                <a href="#AnimalesEliminados">Animales eliminados</a>
             </li>
             <li>
                 <a href="#Avio">Avío</a>
@@ -177,16 +174,6 @@
                     Aborto que ocurre cuando el animal tiene más de 152 días (5 meses) de gestación. Se considera que el animal genera
                     una nueva lactancia en este caso. Y si el animal estaba en producción, automáticamente su fecha de secado corresponde
                     al día anterior del aborto.
-                </p>
-            </div>
-        </div>
-        <h3 id="AnimalesEliminados">Animales eliminados</h3>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    Son considerados eliminados aquellos animales que ya no se encuentren en la finca debido a algún ajuste negativo:
-                    muerte, robo, venta, entre otros. Estos animales existen en la base de datos, pero su información sólo puede ser vista
-                    a través de Datos Generales.
                 </p>
             </div>
         </div>
