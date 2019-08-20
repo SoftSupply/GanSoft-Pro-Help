@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Glosario de términos";
+    ViewBag.Title = "Glosario";
     ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
@@ -50,6 +50,9 @@
                 <a href="#CondicionCorporal">Condición corporal</a>
             </li>
             <li>
+                <a href="#Desconocido">Desconocido</a>
+            </li>
+            <li>
                 <a href="#Destete">Destete</a>
             </li>
             <li>
@@ -92,13 +95,13 @@
                 <a href="#Historicos">Históricos</a>
             </li>
             <li>
+                <a href="#Indefinido">Indefinido</a>
+            </li>
+            <li>
                 <a href="#IntervaloPartos">Intervalo entre parto</a>
             </li>
             <li>
                 <a href="#Lactancia">Lactancia</a>
-            </li>
-            <li>
-                <a href="#Lote">Lote</a>
             </li>
             <li>
                 <a href="#MacroReproductivo">Macroíndice reproductivo</a>
@@ -122,7 +125,7 @@
                 <a href="#Ordeño">Ordeño</a>
             </li>
             <li>
-                <a href="#ProduccionParto">Producción entre Parto</a>
+                <a href="#ProduccionParto">Producción entre parto</a>
             </li>
             <li>
                 <a href="#Raza">Raza</a>
@@ -141,9 +144,6 @@
             </li>
             <li>
                 <a href="#Toro">Toro</a>
-            </li>
-            <li>
-                <a href="#Indefinido">INDEFINIDO</a>
             </li>
             <li>
                 <a href="#Usuario">Usuario</a>
@@ -198,21 +198,23 @@
                 </p>
             </div>
         </div>
-        <h3 id="Becerra">Becerra</h3>
+        <h3 id="Becerra">Becerra (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
                     Estado del animal que corresponde a una hembra que no ha sido destetada.
                 </p>
             </div>
-        </div><h3 id="Becerro">Becerro</h3>
+        </div>
+        <h3 id="Becerro">Becerro (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
                     Estado del animal que corresponde a un macho que no ha sido destetado.
                 </p>
             </div>
-        </div><h3 id="Clasificacion">Clasificación</h3>
+        </div>
+        <h3 id="Clasificacion">Clasificación</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -250,6 +252,14 @@
             <div class="col-md-8">
                 <p>
                     Es un método subjetivo para determinar la cantidad de grasa que tiene un animal, puede ser muy sencilla, como: flaca, regular y buena; o puede ser en base a una escala numérica.
+                </p>
+            </div>
+        </div>
+        <h3 id="Desconocido">Desconocido</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un código reservado asignado a un toro que el programa crea en forma automática, para reportar con éste los servicios de Monta Natural desconocida.
                 </p>
             </div>
         </div>
@@ -307,19 +317,19 @@
                         </tr>
                         <tr>
                             <td>Cría lactante</td>
-                            <td>Becerra</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becerra</td>
                         </tr>
                         <tr>
                             <td>Joven destetada</td>
-                            <td>Mauta</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mauta</td>
                         </tr>
                         <tr>
                             <td>Adulta sin parto</td>
-                            <td>Novilla</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novilla</td>
                         </tr>
                         <tr>
                             <td>Adulta con parto o aborto</td>
-                            <td>Vaca</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vaca</td>
                         </tr>
                         <tr>
                             <th>Machos</th>
@@ -327,19 +337,19 @@
                         </tr>
                         <tr>
                             <td>Cría lactante</td>
-                            <td>Becerro</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becerro</td>
                         </tr>
                         <tr>
                             <td>Joven destetado</td>
-                            <td>Maute</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maute</td>
                         </tr>
                         <tr>
                             <td>Adulto no reproductor</td>
-                            <td>Novillo</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novillo</td>
                         </tr>
                         <tr>
                             <td>Adulto reproductor</td>
-                            <td>Toro</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toro</td>
                         </tr>
                         <tr>
                             <th>Otros</th>
@@ -375,11 +385,6 @@
                     </ul>
                 </p>
             </div>
-            <div class="col-md-4">
-                <a href="~/Areas/GanSoftPro/Content/img/captures/Estatus.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus">
-                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Estatus.jpg" alt="Estatus" />
-                </a>
-            </div>
         </div>
         <h3 id="EstatusReproductivo">Estatus reproductivo</h3>
         <div class="row">
@@ -399,11 +404,6 @@
                     </ol>
                 </p>
             </div>
-            <div class="col-md-4">
-                <a href="~/Areas/GanSoftPro/Content/img/captures/EstatusReproductivo.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus reproductivo">
-                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/EstatusReproductivo.jpg" alt="Estatus reproductivo" />
-                </a>
-            </div>
         </div>
         <h3 id="EstatusProductivo">Estatus productivo</h3>
         <div class="row">
@@ -422,11 +422,6 @@
                         </li>
                     </ol>
                 </p>
-            </div>
-            <div class="col-md-4">
-                <a href="~/Areas/GanSoftPro/Content/img/captures/EstatusProductivo.jpg" class="thumbnail" data-lightbox="interfaz" data-title="Estatus productivo">
-                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/EstatusProductivo.jpg" alt="Estatus productivo" />
-                </a>
             </div>
         </div>
         <h3 id="Eventos">Eventos</h3>
@@ -469,6 +464,14 @@
                 </p>
             </div>
         </div>
+        <h3 id="Indefinido">Indefinido</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un código reservado asignado a un toro que el programa crea en forma automática, para reportar con éste los servicios de Monta Natural desconocida.
+                </p>
+            </div>
+        </div>
         <h3 id="IntervaloParto">Intervalo entre parto</h3>
         <div class="row">
             <div class="col-md-8">
@@ -485,15 +488,7 @@
                 </p>
             </div>
         </div>
-        <h3 id="Lote">Lote</h3>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    Ver <a href="#Vaquera">Vaquera</a>.
-                </p>
-            </div>
-        </div>
-        <h3 id="MacroReproductivo">Macroíndice Reproductivo</h3>
+        <h3 id="MacroReproductivo">Macroíndice reproductivo</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -502,7 +497,7 @@
                 </p>
             </div>
         </div>
-        <h3 id="Mauta">Mauta</h3>
+        <h3 id="Mauta">Mauta (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -510,7 +505,7 @@
                 </p>
             </div>
         </div>
-        <h3 id="Maute">Maute</h3>
+        <h3 id="Maute">Maute (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -526,7 +521,7 @@
                 </p>
             </div>
         </div>
-        <h3 id="Novilla">Novilla</h3>
+        <h3 id="Novilla">Novilla (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -534,7 +529,7 @@
                 </p>
             </div>
         </div>
-        <h3 id="Novillo">Novillo</h3>
+        <h3 id="Novillo">Novillo (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -606,19 +601,11 @@
                 </p>
             </div>
         </div>
-        <h3 id="Toro">Toro</h3>
+        <h3 id="Toro">Toro (o su equivalente según la especie)</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
                     Macho adulto reproductor que se utiliza para notificar las montas en los vientres.
-                </p>
-            </div>
-        </div>
-        <h3 id="Indefinido">INDEFINIDO</h3>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    Es un código reservado asignado a un toro que el programa crea en forma automática, para reportar con éste los servicios de Monta Natural desconocida.
                 </p>
             </div>
         </div>
@@ -642,7 +629,8 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Término utilizado para identificar la locación de un animal dentro de un grupo o lote. Puede hacer referencia a una estructura física (vaquera, matera, corral) o a una serie de grupos (o lotes) de animales, en los cuales se necesite organizar los animales para tener un mejor control y manejo.
+                    Término utilizado para identificar la locación de un animal dentro de un grupo o lote. Puede hacer referencia a una estructura física (vaquera, matera, corral) o a una serie de grupos (o lotes) de animales,
+                    en los cuales se necesite organizar los animales para tener un mejor control y manejo.
                 </p>
             </div>
         </div>
