@@ -1,8 +1,11 @@
 ﻿Todos los cambios recientes son reflejados en este documento
 
-## [1.0.4]
+## [1.0.5]
 ### Correciones
-**Nuevo
+  - Ajustes en textos
+
+## [1.0.4]
+### Nuevo
   - Glosario de términos
   - Conceptos básicos
   - Primera vez
